@@ -37,21 +37,20 @@ function Mmmnavbar() {
             <Nav.Link href="/malper" className="fw-semibold">Anasayfa</Nav.Link>
 
             <NavDropdown title="Hizmetlerimiz" id="services-dropdown">
-              <NavDropdown.Item href="/mmavahi">Ceza Hukuku</NavDropdown.Item>
-              <NavDropdown.Item href="/mmhewcedari">Aile Hukuku</NavDropdown.Item>
-              <NavDropdown.Item href="/mmkedkar">Ticaret Hukuku</NavDropdown.Item>
-              <NavDropdown.Item href="/mmkargeh">İş Hukuku</NavDropdown.Item>
-              <NavDropdown.Item href="/mmkinc">Bilişim Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/mmavahi">Ceza Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/mmhewcedari">Aile Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/mmkedkar">Ticaret Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/mmkargeh">İş Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/mmkinc">Bilişim Hukuku</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/mmwesayit">KVKK ve Veri Koruma</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/mmwesayit">KVKK ve Veri Koruma</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="/mmkinc" className="fw-semibold">Makaleler</Nav.Link>
+            <Nav.Link href="/malper/mmkinc" className="fw-semibold">Makaleler</Nav.Link>
 
 
-            <Nav.Link href="/derheq" className="fw-semibold">Hakkımızda</Nav.Link>
+            <Nav.Link href="/malper/derheq" className="fw-semibold">Hakkımızda</Nav.Link>
 
-            <Nav.Link href="/iletisim" className="fw-semibold">İletişim</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
