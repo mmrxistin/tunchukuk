@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
           letterSpacing: "1px",
           fontSize: "2rem",
         }}
-      >Têkili
+      >Bize Ulaşın
       </h2>
       <Form.Group className="mb-3" controlId="formName">
         <Form.Label style={{ color: "#495057", fontWeight: 500 }}>Name</Form.Label>
@@ -132,7 +132,7 @@ const ContactForm: React.FC = () => {
         >
        
 
-        Bişîne
+        Gönder
         </Button>
       </div>
       <p className="text-center mt-4" style={{ color: "#6c757d", fontSize: "1rem" }}>
