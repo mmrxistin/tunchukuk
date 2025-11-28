@@ -4,20 +4,32 @@
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
+// La ilahe illAllah Muhammeden Abdühü ve Resulühü
+// ELHAMDULILLAHİRABBİL'ALAMİN
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd
+// Bismillahirrahmanirahim
+
+// Bismillahirrahmanirahim
+// Elhamdulillahirabbulalemin
+// Ve salatu ve selamu ala resulina Muhammedin ve alihi ve sahbihi ecmain
+// Allahu Ekber, La ilahe illallah
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// Estağfirullah El-Azim
 
 "use client";
 import React from "react";
-import { Card, Row, Col, Alert } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
-function page() {
+export default function Page() {
   return (
     <div
       style={{
         backgroundColor: "#f8f9fa",
         minHeight: "100vh",
         display: "flex",
-        flexDirection: "column", // mobilde dikey hizalama
+        flexDirection: "column",
         alignItems: "center",
         padding: "10px",
       }}
@@ -29,69 +41,70 @@ function page() {
           textAlign: "center",
           maxWidth: "700px",
           width: "100%",
-          margin: "0 auto",
         }}
       >
         <Card.Body>
-          <Card.Title style={{ fontSize: "1.5rem" }}>Sporcu Beslenmesi</Card.Title>
+          <Card.Title style={{ fontSize: "1.5rem" }}>
+            Hukuk ve Adalet
+          </Card.Title>
+
           <Row className="g-4">
-            {/* Sol Kolon */}
-            <Col xs={12} md={6} className="mb-3 mb-md-0">
-              <Card style={{ textAlign: "center", height: "100%" }}>
+            {/* Sol Taraf */}
+            <Col xs={12} md={6}>
+              <Card style={{ height: "100%" }}>
                 <Card.Body>
-                  <Card.Title style={{ fontSize: "1.1rem" }}>Sporcularda beslenmenin önemi</Card.Title>
-                  <Card.Text style={{ fontSize: "1rem" }}>
+                  <Card.Title style={{ fontSize: "1.1rem" }}>
+                    Hukukun Toplumdaki Yeri
+                  </Card.Title>
+
+                  <Card.Text style={{ fontSize: "1rem", textAlign: "left" }}>
+                    Hukuk, toplum düzeninin korunması, bireylerin hak ve
+                    özgürlüklerinin güvence altına alınması ve adaletin
+                    sağlanması için temel bir sistemdir. Modern devletlerde
+                    hukukun üstünlüğü ilkesi, hem kamu otoritesini hem de
+                    bireyleri bağlayan evrensel bir prensip olarak kabul
+                    edilmektedir.
+
+                    <br /><br />
+
+                    <strong>Hukukun Temel İlkeleri</strong>
                     <br />
-                    Sporcularda beslenme, performansın artırılması, toparlanma
-                    sürecinin hızlandırılması ve genel sağlığın korunması
-                    açısından kritik bir rol oynamaktadır. Son dönem
-                    araştırmalar, beslenmenin sadece enerji alımı değil, aynı
-                    zamanda antrenman adaptasyonu, bağışıklık sistemi desteği ve
-                    zihinsel dayanıklılık üzerinde de etkili olduğunu
-                    göstermektedir.
-                    <br />
-                    <br />
-                    <strong>Makro ve Mikro Besinlerin Önemi</strong>
-                    <br />
-                    Sporcuların enerji ve protein ihtiyaçları, sedanter
-                    bireylere göre daha fazladır. Bu nedenle karbonhidrat,
-                    protein ve yağ gibi makro besin ögelerinin dengeli alımı
-                    önemlidir. Ayrıca, vitamin ve mineral gibi mikro besin
-                    ögeleri de performans ve toparlanma süreçlerinde kritik rol
-                    oynar.
-                    <br />
-                    <br />
+                    Hukuk; adalet, eşitlik, insan hakları, güvenlik ve
+                    öngörülebilirlik gibi temel prensiplere dayanır. Bu
+                    ilkeler, hem yargı süreçlerinin sağlıklı işlemesini hem de
+                    bireysel hakların korunmasını sağlar.
+
+                    <br /><br />
+
                     <strong>Sonuç</strong>
                     <br />
-                    Sporcularda beslenme, sadece fiziksel performansı değil,
-                    aynı zamanda genel sağlığı, zihinsel dayanıklılığı ve uzun
-                    vadeli başarıyı etkileyen temel bir faktördür.
+                    Hukuk, toplumların barış içinde yaşamasını ve bireylerin
+                    adil bir ortamda hayatlarını sürdürebilmesini sağlayan
+                    vazgeçilmez bir mekanizmadır. Adaletin tesisi, güçlü ve
+                    bağımsız bir hukuk sistemi sayesinde mümkün olur.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            {/* Sağ Kolon */}
+
+            {/* Sağ Taraf */}
             <Col xs={12} md={6} className="d-flex align-items-center">
               <Image
-                src="https://iasbh.tmgrup.com.tr/a9e335/0/0/0/0/0/0?u=https://isbh.tmgrup.com.tr/sb/album/2021/12/11/tum-beslenmeniz-degisiyor-iste-saat-1600dan-sonra-asla-tuketmemeniz-gereken-o-besin-1639200626070.jpg&mw=752&mh=700"
+                src="https://img.freepik.com/free-photo/justice-law-concept-with-books_93675-129039.jpg"
+                alt="Hukuk ve Adalet"
+                fluid
                 style={{
                   border: "5px solid white",
                   borderRadius: "10px",
                   width: "100%",
-                  height: "auto",
-                  marginBottom: "10px",
                 }}
-                alt="ROJDA MUSA"
-                fluid
               />
             </Col>
           </Row>
         </Card.Body>
       </Card>
-      {/* Alert ve ForYouFeed Alt Kısma Taşındı */}
-     
     </div>
   );
 }
-
-export default page;
+// Allahumme salli ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Elhamdulillahirabbulalemin

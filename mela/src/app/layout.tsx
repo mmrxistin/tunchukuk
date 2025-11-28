@@ -97,3 +97,5 @@ export function Footer() {
     </footer>
   );
 }
+// La ilahe illAllah Muhammeden Abdühü ve Resulühü
+// Elhamdulillahirabbulalemin
