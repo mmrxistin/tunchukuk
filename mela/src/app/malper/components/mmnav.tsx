@@ -1,9 +1,19 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
-// Ve salatu ve selamu ala resulina Muhammedin ve alihi ve sahbihi ecmain
+// Ve salatu ve selamu ala resulina Muhammedin 
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
+// La ilahe illallah, Muhammeden abduhu ve resuluhu
+//ELHAMDULILLAHİRABBİLALAMİN
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd
+// Bismillahirrahmanirrahim
+// Elhamdulillahirabbulalemin
+// Bismillahirrahmanirrahim
+// Elhamdulillahirabbulalemin
+// Ve salatu ve selamu ala resulina Muhammedin 
+
 "use client"
 
 import Container from 'react-bootstrap/Container';
@@ -13,109 +23,36 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Mmmnavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="light" className="shadow-sm">
       <Container>
-        <Navbar.Brand href="/malper">Günlerin Dili</Navbar.Brand>
-        <Navbar.Brand href="/malper">Anasayfa</Navbar.Brand>
+        <Navbar.Brand href="/malper" className="fw-bold text-dark">
+          Tunç Hukuk Bürosu
+        </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/malper">Masa Takvimleri</Nav.Link>
-            <NavDropdown title="SADE TAKVİM" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/mmavahi/mmmweb"></NavDropdown.Item>
-              <NavDropdown.Item href="/malper/mmavahi/mmmobile">
-                
-             Mobile Apps
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/malper/mmavahi/mmmdesktop">Desktop Apps</NavDropdown.Item>
+          <Nav className="ms-auto">
+
+            <Nav.Link href="/malper" className="fw-semibold">Anasayfa</Nav.Link>
+
+            <NavDropdown title="Hizmetlerimiz" id="services-dropdown">
+              <NavDropdown.Item href="/hukuk/ceza">Ceza Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/hukuk/aile">Aile Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/hukuk/ticaret">Ticaret Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/hukuk/is">İş Hukuku</NavDropdown.Item>
+              <NavDropdown.Item href="/hukuk/bilisim">Bilişim Hukuku</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/malper/mmavahi/mmmai">
-                
-                Artificial Intelligence
-              </NavDropdown.Item>
-
-
-
-
-
-              <NavDropdown.Item href="/malper/mmavahi/mmmhealth">
-                Health/Repairing
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/hukuk/kvkk">KVKK ve Veri Koruma</NavDropdown.Item>
             </NavDropdown>
 
+            <Nav.Link href="/makaleler" className="fw-semibold">Makaleler</Nav.Link>
 
+            <Nav.Link href="/ekip" className="fw-semibold">Ekibimiz</Nav.Link>
 
+            <Nav.Link href="/hakkimizda" className="fw-semibold">Hakkımızda</Nav.Link>
 
-            <NavDropdown title="HEDİYELİ TAKVİM" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/mmperwerdehi">Web</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                
-                
-Mobile
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Machine Learning</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                
-                Cross Platform Apps
-              </NavDropdown.Item>
-            </NavDropdown>
-
-
-
-            <NavDropdown title="Cîhan" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/mmkarubar">Nûçe</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-
-
-
-
-
-
-
-
-
-
-
-
-          
-
-
-            <NavDropdown title="ÖZEL GÜNLER" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/mm">Anneler Günü</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                
-                Babalar Günü
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Öğretmenler Günü</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Diğer
-              </NavDropdown.Item>
-            </NavDropdown>
-
-
-            <NavDropdown title="Tendûrûstî" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/mmmmm">Courses</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Documantations
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Contribute</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Join to Yekazad
-              </NavDropdown.Item>
-            </NavDropdown>
-
-            <Nav.Link href="#link">Derbare</Nav.Link>
+            <Nav.Link href="/iletisim" className="fw-semibold">İletişim</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
@@ -125,3 +62,10 @@ Mobile
 }
 
 export default Mmmnavbar;
+// Allah U Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// Estağfirullah El-Azim
+// La ilahe illallah, Muhammeden Abdühü ve Resulühü
+// ELHAMDULILLAHİRABBİL'ALAMİN
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd

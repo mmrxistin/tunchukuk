@@ -96,7 +96,7 @@ function page() {
         </ul>
 
         <div id="contact" className="mt-6">
-          <ContactForm />
+       
         </div>
       </section>
     </main>
