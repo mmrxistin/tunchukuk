@@ -1,47 +1,69 @@
 // Bismillahirrahmanirahim
+// Elhamdulillahirabbulalemin
+// Ve salatu ve selamu ala resulina Muhammedin 
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// Estağfirullah El-Azim
+// La ilahe illallah, Muhammeden abduhu ve resuluhu
+//ELHAMDULILLAHİRABBİLALAMİN
+"use client";
 
-"use client"
+import React from "react";
 
-import Carousel from 'react-bootstrap/Carousel';
-
-import { Image } from 'react-bootstrap';
-function UncontrolledExample() {
+export default function ContactButtons() {
   return (
-    <Carousel>
-      <Carousel.Item>
-        <Image src='https://cdn.webtekno.com/media/cache/content_detail_v2/article/23831/turkiye-deki-yazilim-sektorunu-buyutmek-icin-devletten-onemli-adim-1483725143.jpg'/>
-        <Carousel.Caption>
-          <h3>Yekazad Software Center</h3>
-          <p>Everything about Software</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image src='https://www.braintechnosys.com/blog/wp-content/uploads/2020/02/Here-are-top-reasons-Of-Android-App-Development-To-Different-Industries.jpg' />
-        <Carousel.Caption>
-          <h3>Android Apps</h3>
-          <p>Build your own Android App</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image  src='https://www.apple.com/newsroom/images/2024/06/ios-18-makes-iphone-more-personal-capable-and-intelligent-than-ever/article/Apple-WWDC24-iOS-18-iPhone-15-Pro-3-up-240610_big.jpg.medium.jpg'/>
-        <Carousel.Caption>
-          <h3>Ios Apps</h3>
-          <p>Build your own Android App</p>
+    <div
+      style={{
+        position: "fixed",
+        bottom: "20px",
+        right: "20px",
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        zIndex: 9999,
+      }}
+    >
+      {/* WhatsApp Button */}
+      <a
+        href="https://wa.me/90548911793"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          backgroundColor: "#25D366",
+          color: "white",
+          padding: "12px 16px",
+          borderRadius: "50px",
+          fontWeight: "bold",
+          textAlign: "center",
+          textDecoration: "none",
+          boxShadow: "0 3px 10px rgba(0,0,0,0.3)",
+        }}
+      >
+        WhatsApp
+      </a>
 
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <Image  src='https://www.fsm.ac.in/blog/wp-content/uploads/2022/08/ml-e1610553826718.jpg'/>
-        <Carousel.Caption>
-          <h3>Machine Learning</h3>
-          <p>
-        Make easy your job with Machine Learning
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+      {/* Phone Button */}
+      <a
+        href="tel:+90548911793"
+        style={{
+          backgroundColor: "#007bff",
+          color: "white",
+          padding: "12px 16px",
+          borderRadius: "50px",
+          fontWeight: "bold",
+          textAlign: "center",
+          textDecoration: "none",
+          boxShadow: "0 3px 10px rgba(0,0,0,0.3)",
+        }}
+      >
+        Telefon
+      </a>
+    </div>
   );
 }
 
-export default UncontrolledExample;
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd
+// Bismillahirrahmanirahim
+// Elhamdulillahirabbulalemin
+// Ve salatu ve selamu ala resulina Muhammedin

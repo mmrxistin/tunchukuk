@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Footer from "./components/mmbingeh";
 import AssistantRoot from "./assistant";
 import ContactForm from "./components/mmfrm";
+import ContactButtons from "./components/mmslide";
 
 
 
@@ -25,7 +26,6 @@ export default async function Layout({
   return (
 <div>
 
-<Alert variant="warning">Supports Palastina and Rojava!</Alert>
 <Mmmnavbar/>
 
 {children}
@@ -33,6 +33,8 @@ export default async function Layout({
 
 
 
+
+ <ContactButtons/>
  <ContactForm/>
 <Footer/>
 </div>
