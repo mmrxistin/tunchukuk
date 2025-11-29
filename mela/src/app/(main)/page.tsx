@@ -19,9 +19,9 @@ function AdminPage() {
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Davalar</Card.Title>
+              <Card.Title>Ceza Hukuku</Card.Title>
               <Card.Text>Hukuk davalarını ve müvekkil bilgilerini yönet.</Card.Text>
-              <Button variant="primary" href="/admin/davalar">
+              <Button variant="primary" href="/mmavahi">
                 Git
               </Button>
             </Card.Body>
@@ -33,7 +33,7 @@ function AdminPage() {
             <Card.Body>
               <Card.Title>Makaleler & Paylaşımlar</Card.Title>
               <Card.Text>Hukuk makalelerini ve blog paylaşımlarını yönet.</Card.Text>
-              <Button variant="primary" href="/admin/makaleler">
+              <Button variant="primary" href="/mmhewcedari">
                 Git
               </Button>
             </Card.Body>
@@ -43,9 +43,9 @@ function AdminPage() {
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Kategoriler</Card.Title>
+              <Card.Title>Aile Hukuku</Card.Title>
               <Card.Text>Hukuk içerik kategorilerini yönet ve ekle.</Card.Text>
-              <Button variant="primary" href="/admin/kategoriler">
+              <Button variant="primary" href="/mmkedkar">
                 Git
               </Button>
             </Card.Body>
@@ -57,9 +57,9 @@ function AdminPage() {
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Müvekkiller</Card.Title>
+              <Card.Title>İş Hukuku</Card.Title>
               <Card.Text>Müvekkil bilgilerini görüntüle ve güncelle.</Card.Text>
-              <Button variant="primary" href="/admin/muvekkiller">
+              <Button variant="primary" href="/mmkargeh">
                 Git
               </Button>
             </Card.Body>
@@ -69,9 +69,9 @@ function AdminPage() {
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Avukatlar</Card.Title>
-              <Card.Text>Avukat profillerini ve yetkilerini yönet.</Card.Text>
-              <Button variant="primary" href="/admin/avukatlar">
+              <Card.Title>KVKK</Card.Title>
+              <Card.Text>düzenle</Card.Text>
+              <Button variant="primary" href="/mmkinc">
                 Git
               </Button>
             </Card.Body>
