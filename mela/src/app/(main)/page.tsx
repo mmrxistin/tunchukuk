@@ -6,45 +6,47 @@
 // La ilahe illallah Muhammedur Resulullah
 // Subhanallah, Elhamdulillah, Allahu Ekber, La ilahe illallah
 // Estağfirulllah El-Azim
-"use client"
+"use client";
 import React from "react";
-import { Alert, Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 function AdminPage() {
   return (
     <Container fluid style={{ background: "#f8f9fa", minHeight: "100vh", padding: "20px" }}>
-     
+      <h2 className="mb-4 text-center">Tunç Hukuk Bürosu - Admin Paneli</h2>
 
-      <Row>
+      <Row className="mb-4">
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Products Page</Card.Title>
-              <Card.Text>Manage or view the sports nutrition page.</Card.Text>
-              <Button variant="primary" href="/mmavahi">
-                Go
+              <Card.Title>Davalar</Card.Title>
+              <Card.Text>Hukuk davalarını ve müvekkil bilgilerini yönet.</Card.Text>
+              <Button variant="primary" href="/admin/davalar">
+                Git
               </Button>
             </Card.Body>
           </Card>
         </Col>
+
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Courses Page</Card.Title>
-              <Card.Text>Manage or view the courses page.</Card.Text>
-              <Button variant="primary" href="/mmkinc">
-                Go
+              <Card.Title>Makaleler & Paylaşımlar</Card.Title>
+              <Card.Text>Hukuk makalelerini ve blog paylaşımlarını yönet.</Card.Text>
+              <Button variant="primary" href="/admin/makaleler">
+                Git
               </Button>
             </Card.Body>
           </Card>
         </Col>
+
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Services</Card.Title>
-              <Card.Text>Manage or view the services page.</Card.Text>
-              <Button variant="primary" href="/mmkargeh">
-                Go
+              <Card.Title>Kategoriler</Card.Title>
+              <Card.Text>Hukuk içerik kategorilerini yönet ve ekle.</Card.Text>
+              <Button variant="primary" href="/admin/kategoriler">
+                Git
               </Button>
             </Card.Body>
           </Card>
@@ -55,32 +57,34 @@ function AdminPage() {
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>References</Card.Title>
-              <Card.Text>Manage or view the references page.</Card.Text>
-              <Button variant="primary" href="/mmwesayit">
-                Go
+              <Card.Title>Müvekkiller</Card.Title>
+              <Card.Text>Müvekkil bilgilerini görüntüle ve güncelle.</Card.Text>
+              <Button variant="primary" href="/admin/muvekkiller">
+                Git
               </Button>
             </Card.Body>
           </Card>
         </Col>
+
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>For Developers</Card.Title>
-              <Card.Text>Manage or view the developer resources page.</Card.Text>
-              <Button variant="primary" href="/mmkedkar">
-                Go
+              <Card.Title>Avukatlar</Card.Title>
+              <Card.Text>Avukat profillerini ve yetkilerini yönet.</Card.Text>
+              <Button variant="primary" href="/admin/avukatlar">
+                Git
               </Button>
             </Card.Body>
           </Card>
         </Col>
+
         <Col md={4} className="mb-3">
           <Card>
             <Card.Body>
-              <Card.Title>Site Management</Card.Title>
-              <Card.Text>Manage or view the site.</Card.Text>
-              <Button variant="primary" href="/malper">
-                Go
+              <Card.Title>Site Yönetimi</Card.Title>
+              <Card.Text>Web sitesini ve genel ayarları yönet.</Card.Text>
+              <Button variant="primary" href="/admin/site">
+                Git
               </Button>
             </Card.Body>
           </Card>
@@ -91,3 +95,15 @@ function AdminPage() {
 }
 
 export default AdminPage;
+
+
+// Elhamdulillahirabbulalemin
+
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd
+// Bismillahirrahmanirahim
+// Elhamdulillahirabbulalemin
+// Ve salatu ve selamu ala resulina Muhammedin
+// Allahumme salli ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// La ilahe illAllah Muhammeden Abdühü ve Resulühü
+// ELHAMDULILLAHİRABBİL'ALAMİN
