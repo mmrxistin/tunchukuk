@@ -18,7 +18,10 @@
 // Allah U Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
-// La ilahe illallah, Muhammedur Resulullah
+// La ilahe illallah, Muhammeden Abdühü ve Resulühü
+// ELHAMDULILLAHİRABBİL'ALAMİN
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd
 
 import React from 'react'
 import ContactForm from './components/mmfrm'
@@ -47,7 +50,7 @@ function page() {
           <p className="text-gray-600 mt-2">
             Soruşturma ve kovuşturma süreçlerinde profesyonel avukatlık hizmeti.
           </p>
-          <a href="/iletisim?konu=ceza" className="text-blue-600 mt-4 inline-block">
+          <a href="/mmavahi" className="text-blue-600 mt-4 inline-block">
             Detaylı Bilgi
           </a>
         </article>
@@ -63,7 +66,7 @@ function page() {
           <p className="text-gray-600 mt-2">
             Boşanma, velayet, nafaka ve aile hukuku süreçlerinde uzman destek.
           </p>
-          <a href="/iletisim?konu=aile" className="text-blue-600 mt-4 inline-block">
+          <a href="/mmkedkar" className="text-blue-600 mt-4 inline-block">
             Detaylı Bilgi
           </a>
         </article>
@@ -79,7 +82,7 @@ function page() {
           <p className="text-gray-600 mt-2">
             Şirket kuruluşları, sözleşmeler, ticari uyuşmazlık çözümü.
           </p>
-          <a href="/iletisim?konu=ticaret" className="text-blue-600 mt-4 inline-block">
+          <a href="/mmwesayit" className="text-blue-600 mt-4 inline-block">
             Detaylı Bilgi
           </a>
         </article>
