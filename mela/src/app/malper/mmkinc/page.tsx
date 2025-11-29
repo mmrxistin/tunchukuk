@@ -1,13 +1,20 @@
 // Bismillahirrahmanirahim
 // Elhamdulillahirabbulalemin
-// Ve salatu ve selamu ala resulina Muhammedin ve alihi ve sahbihi ecmain
+// Ve salatu ve selamu ala resulina Muhammedin 
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// Estağfirullah El-Azim
+
+// Bismillahirrahmanirahim
+// Elhamdulillahirabbulalemin
+// Ve salatu ve selamu ala resulina Muhammedin 
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
 
 "use client";
 import React from "react";
-import { Card, Row, Col, Alert } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
 function page() {
@@ -17,7 +24,7 @@ function page() {
         backgroundColor: "#f8f9fa",
         minHeight: "100vh",
         display: "flex",
-        flexDirection: "column", // mobilde dikey hizalama
+        flexDirection: "column",
         alignItems: "center",
         padding: "10px",
       }}
@@ -33,39 +40,38 @@ function page() {
         }}
       >
         <Card.Body>
-          <Card.Title style={{ fontSize: "1.5rem" }}>Sporcu Beslenmesi</Card.Title>
+          <Card.Title style={{ fontSize: "1.5rem" }}>İş Hukuku: İşçi Hakları</Card.Title>
           <Row className="g-4">
             {/* Sol Kolon */}
             <Col xs={12} md={6} className="mb-3 mb-md-0">
               <Card style={{ textAlign: "center", height: "100%" }}>
                 <Card.Body>
-                  <Card.Title style={{ fontSize: "1.1rem" }}>Sporcularda beslenmenin önemi</Card.Title>
+                  <Card.Title style={{ fontSize: "1.1rem" }}>İş Hukukunda Temel Haklar</Card.Title>
                   <Card.Text style={{ fontSize: "1rem" }}>
                     <br />
-                    Sporcularda beslenme, performansın artırılması, toparlanma
-                    sürecinin hızlandırılması ve genel sağlığın korunması
-                    açısından kritik bir rol oynamaktadır. Son dönem
-                    araştırmalar, beslenmenin sadece enerji alımı değil, aynı
-                    zamanda antrenman adaptasyonu, bağışıklık sistemi desteği ve
-                    zihinsel dayanıklılık üzerinde de etkili olduğunu
-                    göstermektedir.
+                    İş hukuku, işçi ve işveren arasındaki ilişkileri düzenleyen hukuki
+                    çerçeveyi belirler. İşçi hakları, iş sözleşmeleri ve çalışma koşulları
+                    bu hukuk dalının temel konularıdır.
+                    <br /><br />
+                    <strong>1. Çalışma Saatleri ve Fazla Mesai</strong>
                     <br />
+                    İşçilere belirlenen çalışma saatleri ve fazla mesai karşılığı ücret
+                    kanunen güvence altındadır.
+                    <br /><br />
+                    <strong>2. Ücret ve Sosyal Haklar</strong>
                     <br />
-                    <strong>Makro ve Mikro Besinlerin Önemi</strong>
+                    Asgari ücret, izin, prim ve sosyal güvenlik hakları işçilerin korunması
+                    için düzenlenmiştir.
+                    <br /><br />
+                    <strong>3. İş Güvencesi</strong>
                     <br />
-                    Sporcuların enerji ve protein ihtiyaçları, sedanter
-                    bireylere göre daha fazladır. Bu nedenle karbonhidrat,
-                    protein ve yağ gibi makro besin ögelerinin dengeli alımı
-                    önemlidir. Ayrıca, vitamin ve mineral gibi mikro besin
-                    ögeleri de performans ve toparlanma süreçlerinde kritik rol
-                    oynar.
-                    <br />
-                    <br />
+                    Haksız fesihlere karşı işçilerin korunması, tazminat ve işten çıkarma
+                    süreçleri iş hukukunun temel unsurlarındandır.
+                    <br /><br />
                     <strong>Sonuç</strong>
                     <br />
-                    Sporcularda beslenme, sadece fiziksel performansı değil,
-                    aynı zamanda genel sağlığı, zihinsel dayanıklılığı ve uzun
-                    vadeli başarıyı etkileyen temel bir faktördür.
+                    İş hukuku, işçi ve işverenin haklarını koruyarak adil bir çalışma
+                    ortamı sağlamayı amaçlar. İşçiler bu hakları bilerek hareket etmelidir.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -73,7 +79,7 @@ function page() {
             {/* Sağ Kolon */}
             <Col xs={12} md={6} className="d-flex align-items-center">
               <Image
-                src="https://iasbh.tmgrup.com.tr/a9e335/0/0/0/0/0/0?u=https://isbh.tmgrup.com.tr/sb/album/2021/12/11/tum-beslenmeniz-degisiyor-iste-saat-1600dan-sonra-asla-tuketmemeniz-gereken-o-besin-1639200626070.jpg&mw=752&mh=700"
+                src="https://www.istockphoto.com/photo/business-law-gm1095230046-291126152"
                 style={{
                   border: "5px solid white",
                   borderRadius: "10px",
@@ -81,17 +87,20 @@ function page() {
                   height: "auto",
                   marginBottom: "10px",
                 }}
-                alt="ROJDA MUSA"
+                alt="İş Hukuku"
                 fluid
               />
             </Col>
           </Row>
         </Card.Body>
       </Card>
-      {/* Alert ve ForYouFeed Alt Kısma Taşındı */}
-     
     </div>
   );
 }
 
 export default page;
+// Elhamdulillahirabbulalemin
+// Allah U Ekber
+// La ilahe illallah Muhammeden abduhu ve resuluhu
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd

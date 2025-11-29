@@ -5,6 +5,13 @@
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
 
+// Bismillahirrahmanirahim
+// Elhamdulillahirabbulalemin
+// Ve salatu ve selamu ala resulina Muhammedin ve alihi ve sahbihi ecmain
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// Estağfirullah El-Azim
+
 "use client";
 import React from "react";
 import { Card, Row, Col, Alert } from "react-bootstrap";
@@ -95,3 +102,8 @@ function page() {
 }
 
 export default page;
+// Elhamdulillahirabbulalemin
+// Allah U Ekber
+// La ilahe illallah Muhammeden abduhu ve resuluhu
+// Sübhanallah ve bihamdihi, Sübhanallahil-Azim
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahil-hamd
