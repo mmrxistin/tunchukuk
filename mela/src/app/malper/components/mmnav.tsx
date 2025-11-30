@@ -26,7 +26,7 @@ function Mmmnavbar() {
     <Navbar expand="lg" bg="light" className="shadow-sm">
       <Container>
         <Navbar.Brand href="/malper" className="fw-bold text-dark">
-          Tunç Hukuk Bürosu
+        Grafik 
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
