@@ -35,8 +35,8 @@ const geistMono = localFont({
 // ------------------
 export const metadata: Metadata = {
   title: {
-    template: "%s | Tunç Hukuk Bürosu",
-    default: "Tunç Hukuk Bürosu",
+    template: "%s | minak ",
+    default: "örnek site",
   },
   description:
     "Tunç Hukuk Bürosu — Ceza Hukuku, Aile Hukuku, Ticaret Hukuku, İş Hukuku ve Bilişim Hukuku alanlarında profesyonel avukatlık ve danışmanlık hizmetleri.",
