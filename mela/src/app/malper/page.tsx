@@ -30,7 +30,7 @@ function page() {
   return (
     <main className="flex-grow container mx-auto py-8">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold">Tunç Hukuk Bürosu</h1>
+        <h1 className="text-3xl font-bold">bu site denemedir hukukla alakası yoktur.</h1>
         <p className="text-gray-600 mt-2">
           Müvekkillerimize Ceza Hukuku, Aile Hukuku, Ticaret Hukuku, İş Hukuku ve Bilişim Hukuku alanlarında profesyonel avukatlık ve danışmanlık hizmeti sunuyoruz.
         </p>
