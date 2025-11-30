@@ -39,17 +39,8 @@ export const metadata: Metadata = {
     default: "örnek site",
   },
   description:
-    "Tunç Hukuk Bürosu — Ceza Hukuku, Aile Hukuku, Ticaret Hukuku, İş Hukuku ve Bilişim Hukuku alanlarında profesyonel avukatlık ve danışmanlık hizmetleri.",
-  keywords: [
-    "Tunç Hukuk Bürosu",
-    "Avukat",
-    "Hukuk",
-    "Ceza hukuku",
-    "Aile hukuku",
-    "İcra hukuku",
-    "Bilişim hukuku",
-    "Danışmanlık"
-  ],
+    "minak"
+  
 };
 
 
