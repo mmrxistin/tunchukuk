@@ -1,7 +1,3 @@
-// Bismillahirahmanirahim 
-
-
-
 import avatarPlaceholder from "@/assets/avatar-placeholder.png";
 import CropImageDialog from "@/components/CropImageDialog";
 import LoadingButton from "@/components/LoadingButton";
@@ -82,7 +78,7 @@ export default function EditProfileDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Profilê Amade Bike</DialogTitle>
+          <DialogTitle>Edit profile</DialogTitle>
         </DialogHeader>
         <div className="space-y-1.5">
           <Label>Avatar</Label>
@@ -129,7 +125,7 @@ export default function EditProfileDialog({
             />
             <DialogFooter>
               <LoadingButton type="submit" loading={mutation.isPending}>
-                Qeyd bike
+                Save
               </LoadingButton>
             </DialogFooter>
           </form>

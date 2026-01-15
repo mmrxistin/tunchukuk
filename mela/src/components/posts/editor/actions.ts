@@ -8,16 +8,18 @@ import { createPostSchema } from "@/lib/validation";
 export async function submitPost(input: {
   content: string;
   mediaIds: string[];
+  category: "NEWS" | "TECHNOLOGY" | "ART" | "SPORTS" | "LIFESTYLE";
 }) {
   const { user } = await validateRequest();
 
   if (!user) throw new Error("Unauthorized");
 
-  const { content, mediaIds } = createPostSchema.parse(input);
+  const { content, mediaIds, category } = createPostSchema.parse(input);
 
   const newPost = await prisma.post.create({
     data: {
       content,
+      category,
       userId: user.id,
       attachments: {
         connect: mediaIds.map((id) => ({ id })),

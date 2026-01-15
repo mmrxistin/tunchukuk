@@ -1,5 +1,3 @@
-// Bismillahirahmanirahim 
-
 "use client";
 
 import { useSession } from "@/app/(main)/SessionProvider";
@@ -13,7 +11,7 @@ import StarterKit from "@tiptap/starter-kit";
 import { useDropzone } from "@uploadthing/react";
 import { ImageIcon, Loader2, X } from "lucide-react";
 import Image from "next/image";
-import { ClipboardEvent, useRef } from "react";
+import { ClipboardEvent, useRef, useState } from "react";
 import { useSubmitPostMutation } from "./mutations";
 import "./styles.css";
 import useMediaUpload, { Attachment } from "./useMediaUpload";
@@ -45,7 +43,7 @@ export default function PostEditor() {
         italic: false,
       }),
       Placeholder.configure({
-        placeholder: "Selam aleykum,fermo...",
+        placeholder: "What's crack-a-lackin'?",
       }),
     ],
   });
@@ -55,11 +53,16 @@ export default function PostEditor() {
       blockSeparator: "\n",
     }) || "";
 
+  const [category, setCategory] = useState<
+    "NEWS" | "TECHNOLOGY" | "ART" | "SPORTS" | "LIFESTYLE"
+  >("NEWS");
+
   function onSubmit() {
     mutation.mutate(
       {
         content: input,
         mediaIds: attachments.map((a) => a.mediaId).filter(Boolean) as string[],
+        category,
       },
       {
         onSuccess: () => {
@@ -100,6 +103,29 @@ export default function PostEditor() {
         />
       )}
       <div className="flex items-center justify-end gap-3">
+        <div className="flex items-center gap-3">
+          <label className="flex items-center gap-2">
+            <span className="text-sm text-muted-foreground">Category</span>
+            <select
+              value={category}
+              onChange={(e) =>
+                setCategory(e.target.value as
+                  | "NEWS"
+                  | "TECHNOLOGY"
+                  | "ART"
+                  | "SPORTS"
+                  | "LIFESTYLE")
+              }
+              className="rounded-md bg-background px-2 py-1 text-sm"
+            >
+              <option value="NEWS">News</option>
+              <option value="TECHNOLOGY">Technology</option>
+              <option value="ART">Art</option>
+              <option value="SPORTS">Sports</option>
+              <option value="LIFESTYLE">Lifestyle</option>
+            </select>
+          </label>
+        </div>
         {isUploading && (
           <>
             <span className="text-sm">{uploadProgress ?? 0}%</span>
@@ -116,7 +142,7 @@ export default function PostEditor() {
           disabled={!input.trim() || isUploading}
           className="min-w-20"
         >
-          Parve bikin
+          Post
         </LoadingButton>
       </div>
     </div>

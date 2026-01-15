@@ -1,13 +1,8 @@
-// Bismillahir-Rahmanir-Rahim
-// Elhamdulillahirabbulalemin
-// Es-selatu vesselamu ala rasulina Muhammedin ve ala alihi ve sahbihi ecmain
-//Suphanallah, Elhamdulillah, Allahu Ekber
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-
 "use server";
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
+import streamServerClient from "@/lib/stream";
 import { getUserDataSelect } from "@/lib/types";
 import {
   updateUserProfileSchema,
@@ -27,7 +22,12 @@ export async function updateUserProfile(values: UpdateUserProfileValues) {
       data: validatedValues,
       select: getUserDataSelect(user.id),
     });
-  
+    await streamServerClient.partialUpdateUser({
+      id: user.id,
+      set: {
+        name: validatedValues.displayName,
+      },
+    });
     return updatedUser;
   });
 

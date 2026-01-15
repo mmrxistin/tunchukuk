@@ -1,7 +1,5 @@
-// Bismillahirrahmanirrahim 
-// Elhamdulillahirabbulalemin
-// Es-selatu vesselamu ala rasulina Muhammedin ve ala alihi ve sahbihi ecmain
 "use client";
+
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
 import Post from "@/components/posts/Post";
 import PostsLoadingSkeleton from "@/components/posts/PostsLoadingSkeleton";
@@ -23,7 +21,7 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/mmavahi",
+          "/api/posts/for-you",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
         .json<PostsPage>(),
@@ -40,7 +38,7 @@ export default function ForYouFeed() {
   if (status === "success" && !posts.length && !hasNextPage) {
     return (
       <p className="text-center text-muted-foreground">
-        Hê kesî tiştek parvenekirî ye
+        No one has posted anything yet.
       </p>
     );
   }
@@ -48,7 +46,7 @@ export default function ForYouFeed() {
   if (status === "error") {
     return (
       <p className="text-center text-destructive">
-        Pirsgirek derket 
+        An error occurred while loading posts.
       </p>
     );
   }

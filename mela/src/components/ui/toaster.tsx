@@ -1,6 +1,3 @@
-// Bismillahirrahmanirahim 
-
-
 "use client"
 
 import {

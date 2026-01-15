@@ -1,7 +1,3 @@
-// Bismillahirrahmanirrahim 
-
-
-
 import kyInstance from "@/lib/ky";
 import { BookmarkInfo } from "@/lib/types";
 import { cn } from "@/lib/utils";

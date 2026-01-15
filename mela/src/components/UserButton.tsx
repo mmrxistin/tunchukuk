@@ -1,5 +1,3 @@
-// Bismillahirahmanirahim 
-
 "use client";
 
 import { logout } from "@/app/(auth)/actions";
@@ -47,29 +45,29 @@ export default function UserButton({ className }: UserButtonProps) {
         <Link href={`/users/${user.username}`}>
           <DropdownMenuItem>
             <UserIcon className="mr-2 size-4" />
-            Profila We
+            Profile
           </DropdownMenuItem>
         </Link>
         <DropdownMenuSub>
           <DropdownMenuSubTrigger>
             <Monitor className="mr-2 size-4" />
-            Pergal 
+            Theme
           </DropdownMenuSubTrigger>
           <DropdownMenuPortal>
             <DropdownMenuSubContent>
               <DropdownMenuItem onClick={() => setTheme("system")}>
                 <Monitor className="mr-2 size-4" />
-                System
+                System default
                 {theme === "system" && <Check className="ms-2 size-4" />}
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => setTheme("light")}>
                 <Sun className="mr-2 size-4" />
-                Ronahî 
+                Light
                 {theme === "light" && <Check className="ms-2 size-4" />}
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => setTheme("dark")}>
                 <Moon className="mr-2 size-4" />
-                Târî 
+                Dark
                 {theme === "dark" && <Check className="ms-2 size-4" />}
               </DropdownMenuItem>
             </DropdownMenuSubContent>
@@ -83,7 +81,7 @@ export default function UserButton({ className }: UserButtonProps) {
           }}
         >
           <LogOutIcon className="mr-2 size-4" />
-          Derkevin 
+          Logout
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

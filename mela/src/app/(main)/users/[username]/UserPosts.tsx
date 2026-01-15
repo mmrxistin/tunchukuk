@@ -1,10 +1,8 @@
-// Bismillahirahmanirahim 
-
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import PostsLoadingSkeleton from "@/components/mmavahi/PostsLoadingSkeleton";
-import Post from "@/components/mmavahi/Post";
+import Post from "@/components/posts/Post";
+import PostsLoadingSkeleton from "@/components/posts/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
 import { PostsPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
@@ -44,7 +42,7 @@ export default function UserPosts({ userId }: UserPostsProps) {
   if (status === "success" && !posts.length && !hasNextPage) {
     return (
       <p className="text-center text-muted-foreground">
-        Evî zilamî hê tiştek parvenekirî 
+        This user hasn&apos;t posted anything yet.
       </p>
     );
   }
