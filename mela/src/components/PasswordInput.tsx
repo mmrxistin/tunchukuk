@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 import { Eye, EyeOff } from "lucide-react";
 import React, { useState } from "react";
@@ -32,6 +33,8 @@ const PasswordInput = React.forwardRef<HTMLInputElement, InputProps>(
   },
 );
 
+//nextjs
+//react js
 PasswordInput.displayName = "PasswordInput";
 
 export { PasswordInput };

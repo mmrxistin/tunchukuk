@@ -1,3 +1,10 @@
+// Bismillahirahmanirahim 
+// Elhamdulillahirabbulalemin
+// Esselatu vesselamu ala rasulillah 
+// Allahumme salli ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Allah u Ekber, Allahu Ekber, Allahu Ekber
+// La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+
 import { Toaster } from "@/components/ui/toaster";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import type { Metadata } from "next";
@@ -19,10 +26,30 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | bugbook",
-    default: "bugbook",
+    template: "%s |Eroğlu İnşaat",
+    default: "Eroğlu İnşaat - Sıva, Boya, Tadilat Hizmetleri",
   },
-  description: "The social media app for powernerds",
+  description: "  Eroğlu İnşaat, konut ve ticari mekanlarda anahtar teslim tadilat, iç-dış sıva, boya, elektrik ve sıhhi tesisat hizmetleri sunar. Profesyonel ekip, kaliteli malzeme ve uygun fiyatlarla güvenilir çözümler.",
+  keywords: [
+    "Eroğlu İnşaat",
+    "Sıva",
+    "Boya",
+    "Tadilat",
+    "İnşaat Hizmetleri",
+    "Anahtar Teslim Tadilat",
+    "Dış Cephe Sıva",
+    "İç Cephe Boya",
+    "Elektrik Tesisatı",
+    "Sıhhi Tesisat",
+    "Fayans Döşeme",
+    "Çatı İzolasyonu",
+    "Konut Tadilatı",
+    "Ticari Tadilat",
+    "Renovasyon Hizmetleri",
+    "Profesyonel İnşaat",
+    "Güvenilir Tadilat",
+    "Uygun Fiyatlı İnşaat",
+  ],
 };
 
 export default function RootLayout({

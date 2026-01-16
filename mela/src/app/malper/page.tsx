@@ -14,6 +14,7 @@
 // La ilahe illallah, Muhammedur Resulullah
 
 import React from 'react'
+import Image from 'next/image'
 
 function Page() {
   return (
@@ -126,6 +127,23 @@ function Page() {
       </section>
 
       {/* Referans / İletişim CTA */}
+      {/* CEO Profile */}
+      <section className="mb-8">
+        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow p-6 flex items-center gap-6">
+          <Image src="/assets/ceo.jpg" alt="CEO" width={112} height={112} className="rounded-full border" />
+          <div>
+            <h3 className="text-2xl font-semibold">Mehmet Eroğlu</h3>
+            <p className="text-sm text-gray-500 mb-2">CEO — Eroğlu İnşaat</p>
+            <p className="text-gray-600">Yapı ve tadilat sektöründe 20+ yıllık tecrübe ile projeleri yönetiyor; kalite, zamanında teslim ve müşteri memnuniyetini ön planda tutuyor.</p>
+            <div className="mt-3 flex gap-3">
+              <a href="mailto:info@erogluinsaat.local" className="text-sm text-green-600 hover:underline">E-posta Gönder</a>
+              {process.env.NEXT_PUBLIC_PHONE ? (
+                <a href={`tel:${process.env.NEXT_PUBLIC_PHONE}`} className="text-sm text-blue-600 hover:underline">{process.env.NEXT_PUBLIC_PHONE}</a>
+              ) : null}
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="text-center mb-12">
         <h3 className="text-xl font-semibold mb-2">Teklif almak için bizimle iletişime geçin</h3>
         <p className="text-gray-600 mb-4">Projeyi anlatın, ücretsiz keşif ve fiyatlandırma alın.</p>
