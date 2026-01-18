@@ -26,8 +26,8 @@ function Page() {
           Konut ve ticari mekanlarda anahtar teslim tadilat, iç-dış sıva, boya, elektrik ve sıhhi tesisat işlerinizde güvenilir çözüm.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <a href="/malper/mmwesayit" className="bg-green-600 text-white px-5 py-2 rounded-md hover:bg-green-700 transition">Teklif Al</a>
-          <a href="/malper/mmavahi" className="bg-white border border-gray-200 text-gray-700 px-5 py-2 rounded-md hover:shadow transition">Projelerimize Bak</a>
+          <a href="/malper" className="bg-green-600 text-white px-5 py-2 rounded-md hover:bg-green-700 transition">Teklif Al</a>
+          <a href="/malper/parvekirin" className="bg-white border border-gray-200 text-gray-700 px-5 py-2 rounded-md hover:shadow transition">Projelerimize Bak</a>
         </div>
       </section>
 
@@ -133,7 +133,7 @@ function Page() {
         <h3 className="text-xl font-semibold mb-2">Teklif almak için bizimle iletişime geçin</h3>
         <p className="text-gray-600 mb-4">Projeyi anlatın, ücretsiz keşif ve fiyatlandırma alın.</p>
         <div className="flex justify-center gap-3">
-          <a href="/malper/pervekirin" className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Hemen İletişime Geç</a>
+          <a href="" className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Hemen İletişime Geç</a>
           <a href="mailto:info@erogluinsaat.local" className="bg-white border border-gray-200 text-gray-700 px-6 py-2 rounded-md hover:shadow transition">E-posta Gönder</a>
         </div>
       </section>

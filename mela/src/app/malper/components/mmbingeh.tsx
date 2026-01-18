@@ -80,7 +80,13 @@ const Footer = () => (
       <a href="https://yekazad.com" className="text-white">
         Navenda Nivîsbarîyê Yekazad 
       </a>
+
+
+      <a href="/login" className="text-white">
+       Rêveberin
+      </a>
     </div>
+
   </footer>
 );
 
