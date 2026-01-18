@@ -1,4 +1,4 @@
-// Bısmillahirrahmanirrahim
+// Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
 // Ve salatu ve selamu ala resulina Muhammedin 
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
