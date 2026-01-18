@@ -1,15 +1,15 @@
 // Bismillahirahmanirahim
 // Elhamdulillahirrabbulalemin
-// Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Esselatu vesselamu ala seyyidina Muhammedin 
 // Elhamdulillahirabbulalemin
-// Ve salatu ve selamu ala resulina Muhammedin ve alihi ve sahbihi ecmain
+// Ve salatu ve selamu ala resulina Muhammedin 
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
 // La ilahe illallah, Muhammedur Resulullah
 // Bismillahirrahmanirrahim
 // Elhamdulillahirabbilalemin
-// Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Esselatu vesselamu ala seyyidina Muhammedin 
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // La ilahe illallah, Muhammedur Resulullah
 
@@ -148,7 +148,7 @@ function Page() {
         <h3 className="text-xl font-semibold mb-2">Teklif almak için bizimle iletişime geçin</h3>
         <p className="text-gray-600 mb-4">Projeyi anlatın, ücretsiz keşif ve fiyatlandırma alın.</p>
         <div className="flex justify-center gap-3">
-          <a href="/malper/mmwesayit" className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Hemen İletişime Geç</a>
+          <a href="/malper/pervekirin" className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Hemen İletişime Geç</a>
           <a href="mailto:info@erogluinsaat.local" className="bg-white border border-gray-200 text-gray-700 px-6 py-2 rounded-md hover:shadow transition">E-posta Gönder</a>
         </div>
       </section>

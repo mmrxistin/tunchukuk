@@ -1,8 +1,7 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahirrabbulalemin
-// Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
-// Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahe illallah 
+// Esselatu vesselamu ala seyyidina Muhammedin 
+// La ilahe illallah u vahdehu la sherike leh,lehu'l-mulku ve lehul-hamd yuhyi ve yumitu ve huwa ala kulli şey'in kadir
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
 // Xeyni Allah tu Xweda tune
@@ -16,7 +15,7 @@ const Footer = () => (
         <div className="col-md-4 mt-md-0 mt-3">
           <h5 className="text-uppercase font-weight-bold">Hakkımızda</h5>
           <p>
-            Mimarid, yaşam alanlarınızı estetik ve fonksiyonel çözümlerle yeniden tasarlayan bir iç mimarlık ofisidir. Hayalinizdeki mekanları gerçeğe dönüştürmek için buradayız.
+            Eroğlu İnşaat — konut ve ticari projelerde anahtar teslim inşaat, tadilat ve restorasyon hizmetleri sunar. Kaliteli malzeme ve zamanında teslim ilkelerimizdir.
           </p>
         </div>
 
@@ -26,8 +25,8 @@ const Footer = () => (
           <ul className="list-unstyled">
             <li>
               <a href="/malper" className="text-white">
-                Anasayfa
-              </a>
+                  Anasayfa
+                </a>
             </li>
             <li>
               <a href="/malper/projeler/konut" className="text-white">
@@ -76,10 +75,10 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="text-center py-3">
+      <div className="text-center py-3">
       © {new Date().getFullYear()} Tüm Hakları Saklıdır:{" "}
-      <a href="https://mimarid.com" className="text-white">
-        Mimarid İç Mimarlık
+      <a href="https://yekazad.com" className="text-white">
+        Navenda Nivîsbarîyê Yekazad 
       </a>
     </div>
   </footer>
