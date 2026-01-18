@@ -10,8 +10,15 @@
 "use client"
 
 import React from 'react'
-import PostEditor from '@/components/posts/editor/PostEditor'
-import ForYouFeed from '@/app/(main)/ForYouFeed'
+import dynamic from 'next/dynamic'
+
+const PostEditor = dynamic(() => import('@/components/posts/editor/PostEditor'), {
+  ssr: false,
+})
+
+const ForYouFeed = dynamic(() => import('@/app/(main)/ForYouFeed'), {
+  ssr: false,
+})
 
 export default function page() {
   return (
