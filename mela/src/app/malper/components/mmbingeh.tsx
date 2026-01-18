@@ -81,6 +81,8 @@ const Footer = () => (
         Navenda Nivîsbarîyê Yekazad 
       </a>
 
+     
+     <br></br>     <br></br>
 
       <a href="/login" className="text-white">
        Rêveberin
