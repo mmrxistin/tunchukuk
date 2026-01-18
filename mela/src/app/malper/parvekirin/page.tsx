@@ -7,6 +7,8 @@
 
 
 
+"use client"
+
 import React from 'react'
 import PostEditor from '@/components/posts/editor/PostEditor'
 import ForYouFeed from '@/app/(main)/ForYouFeed'
