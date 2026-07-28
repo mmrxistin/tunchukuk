@@ -15,7 +15,7 @@ const Footer = () => (
         <div className="col-md-4 mt-md-0 mt-3">
           <h5 className="text-uppercase font-weight-bold">Hakkımızda</h5>
           <p>
-            Eroğlu İnşaat — konut ve ticari projelerde anahtar teslim inşaat, tadilat ve restorasyon hizmetleri sunar. Kaliteli malzeme ve zamanında teslim ilkelerimizdir.
+            Eroğlu Kadın Derneği — kadınların güçlenmesi, eğitim ve sosyal destek programları yürüten bir sivil toplum kuruluşudur. Topluluk odaklı projelerimizle kalıcı etki sağlamayı hedefliyoruz.
           </p>
         </div>
 

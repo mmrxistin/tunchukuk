@@ -21,9 +21,9 @@ function Page() {
     <main className="flex-grow container mx-auto py-10">
       {/* Başlık / Hero */}
       <section className="mb-8 text-center">
-        <h1 className="text-4xl font-bold text-green-700 mb-2">Eroğlu İnşaat — Sıva, Boya, Tadilat</h1>
+        <h1 className="text-4xl font-bold text-green-700 mb-2">Eroğlu Kadın Derneği — Topluluk, Eğitim, Destek</h1>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          Konut ve ticari mekanlarda anahtar teslim tadilat, iç-dış sıva, boya, elektrik ve sıhhi tesisat işlerinizde güvenilir çözüm.
+          Kadınların güçlenmesi için eğitim, meslek edindirme ve toplumsal destek programları sunuyoruz. Dayanışma ve sürdürülebilir projelerle yanınızdayız.
         </p>
         <div className="mt-6 flex justify-center gap-4">
           <a href="/malper" className="bg-green-600 text-white px-5 py-2 rounded-md hover:bg-green-700 transition">Teklif Al</a>
@@ -36,72 +36,72 @@ function Page() {
         <h2 className="text-2xl font-semibold mb-4">Hizmetlerimiz</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <article className="bg-white rounded-xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Sıva & Dış Cephe</h3>
-            <p className="text-gray-600 mb-3">İç ve dış cephe sıva işleri; beton, brüt ve eski yüzey tadilatları. Kaliteli işçilik ve uzun ömürlü uygulama.</p>
+            <h3 className="text-xl font-semibold mb-2">Eğitim & Atölye</h3>
+            <p className="text-gray-600 mb-3">Kadınlara yönelik mesleki eğitimler, el becerileri atölyeleri ve kişisel gelişim programları düzenliyoruz.</p>
             <ul className="text-gray-600 list-disc pl-5 space-y-1">
-              <li>Manuel ve makine sıva</li>
-              <li>Yüzey onarımı ve priz kontrolü</li>
-              <li>Dış cephe tamiri</li>
+              <li>Meslek edindirme kursları</li>
+              <li>Kariyer ve girişimcilik atölyeleri</li>
+              <li>Kişisel gelişim seminerleri</li>
             </ul>
           </article>
 
           <article className="bg-white rounded-xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Boya & Kaplama</h3>
-            <p className="text-gray-600 mb-3">İç ve dış mekan boya işlerinizde geniş havuzlu renk seçenekleri, su bazlı ve solvent bazlı uygulamalar.</p>
+            <h3 className="text-xl font-semibold mb-2">Destek & Danışmanlık</h3>
+            <p className="text-gray-600 mb-3">Psikososyal destek, hukuki danışmanlık ve rehberlik hizmetleriyle yanınızdayız.</p>
             <ul className="text-gray-600 list-disc pl-5 space-y-1">
-              <li>İç cephe boya (mat/satin)</li>
-              <li>Dış cephe akrilik/ silikonlu kaplamalar</li>
-              <li>Astarlama, dolgu ve son kat uygulama</li>
+              <li>Bireysel danışmanlık</li>
+              <li>Grupla destek oturumları</li>
+              <li>Hukuki yönlendirme</li>
             </ul>
           </article>
 
           <article className="bg-white rounded-xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Elektrik & Sıhhi Tesisat</h3>
-            <p className="text-gray-600 mb-3">Güvenlik ve standartlara uygun elektrik tesisatı, aydınlatma, priz, pano işleri ve su tesisatı montajı.</p>
+            <h3 className="text-xl font-semibold mb-2">Girişimcilik & Meslek Edindirme</h3>
+            <p className="text-gray-600 mb-3">Kendi işini kurmak isteyen kadınlara eğitim, mentorluk ve mikro-hibe destekleri sağlıyoruz.</p>
             <ul className="text-gray-600 list-disc pl-5 space-y-1">
-              <li>Vector/keystone pano kurulumu</li>
-              <li>Banyo ve mutfak tesisat montajı</li>
-              <li>Kaçağa karşı test ve garanti</li>
+              <li>İş planı ve finansal eğitim</li>
+              <li>Mentorluk programları</li>
+              <li>Mikro-hibe ve destek yönlendirmesi</li>
             </ul>
           </article>
 
           <article className="bg-white rounded-xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Fayans, Seramik & Zemin</h3>
-            <p className="text-gray-600 mb-3">Profesyonel ölçü, seramik ve fayans döşeme; ısıtmalı zemin uygulamaları dahil.</p>
+            <h3 className="text-xl font-semibold mb-2">Sağlık & Danışmanlık</h3>
+            <p className="text-gray-600 mb-3">Sağlık bilgilendirmesi, tarama etkinlikleri ve yönlendirme hizmetleri sunuyoruz.</p>
             <ul className="text-gray-600 list-disc pl-5 space-y-1">
-              <li>Banyo/mutfak seramik döşeme</li>
-              <li>Merdiven ve dış mekan kaplamaları</li>
-              <li>Derz dolgu ve su izolasyonu</li>
+              <li>Sağlık tarama etkinlikleri</li>
+              <li>Doğum ve anne-çocuk desteği</li>
+              <li>Sağlık bilgilendirme seminerleri</li>
             </ul>
           </article>
 
           <article className="bg-white rounded-xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Çatı & İzolasyon</h3>
-            <p className="text-gray-600 mb-3">Çatı onarımı, izolasyon ve yağmur suyu drenaj sistemleriyle yapınızı koruyoruz.</p>
+            <h3 className="text-xl font-semibold mb-2">Sosyal Projeler & Etkinlikler</h3>
+            <p className="text-gray-600 mb-3">Topluluk etkinlikleri, farkındalık kampanyaları ve ortak projelerle toplumsal etki yaratıyoruz.</p>
             <ul className="text-gray-600 list-disc pl-5 space-y-1">
-              <li>Membran ve örtü onarımı</li>
-              <li>Isı ve su izolasyon uygulamaları</li>
-              <li>Çatı kaplama ve baca onarımı</li>
+              <li>Atölye ve seminer organizasyonu</li>
+              <li>Farkındalık kampanyaları</li>
+              <li>Topluluk buluşmaları</li>
             </ul>
           </article>
 
           <article className="bg-white rounded-xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Kapı, Pencere & Montaj</h3>
-            <p className="text-gray-600 mb-3">PVC, ahşap ve alüminyum doğrama işleri; montaj, değiştirme ve akıllı kilit uygulamaları.</p>
+            <h3 className="text-xl font-semibold mb-2">Mentorluk & Rehberlik</h3>
+            <p className="text-gray-600 mb-3">Bireysel kariyer rehberliği, eğitim planlaması ve topluluk temelli mentorluk programları sunuyoruz.</p>
             <ul className="text-gray-600 list-disc pl-5 space-y-1">
-              <li>Ölçü ve montaj</li>
-              <li>Cam ve izolasyon uygulamaları</li>
-              <li>İç kapı ve güvenlik kapıları</li>
+              <li>Kariyer koçluğu</li>
+              <li>Eğitim planlama desteği</li>
+              <li>Mentorluk eşleştirmesi</li>
             </ul>
           </article>
 
           <article className="bg-white rounded-xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Anahtar Teslim Yapım & Tadilat</h3>
-            <p className="text-gray-600 mb-3">Proje yönetimi, malzeme temini ve süre yönetimiyle anahtar teslim çözümler.</p>
+            <h3 className="text-xl font-semibold mb-2">Topluluk Proje Yönetimi</h3>
+            <p className="text-gray-600 mb-3">Projelerin planlanması, kaynak yönetimi ve uygulama desteği ile topluluk tabanlı programlar yürütüyoruz.</p>
             <ul className="text-gray-600 list-disc pl-5 space-y-1">
-              <li>Projelendirme ve iş programı</li>
-              <li>Malzeme seçimi ve temini</li>
-              <li>Teslim sonrası garanti ve bakım</li>
+              <li>Proje planlama ve koordinasyon</li>
+              <li>Kaynak ve bütçe yönetimi</li>
+              <li>Değerlendirme ve sürdürülebilirlik</li>
             </ul>
           </article>
         </div>
@@ -134,7 +134,7 @@ function Page() {
         <p className="text-gray-600 mb-4">Projeyi anlatın, ücretsiz keşif ve fiyatlandırma alın.</p>
         <div className="flex justify-center gap-3">
           <a href="" className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Hemen İletişime Geç</a>
-          <a href="mailto:info@erogluinsaat.local" className="bg-white border border-gray-200 text-gray-700 px-6 py-2 rounded-md hover:shadow transition">E-posta Gönder</a>
+          <a href="mailto:info@eroglukadindernegi.local" className="bg-white border border-gray-200 text-gray-700 px-6 py-2 rounded-md hover:shadow transition">E-posta Gönder</a>
         </div>
       </section>
     </main>

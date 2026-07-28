@@ -14,28 +14,28 @@ export default function page() {
     <main className="container mx-auto py-10">
       {/* Hero */}
       <section className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-green-700">Eroğlu İnşaat</h1>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto mt-3">
-          Konut ve ticari projelerde anahtar teslim inşaat, tadilat ve restorasyon hizmetleri. Güven, kalite ve zamanında teslim ilkelerimizdir.
-        </p>
+          <h1 className="text-4xl font-bold text-green-700">Eroğlu Kadın Derneği</h1>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto mt-3">
+            Toplumsal projelerde eğitim, dayanışma ve destek hizmetleri sunan, kadınların güçlenmesini hedefleyen bir sivil toplum kuruluşuyuz.
+          </p>
       </section>
 
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
         <div className="lg:col-span-2">
           <h2 className="text-2xl font-semibold mb-3">Hakkımızda</h2>
           <p className="text-gray-700 mb-4">
-            Eroğlu İnşaat, yılların tecrübesiyle konut ve ticari alanlarda kapsamlı inşaat ve tadilat çözümleri sunar. Müşteri odaklı yaklaşımımız ile projeleri en iyi malzeme ve işçilikle tamamlıyoruz. Her proje bizim için ayrı bir sorumluluk ve imza niteliğindedir.
+              Eroğlu Kadın Derneği, yılların deneyimiyle kadınların sosyal ve ekonomik güçlenmesi için eğitim, danışmanlık ve topluluk projeleri yürütür. Katılımcı odaklı yaklaşımımızla sürdürülebilir çözümler üretiyoruz.
           </p>
 
           <h3 className="text-xl font-semibold mt-4 mb-2">Misyonumuz</h3>
-          <p className="text-gray-700 mb-3">
-            Müşterilerimize güvenilir, sürdürülebilir ve estetik çözümler sunmak; projeleri bütçe ve zamanda taahhüt ettiğimiz şekilde teslim etmektir.
-          </p>
+            <p className="text-gray-700 mb-3">
+              Üyelerimize ve faydalanıcılara güvenilir, sürdürülebilir ve etkili programlar sunmak; projelerimizi şeffaf ve hesap verebilir şekilde yürütmektir.
+            </p>
 
           <h3 className="text-xl font-semibold mt-4 mb-2">Vizyonumuz</h3>
-          <p className="text-gray-700 mb-3">
-            Bölgesel olarak tercih edilen bir inşaat firması olmak; yenilikçi teknikler ve sürdürülebilir uygulamalarla sektörde örnek teşkil etmektir.
-          </p>
+            <p className="text-gray-700 mb-3">
+              Bölgesel olarak tercih edilen bir kadın derneği olmak; yenilikçi ve kapsayıcı uygulamalarla topluma örnek teşkil etmektir.
+            </p>
 
           <h3 className="text-xl font-semibold mt-4 mb-2">Değerlerimiz</h3>
           <ul className="list-disc list-inside text-gray-700 space-y-1">
@@ -59,7 +59,7 @@ export default function page() {
           <div>
             <h4 className="font-semibold mb-2">İletişim</h4>
             <p className="text-sm text-gray-700">Telefon: {process.env.NEXT_PUBLIC_PHONE ?? '—'}</p>
-            <p className="text-sm text-gray-700">E-posta: info@erogluinsaat.local</p>
+              <p className="text-sm text-gray-700">E-posta: info@eroglukadindernegi.local</p>
             <a href="/malper/iletisim" className="inline-block mt-3 bg-green-600 text-white px-4 py-2 rounded">İletişime Geç</a>
           </div>
         </aside>
@@ -68,7 +68,7 @@ export default function page() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">Ekibimiz</h2>
         <p className="text-gray-700 mb-4">
-          Uzman ekiplerimizde inşaat mühendisleri, ustalar ve proje yöneticileri yer alır. Her proje için uygun ekip kurulur ve detaylı iş programı ile ilerlenir.
+            Uzman ekiplerimizde eğitimciler, sosyal hizmet uzmanları ve proje koordinatörleri yer alır. Her program için uygun ekip kurulur ve katılımcı odaklı planlarla ilerlenir.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
