@@ -1,6 +1,6 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahi Rabbil Alamin
-// Ve salatu ve selamu ala Resulina Muhammedin ve ala alihi ve sahbihi ecmain
+// Ve salatu ve selamu ala Resulina Muhammedin 
 // Allah ümmetimizi korusun, birlik ve beraberliğimizi daim eylesin.
 // Allah bizleri doğru yoldan ayırmasın, İslam'ı en güzel şekilde yaşamayı nasip etsin.
 // Allah bizleri Kur'an ve Sünnet'e bağlı, salih ameller işleyen kullarından eylesin.
