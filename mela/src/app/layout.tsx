@@ -15,9 +15,9 @@ import localFont from "next/font/local";
 import { extractRouterConfig } from "uploadthing/server";
 import { fileRouter } from "./api/uploadthing/core";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.css";
 import ReactQueryProvider from "./ReactQueryProvider";
 
-import Alert from 'react-bootstrap';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

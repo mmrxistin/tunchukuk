@@ -7,7 +7,7 @@
 
 
 
-import Navbar from "../Navbar";
+import AdminNavbar from "./AdminNavbar";
 import MenuBar from "../MenuBar";
 import AdminFooter from "./AdminFooter";
 
@@ -18,7 +18,7 @@ interface AdminShellProps {
 export default function AdminShell({ children }: AdminShellProps) {
   return (
     <div className="min-h-screen bg-slate-100 text-slate-900">
-      <Navbar />
+      <AdminNavbar />
 
       <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-[1440px] gap-5 px-4 py-5 lg:px-6">
         <aside className="hidden w-72 shrink-0 lg:block">
