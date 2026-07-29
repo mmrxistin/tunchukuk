@@ -3,7 +3,11 @@
 // Esselatu vesselamu ala rasulina Muhammedin 
 // Suphanallah, Elhamdulillah, Allahu Ekber
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-
+// Allah u Ekber Ve Lillahil Hamd, Allah u Ekber, Allah u Ekber,
+//  La ilahe illallah u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+//  yuhyi ve yumit ve biyadihil xayr 
+//  ve huve ala kulli şey'in kadir
+// Allah u Ekber Ve Lillahil Hamd
 import Link from "next/link";
 import { ArrowRight, BookOpen, FileText, Home, MessageCircle, ShieldCheck, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
