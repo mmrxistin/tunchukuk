@@ -14,17 +14,12 @@ import { Button } from "@/components/ui/button";
 
 const dashboardCards = [
   {
-    title: "Dashboard",
+    title: "Haberler",
     description: "Admin panel genel bakışı, hızlı erişim ve yönetim araçları.",
-    href: "/dua",
+    href: "/rojname",
     icon: Home,
   },
-  {
-    title: "Kullanıcılar",
-    description: "Tüm kullanıcılarınızı görüntüleyin ve yönetin.",
-    href: "/users",
-    icon: Users,
-  },
+
   {
     title: "Mesajlar",
     description: "Gelen mesajları, bildirimleri ve geri bildirimleri denetleyin.",
@@ -32,7 +27,7 @@ const dashboardCards = [
     icon: MessageCircle,
   },
   {
-    title: "İçerik Yönetimi",
+    title: "Hakkımızda",
     description: "Qur'an, Hedis, Fiqih, Kelam ve diğer içerik bölümlerine hızlı erişim.",
     href: "/",
     icon: FileText,
