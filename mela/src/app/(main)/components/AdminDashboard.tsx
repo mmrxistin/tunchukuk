@@ -16,7 +16,7 @@ const dashboardCards = [
   {
     title: "Dashboard",
     description: "Admin panel genel bakışı, hızlı erişim ve yönetim araçları.",
-    href: "/mmdashboard",
+    href: "/dua",
     icon: Home,
   },
   {
