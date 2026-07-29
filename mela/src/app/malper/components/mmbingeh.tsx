@@ -41,8 +41,8 @@ const Footer = () => (
               </a>
             </li>
             <li>
-              <a href="/login" className="text-white">
-                Giriş
+              <a href="/" className="text-white">
+             .....
               </a>
             </li>
             <li>
