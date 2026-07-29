@@ -50,3 +50,10 @@ function Mmmnavbar() {
 }
 
 export default Mmmnavbar;
+// Allahumme salli ala seyyidina Muhammedin ve ala ali seyyidina Muhammedin 
+// Elhamdulillahirabbulalemin
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// La ilahhe illAllahu vahdehu la sherike leh, lehu'l-mulku ve lehul-hamd yuhyi ve yumit, biyadhil xayr ve huwa ala kulli şey'in kadir.
+// Estağfirullah El-Azim
+
+// La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
