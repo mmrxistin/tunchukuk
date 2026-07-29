@@ -1,3 +1,12 @@
+// Bismillahirrahmanirrahim 
+// Elhamdulillahirabbulalemin
+// Esselatu vesselamu ala rasulina Muhammedin 
+// Suphanallah, Elhamdulillah, Allahu Ekber
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+
+
+
+
 import Navbar from "../Navbar";
 import MenuBar from "../MenuBar";
 import AdminFooter from "./AdminFooter";

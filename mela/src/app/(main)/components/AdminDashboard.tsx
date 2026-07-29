@@ -1,3 +1,9 @@
+// Bismillahirrahmanirrahim 
+// Elhamdulillahirabbulalemin
+// Esselatu vesselamu ala rasulina Muhammedin 
+// Suphanallah, Elhamdulillah, Allahu Ekber
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+
 import Link from "next/link";
 import { ArrowRight, BookOpen, FileText, Home, MessageCircle, ShieldCheck, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";

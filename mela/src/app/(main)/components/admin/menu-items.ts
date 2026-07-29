@@ -1,3 +1,9 @@
+// Bismillahirrahmanirrahim 
+// Elhamdulillahirabbulalemin
+// Esselatu vesselamu ala rasulina Muhammedin 
+// Suphanallah, Elhamdulillah, Allahu Ekber
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+
 import { Bookmark, Home, Mail, Settings2, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
