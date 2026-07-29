@@ -24,7 +24,7 @@ export default async function Page() {
           </div>
           <div className="rounded-3xl bg-slate-50 p-6">
             <h2 className="text-sm uppercase tracking-[0.25em] text-slate-500">Email</h2>
-            <p className="mt-2 text-lg font-medium text-slate-900">{user.email ?? "Kayıtlı değil"}</p>
+            <p className="mt-2 text-lg font-medium text-slate-900">{user.displayName ?? user.username ?? "Kayıtlı değil"}</p>
           </div>
           <div className="rounded-3xl bg-slate-50 p-6 sm:col-span-2">
             <h2 className="text-sm uppercase tracking-[0.25em] text-slate-500">Profil Bilgisi</h2>
