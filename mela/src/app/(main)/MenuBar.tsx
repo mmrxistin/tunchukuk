@@ -36,7 +36,7 @@ export default async function MenuBar({ className }: MenuBarProps) {
   return (
     <div className={className}>
       <div className="mb-5 rounded-3xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600">
-        <p className="font-semibold text-slate-900">{user.username ?? user.email ?? "Admin"}</p>
+        <p className="font-semibold text-slate-900">{user.displayName ?? user.username ?? "Admin"}</p>
         <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Yönetim Paneli</p>
       </div>
 
