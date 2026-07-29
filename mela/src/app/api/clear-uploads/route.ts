@@ -1,3 +1,13 @@
+//Bismillahirrahmanirrahim 
+// Elhamdulillahirabbulalemin
+// Es-selatu vesselamu ala rasulina Muhammedin 
+//Suphanallah, Elhamdulillah, Allahu Ekber
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+
+
+
+
+
 import prisma from "@/lib/prisma";
 import { UTApi } from "uploadthing/server";
 
@@ -14,7 +24,7 @@ export async function GET(req: Request) {
 
     const unusedMedia = await prisma.media.findMany({
       where: {
-        postId: null,
+        agahiId: null,
         ...(process.env.NODE_ENV === "production"
           ? {
               createdAt: {

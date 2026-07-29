@@ -1,7 +1,8 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahirrabbulalemin
-// Esselatu vesselamu ala seyyidina Muhammedin 
-// La ilahe illallah u vahdehu la sherike leh,lehu'l-mulku ve lehul-hamd yuhyi ve yumitu ve huwa ala kulli şey'in kadir
+// Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// La ilahe illallah 
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
 // Xeyni Allah tu Xweda tune
@@ -13,34 +14,40 @@ const Footer = () => (
       <div className="row">
         {/* About Section */}
         <div className="col-md-4 mt-md-0 mt-3">
-          <h5 className="text-uppercase font-weight-bold">Hakkımızda</h5>
+          <h5 className="text-uppercase font-weight-bold">About Us</h5>
           <p>
-            Eroğlu Kadın Derneği — kadınların güçlenmesi, eğitim ve sosyal destek programları yürüten bir sivil toplum kuruluşudur. Topluluk odaklı projelerimizle kalıcı etki sağlamayı hedefliyoruz.
+            We are committed to providing the best services and resources for
+            our users. Stay connected with us for updates and news.
           </p>
         </div>
 
         {/* Links Section */}
         <div className="col-md-4 mb-md-0 mb-3">
-          <h5 className="text-uppercase font-weight-bold">Hızlı Menü</h5>
+          <h5 className="text-uppercase font-weight-bold">Quick Links</h5>
           <ul className="list-unstyled">
             <li>
-              <a href="/malper" className="text-white">
-                  Anasayfa
-                </a>
-            </li>
-            <li>
-              <a href="/malper/projeler/konut" className="text-white">
-                Projelerimiz
+              <a href="#!" className="text-white">
+                Home
               </a>
             </li>
             <li>
-              <a href="/malper/hizmetler/tasarim" className="text-white">
-                Hizmetlerimiz
+              <a href="#!" className="text-white">
+                About
               </a>
             </li>
             <li>
-              <a href="/malper/iletisim" className="text-white">
-                İletişim
+              <a href="#!" className="text-white">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/login" className="text-white">
+                Giriş
+              </a>
+            </li>
+            <li>
+              <a href="/signup" className="text-white">
+                Üye Ol
               </a>
             </li>
           </ul>
@@ -48,25 +55,25 @@ const Footer = () => (
 
         {/* Social Media Section */}
         <div className="col-md-4 mb-md-0 mb-3">
-          <h5 className="text-uppercase font-weight-bold">Bizi Takip Edin</h5>
+          <h5 className="text-uppercase font-weight-bold">Follow Us</h5>
           <ul className="list-unstyled d-flex justify-content-center">
             <li className="mx-2">
-              <a href="https://facebook.com" className="text-white" aria-label="Facebook">
+              <a href="https://facebook.com" className="text-white">
                 <i className="fab fa-facebook-f"></i>
               </a>
             </li>
             <li className="mx-2">
-              <a href="https://instagram.com" className="text-white" aria-label="Instagram">
+              <a href="https://twitter.com" className="text-white">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li className="mx-2">
+              <a href="https://instagram.com" className="text-white">
                 <i className="fab fa-instagram"></i>
               </a>
             </li>
             <li className="mx-2">
-              <a href="https://pinterest.com" className="text-white" aria-label="Pinterest">
-                <i className="fab fa-pinterest"></i>
-              </a>
-            </li>
-            <li className="mx-2">
-              <a href="https://linkedin.com" className="text-white" aria-label="LinkedIn">
+              <a href="https://linkedin.com" className="text-white">
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -75,20 +82,12 @@ const Footer = () => (
       </div>
     </div>
 
-      <div className="text-center py-3">
-      © {new Date().getFullYear()} Tüm Hakları Saklıdır:{" "}
+    <div className="text-center py-3">
+      © {new Date().getFullYear()} Copyright:{" "}
       <a href="https://yekazad.com" className="text-white">
-        Navenda Nivîsbarîyê Yekazad 
-      </a>
-
-     
-     <br></br>     <br></br>
-
-      <a href="/login" className="text-white">
-       Rêveberin
+        Yekazad
       </a>
     </div>
-
   </footer>
 );
 

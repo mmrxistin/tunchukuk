@@ -1,3 +1,13 @@
+//Bismillahirahmanirahim 
+// Elhamdulillahirabbulalemin
+// Esselatu vesselamu ala rasulillah 
+// Allahumme salli ala seyyidina Muhammedin 
+// Allah u Ekber, Allahu Ekber, Allahu Ekber
+// La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+// Subhanallah, Elhamdulillah, Allahu Ekber
+
+
+
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
 import { getUserDataSelect } from "@/lib/types";

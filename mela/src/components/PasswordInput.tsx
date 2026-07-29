@@ -1,3 +1,10 @@
+//Bismillahirahmanirahim 
+//Elhamdulillahi rabbil 'alamin
+//Essalatu vesselamu ala seyyidina Muhammedin 
+//Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+//Subhanallah, Elhamdulillah, Allahu Ekber
+
+
 
 import { cn } from "@/lib/utils";
 import { Eye, EyeOff } from "lucide-react";
@@ -33,8 +40,6 @@ const PasswordInput = React.forwardRef<HTMLInputElement, InputProps>(
   },
 );
 
-//nextjs
-//react js
 PasswordInput.displayName = "PasswordInput";
 
 export { PasswordInput };

@@ -1,7 +1,15 @@
+// Bismillahirahmanirahim 
+// ElHAMDULİLLAHİRABBULALEMİN
+// Es-selatu ve Es-selamu ala Resulina Muhammedin ve ala alihi ve sahbihi ecmain
+// Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
+// SubhanAllah, Elhamdulillah, Allahu Ekber
+// Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
+// Subhanallah , Elhamdulillah, Allahu Ekber
+// Hasbunallahu ve ni'mel vekil
+// La havle ve la kuvvete illa billahil aliyyil azim
+
 import { validateRequest } from "@/auth";
 import { redirect } from "next/navigation";
-import MenuBar from "./MenuBar";
-import Navbar from "./Navbar";
 import SessionProvider from "./SessionProvider";
 
 export default async function Layout({
@@ -13,16 +21,25 @@ export default async function Layout({
 
   if (!session.user) redirect("/malper");
 
+  return <SessionProvider value={session}>{children}</SessionProvider>;
+}
+
+
+
+
+
+
+export function Footer() {
   return (
-    <SessionProvider value={session}>
-      <div className="flex min-h-screen flex-col">
-        <Navbar />
-        <div className="mx-auto flex w-full max-w-7xl grow gap-5 p-5">
-          <MenuBar className="sticky top-[5.25rem] hidden h-fit flex-none space-y-3 rounded-2xl bg-card px-3 py-5 shadow-sm sm:block lg:px-5 xl:w-80" />
-          {children}
-        </div>
-        <MenuBar className="sticky bottom-0 flex w-full justify-center gap-5 border-t bg-card p-3 sm:hidden" />
-      </div>
-    </SessionProvider>
+    <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
+      <p className="text-sm">
+        © {new Date().getFullYear()} Yekazad Software Center. All rights reserved.
+      </p>
+      <span className="mx-2">|</span>
+      <p className="text-xs text-gray-400">
+        Admin Panel &mdash; Empowering your management experience.
+      </p>
+    </footer>
   );
+  
 }

@@ -1,10 +1,12 @@
-// Bismillahirahmanirahim 
+// Bismillahirrahmanirrahim 
 // Elhamdulillahirabbulalemin
 // Esselatu vesselamu ala rasulillah 
 // Allahumme salli ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
 // La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+// Subhanallah, Elhamdulillah, Allahu Ekber
 
+import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import type { Metadata } from "next";
@@ -15,6 +17,7 @@ import { fileRouter } from "./api/uploadthing/core";
 import "./globals.css";
 import ReactQueryProvider from "./ReactQueryProvider";
 
+import Alert from 'react-bootstrap';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,30 +29,11 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s |Eroğlu İnşaat",
-    default: "Eroğlu İnşaat - Sıva, Boya, Tadilat Hizmetleri",
+    template: "%s | Rêya Feqî",
+    default: " Rêya Feqî - Ber bi ronahîya dînê îslamê...",
   },
-  description: "  Eroğlu İnşaat, konut ve ticari mekanlarda anahtar teslim tadilat, iç-dış sıva, boya, elektrik ve sıhhi tesisat hizmetleri sunar. Profesyonel ekip, kaliteli malzeme ve uygun fiyatlarla güvenilir çözümler.",
-  keywords: [
-    "Eroğlu İnşaat",
-    "Sıva",
-    "Boya",
-    "Tadilat",
-    "İnşaat Hizmetleri",
-    "Anahtar Teslim Tadilat",
-    "Dış Cephe Sıva",
-    "İç Cephe Boya",
-    "Elektrik Tesisatı",
-    "Sıhhi Tesisat",
-    "Fayans Döşeme",
-    "Çatı İzolasyonu",
-    "Konut Tadilatı",
-    "Ticari Tadilat",
-    "Renovasyon Hizmetleri",
-    "Profesyonel İnşaat",
-    "Güvenilir Tadilat",
-    "Uygun Fiyatlı İnşaat",
-  ],
+  description: "Rêya Feqî malpereke perwerdehiyê îslamî ye ku armanca wê belavkirina zanîna rast û derbarê dîna Îslamê ye.",
+  keywords: ["islam dini", "İslamiyet", "FIKIH","KELAM","tasavvuf","tarikat","anlam","fetva","diyanet","alim","müftü","molla","imam","hoca","müslüman","müslümanlar","islamiyet","tarih","peygamber","sahabe","hadis","kuran","kuranı kerim","allah","allah cc","allah cc","muhammed sav","muhammed aleyhisselam","din eğitimi","dini bilgiler","islam tarihi","islam fıkhı","islam kelamı","islam tasavvufu"],
 };
 
 export default function RootLayout({
@@ -68,11 +52,35 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+              {children}
+             
           </ThemeProvider>
         </ReactQueryProvider>
         <Toaster />
       </body>
     </html>
   );
+}
+
+
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+
+//La ilahe illAllah Muhammeden abduhu ve resuluhu
+
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+
+
+
+
+
+
+export function Footer() {
+  return (
+    <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
+      <p className="text-sm">© {new Date().getFullYear()} Yekazad Software Center</p>
+    </footer>
+  );
+  
 }

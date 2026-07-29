@@ -1,8 +1,7 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
-// Ve salatu ve selamu ala resulina Muhammedin 
+// Ve salatu ve selamu ala resulina Muhammedin ve alihi ve sahbihi ecmain
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-// La ilahe illAllahuvahdehu la sherike leh,lehu'l-mulku ve lehul-hamd yuhyi ve yumit, biyadhil xayr ve huwa ala kulli şey'in kadir
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
 "use client"
@@ -16,33 +15,38 @@ function Mmmnavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/malper">Rosa Kadın Derneği</Navbar.Brand>
+        <Navbar.Brand href="/malper">Rêya Feqî</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-              <Nav.Link href="/malper">Anasayfa</Nav.Link>
-              <NavDropdown title="Projeler" id="projects-nav-dropdown">
-                <NavDropdown.Item href="/malper/projeler/egitim">Eğitim Programları</NavDropdown.Item>
-                <NavDropdown.Item href="/malper/projeler/sosyal">Sosyal Projeler</NavDropdown.Item>
-                <NavDropdown.Item href="/malper/projeler/girisim">Girişim Destekleri</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/malper/projeler/ortak-projeler">Ortak Projeler</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Hizmetler" id="services-nav-dropdown">
-                <NavDropdown.Item href="/malper/hizmetler/egitim">Eğitim & Atölye</NavDropdown.Item>
-                <NavDropdown.Item href="/malper/hizmetler/destek">Destek & Danışmanlık</NavDropdown.Item>
-                <NavDropdown.Item href="/malper/hizmetler/girisimcilik">Girişimcilik & Mentorluk</NavDropdown.Item>
-                <NavDropdown.Item href="/malper/hizmetler/saglik">Sağlık & Destek</NavDropdown.Item>
-                <NavDropdown.Item href="/malper/hizmetler/farkindalik">Farkındalık & Etkinlik</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="/malper/hakkimizda">Hakkımızda</Nav.Link>
-              <Nav.Link href="/malper/ekip">Ekibimiz</Nav.Link>
-              <Nav.Link href="/malper/iletisim">İletişim</Nav.Link>
-              <NavDropdown title="Bilgi" id="blog-nav-dropdown">
-                <NavDropdown.Item href="/malper/bilgi/ipuclari">İpuçları & Rehber</NavDropdown.Item>
-                <NavDropdown.Item href="/malper/bilgi/etkinlikler">Etkinlikler & Haberler</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
+            
+            <Nav.Link href="/malper/agahi">Qur'an a Pîroz</Nav.Link>
+
+            <NavDropdown title="Zanistên Îslamî" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/malper/kelam">Kelam</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/fiqih">Fıkıh</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/aqide">Aqîde</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/malper/dirok">Dîroka Îslamî</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Hadîs û Du‘a" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/malper/hedis">Hadîsên Navîn</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/dua">Du‘a</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Pirtûkxane" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/malper/xane">Alim û pirtukên wan</NavDropdown.Item>
+           
+                         <NavDropdown.Item href="/malper/xane/feqijs">Asistanê AI Îslamî Feqî</NavDropdown.Item>
+
+            </NavDropdown>
+
+            <Nav.Link href="/malper/mmmmm">Derbarê Me</Nav.Link>
+            <Nav.Link href="/malper/account">Hesabım</Nav.Link>
+            <Nav.Link href="/login">Giriş</Nav.Link>
+            <Nav.Link href="/signup">Üye Ol</Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -50,10 +54,10 @@ function Mmmnavbar() {
 }
 
 export default Mmmnavbar;
-// Allahumme salli ala seyyidina Muhammedin ve ala ali seyyidina Muhammedin 
-// Elhamdulillahirabbulalemin
-// Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahhe illAllahu vahdehu la sherike leh, lehu'l-mulku ve lehul-hamd yuhyi ve yumit, biyadhil xayr ve huwa ala kulli şey'in kadir.
-// Estağfirullah El-Azim
-
-// La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+//Subhanallah Subhanallah Subhanallahi Azim ve Bihamdihi
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+// La ilahe illAllah Muhammden abduhu ve resuluhu
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin

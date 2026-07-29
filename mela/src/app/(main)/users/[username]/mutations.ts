@@ -1,5 +1,10 @@
+//Bismillahirrahmanirrahim
+//Elhamdulillahi Rabbil Alamin
+//Essalatu vesselamu ala Resulina Muhammedin
+//La ilahe illallah, Muhammedur Resulullah
+//SuphanAllah velhamdulillah, Allahu Ekber
 import { useToast } from "@/components/ui/use-toast";
-import { PostsPage } from "@/lib/types";
+import { AgahiPage} from "@/lib/types";
 import { useUploadThing } from "@/lib/uploadthing";
 import { UpdateUserProfileValues } from "@/lib/validation";
 import {
@@ -42,22 +47,24 @@ export function useUpdateProfileMutation() {
 
       await queryClient.cancelQueries(queryFilter);
 
-      queryClient.setQueriesData<InfiniteData<PostsPage, string | null>>(
+      queryClient.setQueriesData<InfiniteData<AgahiPage, string | null>>(
         queryFilter,
         (oldData) => {
-          if (!oldData) return;
+          if (!oldData) return oldData;
 
           return {
             pageParams: oldData.pageParams,
             pages: oldData.pages.map((page) => ({
-              nextCursor: page.nextCursor,
-              posts: page.posts.map((post) => {
+              ...page,
+              posts: page.posts.map((post: { user: { id: string; avatarUrl: any; }; }) => {
                 if (post.user.id === updatedUser.id) {
                   return {
                     ...post,
                     user: {
+                      // keep existing full user object fields, overwrite with updated fields
+                      ...post.user,
                       ...updatedUser,
-                      avatarUrl: newAvatarUrl || updatedUser.avatarUrl,
+                      avatarUrl: newAvatarUrl ?? updatedUser.avatarUrl ?? post.user.avatarUrl,
                     },
                   };
                 }
@@ -85,3 +92,5 @@ export function useUpdateProfileMutation() {
 
   return mutation;
 }
+// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
+// ALLAHU EKBER, ALLAHU EKBER, ALLAHU EKBER, LA ILAHE ILLALLAH

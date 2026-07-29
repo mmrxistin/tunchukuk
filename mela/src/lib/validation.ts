@@ -1,3 +1,8 @@
+// Bismillahirrahmanirahim
+// Elhamdulillahirrabbulalemin
+//Es selatu vesselamu ala rasulina  Muhaammedin ve ala alihi ve sahbihi ecmain
+
+
 import { z } from "zod";
 
 const requiredString = z.string().trim().min(1, "Required");
@@ -21,10 +26,11 @@ export const loginSchema = z.object({
 export type LoginValues = z.infer<typeof loginSchema>;
 
 export const createPostSchema = z.object({
-  content: requiredString,
+  content: z.array(requiredString), // content artık array (string[])
   mediaIds: z.array(z.string()).max(5, "Cannot have more than 5 attachments"),
-  category: z.enum(["NEWS", "TECHNOLOGY", "ART", "SPORTS", "LIFESTYLE"]),
 });
+
+export type CreatePostValues = z.infer<typeof createPostSchema>;
 
 export const updateUserProfileSchema = z.object({
   displayName: requiredString,
@@ -32,7 +38,3 @@ export const updateUserProfileSchema = z.object({
 });
 
 export type UpdateUserProfileValues = z.infer<typeof updateUserProfileSchema>;
-
-export const createCommentSchema = z.object({
-  content: requiredString,
-});

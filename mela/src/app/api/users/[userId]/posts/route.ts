@@ -1,6 +1,17 @@
+// Bismillahirahmanirahim 
+// Elhamdulillahirabbulalemin
+// Esselatu vesselamu ala rasulillah 
+// Allahumme salli ala seyyidina Muhammedin 
+// Allah u Ekber, Allahu Ekber, Allahu Ekber
+// La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+// Subhanallah, Elhamdulillah, Allahu Ekber
+
+
+
+
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getPostDataInclude, PostsPage } from "@/lib/types";
+import { getAgahiInclude, AgahiPage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(
@@ -18,20 +29,23 @@ export async function GET(
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.post.findMany({
+    const posts = await prisma.agahi.findMany({
       where: { userId },
-      include: getPostDataInclude(user.id),
+      include: getAgahiInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,
     });
 
     const nextCursor = posts.length > pageSize ? posts[pageSize].id : null;
-
-    const data: PostsPage = {
-      posts: posts.slice(0, pageSize),
-      nextCursor,
-    };
+const data = {
+       posts: posts.slice(0, pageSize).map((post: { content: any; }) => ({
+         ...post,
+         content: Array.isArray(post.content) ? post.content : [post.content]
+       })),
+       nextCursor,
+     } as unknown as AgahiPage;
+ 
 
     return Response.json(data);
   } catch (error) {
