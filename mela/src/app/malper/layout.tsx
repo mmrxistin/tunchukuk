@@ -8,9 +8,14 @@
 // Subhanallah, Elhamdulillah, Allahu Ekber
 
 import React from "react";
-
+import Mmmnavbar from "./components/mmnav";
+import LFooter from "./components/mmbingeh";
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return <>
+  <Mmmnavbar /> 
+  {children}
+  <LFooter /></>
+  ;
 }
 
 

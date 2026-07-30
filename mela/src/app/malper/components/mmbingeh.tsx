@@ -1,43 +1,45 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahirrabbulalemin
-// Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Esselatu vesselamu ala seyyidina Muhammedin 
 // Subhanallah, Elhamdulillah, Allahu Ekber
 // La ilahe illallah 
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
-// Xeyni Allah tu Xweda tune
+// Xeyni Allah tu Xweda tune,Allah yeke(Esma ul Husna) û tu şirîkê Allah tune,pesin da jî mulk de jî û spasî tenê Allah re tê kirin.
+//  Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
+
 import React from "react";
 
-const Footer = () => (
-  <footer className="bg-dark text-white pt-4">
+const LFooter = () => (
+  <footer className="bg-primary text-white pt-5">
     <div className="container text-center text-md-left">
       <div className="row">
         {/* About Section */}
         <div className="col-md-4 mt-md-0 mt-3">
-          <h5 className="text-uppercase font-weight-bold">About Us</h5>
+          <h5 className="text-uppercase font-weight-bold">Rosa Kadın Derneği</h5>
           <p>
-            We are committed to providing the best services and resources for
-            our users. Stay connected with us for updates and news.
+            Rosa Kadın Derneği, kadınların güçlenmesi, eğitim ve dayanışma
+            amaçlı projeler geliştiren bir sivil toplum kuruluşudur.
           </p>
         </div>
 
         {/* Links Section */}
         <div className="col-md-4 mb-md-0 mb-3">
-          <h5 className="text-uppercase font-weight-bold">Quick Links</h5>
+          <h5 className="text-uppercase font-weight-bold">Hızlı Linkler</h5>
           <ul className="list-unstyled">
             <li>
               <a href="#!" className="text-white">
-                Home
+                Ana Sayfa
               </a>
             </li>
             <li>
               <a href="#!" className="text-white">
-                About
+                Hakkımızda
               </a>
             </li>
             <li>
               <a href="#!" className="text-white">
-                Services
+                Projeler
               </a>
             </li>
             <li>
@@ -55,7 +57,7 @@ const Footer = () => (
 
         {/* Social Media Section */}
         <div className="col-md-4 mb-md-0 mb-3">
-          <h5 className="text-uppercase font-weight-bold">Follow Us</h5>
+          <h5 className="text-uppercase font-weight-bold">Bizi Takip Edin</h5>
           <ul className="list-unstyled d-flex justify-content-center">
             <li className="mx-2">
               <a href="https://facebook.com" className="text-white">
@@ -82,13 +84,10 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="text-center py-3">
-      © {new Date().getFullYear()} Copyright:{" "}
-      <a href="https://yekazad.com" className="text-white">
-        Yekazad
-      </a>
+    <div className="text-center py-3 small">
+      © {new Date().getFullYear()} Rosa Kadın Derneği — Tüm hakları saklıdır.
     </div>
   </footer>
 );
 
-export default Footer;
+export default LFooter;

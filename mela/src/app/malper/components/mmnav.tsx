@@ -13,36 +13,28 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Mmmnavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="primary" variant="dark" className="shadow-sm">
       <Container>
-        <Navbar.Brand href="/malper">Rêya Feqî</Navbar.Brand>
+        <Navbar.Brand href="/malper">Rosa Kadın Derneği</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            
-            <Nav.Link href="/malper/agahi">Qur'an a Pîroz</Nav.Link>
+            <Nav.Link href="/malper">Ana Sayfa</Nav.Link>
 
-            <NavDropdown title="Zanistên Îslamî" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/kelam">Kelam</NavDropdown.Item>
-              <NavDropdown.Item href="/malper/fiqih">Fıkıh</NavDropdown.Item>
-              <NavDropdown.Item href="/malper/aqide">Aqîde</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/malper/dirok">Dîroka Îslamî</NavDropdown.Item>
+            <NavDropdown title="Projeler" id="projects-dropdown">
+              <NavDropdown.Item href="/malper/egitim">Eğitim Programları</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/dayanisma">Dayanışma Projeleri</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/saglik">Sağlık ve Destek</NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown title="Hadîs û Du‘a" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/hedis">Hadîsên Navîn</NavDropdown.Item>
-              <NavDropdown.Item href="/malper/dua">Du‘a</NavDropdown.Item>
+            <Nav.Link href="/malper/etkinlikler">Etkinlikler</Nav.Link>
+
+            <NavDropdown title="Kaynaklar" id="resources-dropdown">
+              <NavDropdown.Item href="/malper/kaynaklar">Makale & Rehber</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/yonetim">Yönetim ve Politika</NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown title="Pirtûkxane" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/xane">Alim û pirtukên wan</NavDropdown.Item>
-           
-                         <NavDropdown.Item href="/malper/xane/feqijs">Asistanê AI Îslamî Feqî</NavDropdown.Item>
-
-            </NavDropdown>
-
-            <Nav.Link href="/malper/mmmmm">Derbarê Me</Nav.Link>
+            <Nav.Link href="/malper/hakkimizda">Hakkımızda</Nav.Link>
             <Nav.Link href="/malper/account">Hesabım</Nav.Link>
             <Nav.Link href="/login">Giriş</Nav.Link>
             <Nav.Link href="/signup">Üye Ol</Nav.Link>
