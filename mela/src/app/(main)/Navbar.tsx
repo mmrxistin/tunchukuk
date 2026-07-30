@@ -1,9 +1,9 @@
 // Bismillahirrahmanirahim
 // Elhamdulillahirabbulalemin
-// Es-selatu vesselamu ala rasulina Muhammedin ve ala alihi ve sahbihi ecmain
+// Es-selatu vesselamu ala rasulina Muhammedin 
 // La ilahe illallah, Muhammedur Resulullah
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 // Allah U Ekber ve lillahi'l-hamd
 
 "use client";
@@ -149,3 +149,12 @@ export default function Navbar() {
     </header>
   );
 }
+// Bismillahirrahmanirahim
+// Elhamdulillahirabbulalemin
+// Es-selatu vesselamu ala rasulina Muhammedin
+// La ilahe illallah, Muhammedur Resulullah
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// SubhanAllah, Elhamdulillah, Allahu Ekber
+// Allah U Ekber ve lillahi'l-hamd
+// SuphanAllahi Ehed i Azim i Kerim i Vehhab i Rahmarir Rahim ve Bihamdihi
+// Allah U Ekber ve lillahi'l-hamd
