@@ -1,7 +1,7 @@
 // Bismillahirrahmanirrahim 
 // Elhamdulillahirabbulalemin
+//        اَشْهَدُ اَنْ لاَ اِلٰهَ اِلاَّ اللّٰهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
 // Esselatu vesselamu ala rasulillah 
-// Allahumme salli ala seyyidina Muhammedin 
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
 // La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
 // Subhanallah, Elhamdulillah, Allahu Ekber
@@ -29,11 +29,11 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Rêya Feqî",
-    default: " Rêya Feqî - Ber bi ronahîya dînê îslamê...",
+    template: "%s | Rosa Kadın Derneği",
+    default: "Rosa Kadın Derneği - Kadınların güçlenmesi için birlikte",
   },
-  description: "Rêya Feqî malpereke perwerdehiyê îslamî ye ku armanca wê belavkirina zanîna rast û derbarê dîna Îslamê ye.",
-  keywords: ["islam dini", "İslamiyet", "FIKIH","KELAM","tasavvuf","tarikat","anlam","fetva","diyanet","alim","müftü","molla","imam","hoca","müslüman","müslümanlar","islamiyet","tarih","peygamber","sahabe","hadis","kuran","kuranı kerim","allah","allah cc","allah cc","muhammed sav","muhammed aleyhisselam","din eğitimi","dini bilgiler","islam tarihi","islam fıkhı","islam kelamı","islam tasavvufu"],
+  description: "Rosa Kadın Derneği, kadınların güçlenmesini, eğitimini ve toplumsal dayanışmasını destekleyen sivil toplum kuruluşudur.",
+  keywords: ["Rosa Kadın Derneği", "kadın", "kadın hakları", "toplumsal dayanışma", "kadın eğitimi", "kadın sağlığı", "sivil toplum", "toplumsal cinsiyet", "örgüt", "yardımlaşma"],
 };
 
 export default function RootLayout({
@@ -62,10 +62,13 @@ export default function RootLayout({
   );
 }
 
+// Allahumme salli ala seyyidina Muhammedin 
 
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
-
+// La ilahe illAllahu vahdehu la şerike leh, lehul mulku ve lehul hamdu ,yuhyi ve yumit,biyadihil xayr ve huve ala kulli şeyin kadir
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 //La ilahe illAllah Muhammeden abduhu ve resuluhu
 
 // Elhamdulillah Elhamdulillah Elhamdulillah
@@ -79,8 +82,8 @@ export default function RootLayout({
 export function Footer() {
   return (
     <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
-      <p className="text-sm">© {new Date().getFullYear()} Yekazad Software Center</p>
-    </footer>
+        <p className="text-sm">© {new Date().getFullYear()} Rosa Kadın Derneği</p>
+      </footer>
   );
   
 }
