@@ -1,83 +1,116 @@
-// Bismillahirahmanirahim
-// Elhamdulillahirrabbulalemin
-// Esselatu vesselamu ala seyyidina Muhammedin 
-// La ilahe illAllahu vahdehu la şerike leh, lehul mulku ve lehul hamdu ,yuhyi ve yumit,biyadihil xayr ve huve ala kulli şeyin kadir
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-// Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahe illallah, Muhammedur Resulullah
+// Bismillahirrahmanirrahim 
+// Elhamdulillahirabbulalemin
+// Esselatu vesselamu ala rasulina Muhammedin 
+// Suphanallah, Elhamdulillah, Allahu Ekber
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
+// Allah u Ekber Ve Lillahil Hamd, Allah u Ekber, Allah u Ekber,
+//  La ilahe illAllah u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+//  yuhyi ve yumit ve biyadihil xayr 
+//  ve huve ala kulli şey'in kadir
+// Allah u Ekber Ve Lillahil Hamd
 "use client";
-import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card'
+import React, { useState } from 'react';
+import SpotlightBackground from '@/components/SpotlightBackground';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import WorkAreasSection from '@/components/WorkAreasSection';
+import FieldGallerySection from '@/components/FieldGallerySection';
+import MediaReportsSection from '@/components/MediaReportsSection';
+import NewsPanelSection from '@/components/NewsPanelSection';
+import AboutSection from '@/components/AboutSection';
+import ContactSection from '@/components/ContactSection';
+import WorkModuleModal from '@/components/WorkModuleModal';
+import MediaModal from '@/components/MediaModal';
+import GalleryModal from '@/components/GalleryModal';
+import DonateModal from '@/components/DonateModal';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
+import Footer from '@/components/Footer';
+import { ActiveModalState, MediaItem, GalleryItem } from '@/types/cms';
+import { useLanguage } from '@/context/LanguageContext';
+import { CMS_DATABASE } from '@/constants/cms-database';
+export default function Home(): React.JSX.Element {
+  const { lang, setLang } = useLanguage();
+  const [activeModal, setActiveModal] = useState<ActiveModalState | null>(null);
+  const [activeMediaItem, setActiveMediaItem] = useState<MediaItem | null>(null);
+  const [activeGalleryItem, setActiveGalleryItem] = useState<GalleryItem | null>(null);
+  const [isDonateModalOpen, setIsDonateModalOpen] = useState<boolean>(false);
 
-export default function Page() {
+  const pageData = CMS_DATABASE[lang] || CMS_DATABASE['TR'];
+
   return (
-    <main className="flex-grow">
-      <Container className="py-5">
-        <Row className="align-items-center mb-5">
-          <Col md={6}>
-            <h1 className="display-5 fw-bold">Rosa Kadın Derneği</h1>
-            <p className="lead">
-              Kadınların güçlenmesi, eğitim ve dayanışma için birlikteyiz. Projelerimize
-              katılın, destek olun veya gönüllü olun.
-            </p>
-            <div className="d-flex gap-2">
-              <Button href="/signup" variant="primary">Üye Ol</Button>
-              <Button href="/malper/projeler" variant="outline-primary">Projelerimiz</Button>
-            </div>
-          </Col>
-          <Col md={6} className="text-center">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80&auto=format&fit=crop" alt="Rosa Kadınlar" className="img-fluid rounded shadow" />
-          </Col>
-        </Row>
+    <>
+      <SpotlightBackground />
+      <Navbar
+        currentLang={lang}
+        onLangChange={setLang}
+        onOpenDonateModal={() => setIsDonateModalOpen(true)}
+      />
 
-        <Row className="g-4">
-          <Col md={4}>
-            <Card className="h-100 shadow-sm">
-              <Card.Body>
-                <Card.Title>Eğitim Programları</Card.Title>
-                <Card.Text>
-                  Mesleki eğitimlerden psikososyal desteğe kadar geniş programlarımızla
-                  kadınların becerilerini artırıyoruz.
-                </Card.Text>
-                <Button href="/malper/egitim" variant="outline-primary">Detaylar</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="h-100 shadow-sm">
-              <Card.Body>
-                <Card.Title>Toplumsal Dayanışma</Card.Title>
-                <Card.Text>
-                  Yerel ağlarla dayanışma projeleri, destek grupları ve danışmanlık hizmetleri.
-                </Card.Text>
-                <Button href="/malper/dayanisma" variant="outline-primary">Detaylar</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="h-100 shadow-sm">
-              <Card.Body>
-                <Card.Title>Gönüllülük</Card.Title>
-                <Card.Text>
-                  Gönüllü ekibimize katılın ve projelerimizin bir parçası olun.
-                </Card.Text>
-                <Button href="/malper/gonulluler" variant="outline-primary">Katıl</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </main>
-  )
+      <HeroSection hero={pageData.hero} ui={pageData.ui} />
+      <NewsPanelSection
+        newsItems={pageData.newsItems}
+        announcementItems={pageData.announcementItems}
+        questionItems={pageData.questionItems}
+        ui={pageData.ui}
+      />
+
+      <WorkAreasSection
+        sections={pageData.sections}
+        ui={pageData.ui}
+        modules={pageData.modules}
+        onSelectModule={setActiveModal}
+      />
+
+      <FieldGallerySection
+        sections={pageData.sections}
+        galleryItems={pageData.galleryItems}
+        onSelectGallery={setActiveGalleryItem}
+      />
+
+      <MediaReportsSection
+        sections={pageData.sections}
+        ui={pageData.ui}
+        mediaItems={pageData.mediaItems}
+        onSelectMedia={setActiveMediaItem}
+      />
+
+      <AboutSection
+        sections={pageData.sections}
+        stats={pageData.stats}
+      />
+
+      <ContactSection
+        contact={pageData.contact}
+        ui={pageData.ui}
+      />
+
+      <WorkModuleModal
+        activeModal={activeModal}
+        ui={pageData.ui}
+        onClose={() => setActiveModal(null)}
+      />
+
+      <MediaModal
+        item={activeMediaItem}
+        ui={pageData.ui}
+        onClose={() => setActiveMediaItem(null)}
+      />
+
+      <GalleryModal
+        item={activeGalleryItem}
+        ui={pageData.ui}
+        onClose={() => setActiveGalleryItem(null)}
+      />
+
+      <DonateModal
+        isOpen={isDonateModalOpen}
+        ui={pageData.ui}
+        onClose={() => setIsDonateModalOpen(false)}
+      />
+
+      <ScrollToTopButton ariaLabel={pageData.ui.ariaScrollTop} />
+
+      <Footer ui={pageData.ui} contact={pageData.contact} onOpenDonateModal={() => setIsDonateModalOpen(true)} />
+    </>
+  );
 }
-// Elhamdulillah Elhamdulillah Elhamdulillah
-// Elhamdulillah Elhamdulillah Elhamdulillah
-// Elhamdulillah Elhamdulillah Elhamdulillah
-// Elhamdulillahirabbilalemin
-// Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
-// SubhanAllah, Elhamdulillah, Allahu Ekber
-// Allah u Ekber Ve Lillahil Hamd, Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah

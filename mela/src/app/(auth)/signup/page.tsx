@@ -8,7 +8,7 @@
 // Xeyni Allah tu Xweda tune
 
 
-import signupImage from "@/assets/signup-image.jpg";
+import signupImage from "@/assets/signup-image.svg";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";

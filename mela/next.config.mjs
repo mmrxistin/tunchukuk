@@ -26,7 +26,7 @@ const nextConfig = {
   },
   serverExternalPackages: ["@node-rs/argon2"],
   images: {
-    domains: ['utfs.io'],
+    domains: ['utfs.io', 'images.unsplash.com'],
   },
   rewrites: () => {
     return [

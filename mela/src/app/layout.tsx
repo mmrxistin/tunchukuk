@@ -11,21 +11,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import localFont from "next/font/local";
 import { extractRouterConfig } from "uploadthing/server";
 import { fileRouter } from "./api/uploadthing/core";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import ReactQueryProvider from "./ReactQueryProvider";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -43,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body >
         <NextSSRPlugin routerConfig={extractRouterConfig(fileRouter)} />
         <ReactQueryProvider>
           <ThemeProvider
@@ -66,7 +56,8 @@ export default function RootLayout({
 
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
-// La ilahe illAllahu vahdehu la şerike leh, lehul mulku ve lehul hamdu ,yuhyi ve yumit,biyadihil xayr ve huve ala kulli şeyin kadir
+// La ilahe illAllahu vahdehu la şerike leh, lehul mulku ve lehul hamdu 
+// yuhyi ve yumit,biyadihil xayr ve huve ala kulli şeyin kadir
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // SubhanAllah, Elhamdulillah, Allahu Ekber
 //La ilahe illAllah Muhammeden abduhu ve resuluhu
