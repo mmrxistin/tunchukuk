@@ -1,116 +1,97 @@
-// Bismillahirrahmanirrahim 
-// Elhamdulillahirabbulalemin
-// Esselatu vesselamu ala rasulina Muhammedin 
-// Suphanallah, Elhamdulillah, Allahu Ekber
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
-// Allah u Ekber Ve Lillahil Hamd, Allah u Ekber, Allah u Ekber,
-//  La ilahe illAllah u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
-//  yuhyi ve yumit ve biyadihil xayr 
-//  ve huve ala kulli şey'in kadir
-// Allah u Ekber Ve Lillahil Hamd
-"use client";
-import React, { useState } from 'react';
-import SpotlightBackground from '@/components/SpotlightBackground';
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import WorkAreasSection from '@/components/WorkAreasSection';
-import FieldGallerySection from '@/components/FieldGallerySection';
-import MediaReportsSection from '@/components/MediaReportsSection';
-import NewsPanelSection from '@/components/NewsPanelSection';
-import AboutSection from '@/components/AboutSection';
-import ContactSection from '@/components/ContactSection';
-import WorkModuleModal from '@/components/WorkModuleModal';
-import MediaModal from '@/components/MediaModal';
-import GalleryModal from '@/components/GalleryModal';
-import DonateModal from '@/components/DonateModal';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
-import Footer from '@/components/Footer';
-import { ActiveModalState, MediaItem, GalleryItem } from '@/types/cms';
-import { useLanguage } from '@/context/LanguageContext';
-import { CMS_DATABASE } from '@/constants/cms-database';
-export default function Home(): React.JSX.Element {
-  const { lang, setLang } = useLanguage();
-  const [activeModal, setActiveModal] = useState<ActiveModalState | null>(null);
-  const [activeMediaItem, setActiveMediaItem] = useState<MediaItem | null>(null);
-  const [activeGalleryItem, setActiveGalleryItem] = useState<GalleryItem | null>(null);
-  const [isDonateModalOpen, setIsDonateModalOpen] = useState<boolean>(false);
+// Bismillahirahmanirahim
+// Elhamdulillahirrabbulalemin
+// Esselatu vesselamu ala seyyidina Muhammedin 
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// Subhanallah, Elhamdulillah, Allahu Ekber
 
-  const pageData = CMS_DATABASE[lang] || CMS_DATABASE['TR'];
-
+import React from 'react'
+import ParvekirinaAgahi from './agahi/parvekirin'
+import ParvekirinaMeal from './agahi/meal/parvekirin'
+import ParvekirinaTefsir from './agahi/tefsir/parvekirin'
+import Hedis from './hedis/parvekirin'
+function page() {
   return (
     <>
-      <SpotlightBackground />
-      <Navbar
-        currentLang={lang}
-        onLangChange={setLang}
-        onOpenDonateModal={() => setIsDonateModalOpen(true)}
-      />
+      <main className="flex-grow container mx-auto py-8">
+        
+        {/* Beşa Perwerdehîya Îslamî */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          {/* Karta 1: */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-2">QURAN-İ KERİM</h3>
+            <p className="text-gray-600">
+              Quran-î Kerîm pirtûka pîroz a Îslamê ye Allah Azze Ve Celle ji me re şandiye. Li vir hûn dikarin  derbarê peygamberan, îman û rêberiyên jiyanê hîn bibin .
+            </p>
+            <a href="/malper/agahi" className="text-blue-500 hover:underline mt-4 block">
+              Zêdetir Bibînin
+            </a>
+          </div>
+           {/* Karta 1: Kelam */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-2">Hedis</h3>
+            <p className="text-gray-600">
+              Hedis ramanên û gotinên peygamberê me Muhammed (s.a.v) ne. Li vir hûn dikarin zanînên derbarê sunneta peygamberê me hîn bibin.
+            </p>
+            <a href="/malper/hedis" className="text-blue-500 hover:underline mt-4 block">
+              Zêdetir Bibînin
+            </a>
+          </div>
 
-      <HeroSection hero={pageData.hero} ui={pageData.ui} />
-      <NewsPanelSection
-        newsItems={pageData.newsItems}
-        announcementItems={pageData.announcementItems}
-        questionItems={pageData.questionItems}
-        ui={pageData.ui}
-      />
+          {/* Karta 2: Fıkıh */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-2">Fıkıh</h3>
+            <p className="text-gray-600">
+              Fıkıh ramanên Îslamî yên li ser ibadet, muamelat û ahlakiye. Hûn dikarin qanûnên şerîat hîn bibin.
+            </p>
+            <a href="/perwerdeh/fikih" className="text-blue-500 hover:underline mt-4 block">
+              Zêdetir Bibînin
+            </a>
+          </div>
 
-      <WorkAreasSection
-        sections={pageData.sections}
-        ui={pageData.ui}
-        modules={pageData.modules}
-        onSelectModule={setActiveModal}
-      />
+          {/* Karta 3: Tarîxê Îslamî */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-2">Kelam</h3>
+            <p className="text-gray-600">
+              Kelam ilimê aqîdeyê ye ku di derbarê baweriyên eslê Îslamê de axivî. Li vir hûn dikarin derbarê tawhîd û îman hîn bibin.
+            </p>
+            <a href="/malper/kelam" className="text-blue-500 hover:underline mt-4 block">
+              Zêdetir Bibînin
+            </a>
+          </div>
+            {/* Karta 3: Tarîxê Îslamî */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-2">Dirok a Îslamî</h3>
+            <p className="text-gray-600">
+              Tarîxê Îslamî hûn re dide zanînê derbarê peygamberan, sahabeyan û derbasbûna Îslamê di dîroka xwe de.
+            </p>
+            <a href="/malper/dirok" className="text-blue-500 hover:underline mt-4 block">
+              Zêdetir Bibînin
+            </a>
+          </div>
+        </div>
+      
+        {/* Beşa Nûvekirinên Perwerdehî */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-bold mb-4">Nûvekirinên Perwerdehî</h2>
+          <ul className="list-disc pl-5 text-gray-700">
+            <li>Maddelerên nû li ser aqîde û tawhîd hatine zêdekirin.</li>
+            <li>Fıkıh – Rêbera ibadetên sala nû.</li>
+            <li>Tarîx – Peygamberan û sahabeyan.</li>
+          </ul>
+        </div>
 
-      <FieldGallerySection
-        sections={pageData.sections}
-        galleryItems={pageData.galleryItems}
-        onSelectGallery={setActiveGalleryItem}
-      />
+     <ParvekirinaAgahi/>
+     <ParvekirinaMeal/>
+     <ParvekirinaTefsir/>
+     <Hedis/>
+     
 
-      <MediaReportsSection
-        sections={pageData.sections}
-        ui={pageData.ui}
-        mediaItems={pageData.mediaItems}
-        onSelectMedia={setActiveMediaItem}
-      />
-
-      <AboutSection
-        sections={pageData.sections}
-        stats={pageData.stats}
-      />
-
-      <ContactSection
-        contact={pageData.contact}
-        ui={pageData.ui}
-      />
-
-      <WorkModuleModal
-        activeModal={activeModal}
-        ui={pageData.ui}
-        onClose={() => setActiveModal(null)}
-      />
-
-      <MediaModal
-        item={activeMediaItem}
-        ui={pageData.ui}
-        onClose={() => setActiveMediaItem(null)}
-      />
-
-      <GalleryModal
-        item={activeGalleryItem}
-        ui={pageData.ui}
-        onClose={() => setActiveGalleryItem(null)}
-      />
-
-      <DonateModal
-        isOpen={isDonateModalOpen}
-        ui={pageData.ui}
-        onClose={() => setIsDonateModalOpen(false)}
-      />
-
-      <ScrollToTopButton ariaLabel={pageData.ui.ariaScrollTop} />
-
-      <Footer ui={pageData.ui} contact={pageData.contact} onOpenDonateModal={() => setIsDonateModalOpen(true)} />
+      </main>
     </>
-  );
+  )
 }
+
+export default page
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin

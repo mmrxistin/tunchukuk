@@ -1,15 +1,300 @@
+// Bismillahirrahmanirahim
+// Elhamdullillahirabbulalemin
+// Es-selatu vesselamu ala rasulina Muhammedin 
+// Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
+// La ilahe illallah
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch"]
 }
 
 datasource db {
-  provider = "postgresql" // değiştirin: postgresql, mysql, sqlite vb.
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
-// Prisma şeması model tanımları bu dosyaya eklenmelidir.
-// Örnek:
-// model User {
-//   id    String @id @default(cuid())
-//   email String @unique
-// }
+model User {
+  id                    String         @id
+  username              String         @unique
+  displayName           String
+  email                 String?        @unique
+  passwordHash          String?
+  googleId              String?        @unique
+  avatarUrl             String?
+  bio                   String?
+  sessions              Session[]
+  duyem                 Duyem[]
+  hedis                 Hedis[]
+  agahi                 Agahi[]        // <-- add this line
+  dua                   Dua[]
+  createdAt   DateTime      @default(now())
+  Yekem       Yekem[]        // renamed relation (was Mmhewcedari)
+  Dirok       Dirok[]
+  Mmmpeyam    Mmmpeyam[]
+  Tefsir      Tefsir[]
+  Meal        Meal[]
+  Kelam       Kelam[]
+  Fiqih       Fiqih[]
+  xane        Xane[]
+  rojname     Rojname[]
+  @@map("users")
+}
+
+model Session {
+  id        String   @id
+  userId    String
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+
+model Agahi {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+
+  createdAt           DateTime       @default(now())
+
+  @@map("agahi")
+}
+
+model Duyem {
+  id                  String         @id @default(cuid())
+  content             String[]
+  userId              String
+  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments         Media[]
+
+  createdAt DateTime @default(now())
+
+  @@map("duyem")
+}
+model Mmmpeyam {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+
+  // optional relation to User (keeps existing User.Mmmpeyam[] valid)
+  userId String? 
+  user   User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@map("mmmpeyam")
+}
+
+model Xane {
+  id                  String         @id @default(cuid())
+  content             String[]
+  userId              String
+  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments         Media[]
+
+  createdAt DateTime @default(now())
+
+  @@map("xane")
+}
+
+
+// ---------------------------
+// MEDIA
+// ---------------------------
+model Media {
+  id         String    @id @default(cuid())
+  type       MediaType
+  url        String
+  createdAt  DateTime  @default(now())
+
+  // relations to content tables
+  agahiId    String?
+  Agahi      Agahi?    @relation(fields: [agahiId], references: [id])
+
+  duyemId    String?
+  Duyem      Duyem?    @relation(fields: [duyemId], references: [id], onDelete: SetNull)
+
+  xaneId     String?
+  Xane       Xane?     @relation(fields: [xaneId], references: [id], onDelete: SetNull)
+
+  duaId      String?
+  Dua        Dua?      @relation(fields: [duaId], references: [id], onDelete: SetNull)
+
+  mealId     String?
+  Meal       Meal?     @relation(fields: [mealId], references: [id])
+
+  tefsirId   String?
+  Tefsir     Tefsir?   @relation(fields: [tefsirId], references: [id])
+
+  hedisId    String?
+  Hedis      Hedis?    @relation(fields: [hedisId], references: [id])
+
+  fiqihId    String?
+  Fiqih      Fiqih?    @relation(fields: [fiqihId], references: [id])
+
+  kelamId    String?
+  Kelam      Kelam?    @relation(fields: [kelamId], references: [id])
+
+  dirokId    String?
+  Dirok      Dirok?    @relation(fields: [dirokId], references: [id])
+
+  yekemId    String?
+  Yekem      Yekem?    @relation(fields: [yekemId], references: [id])
+
+  rojnameId  String?
+  Rojname    Rojname?  @relation(fields: [rojnameId], references: [id], onDelete: SetNull)
+
+  @@map("post_media")
+}
+
+enum MediaType {
+  IMAGE
+  VIDEO
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+model Rojname {
+  id                  String         @id @default(cuid())
+  content             String[]
+  userId              String
+  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments         Media[]
+
+  createdAt DateTime @default(now())
+
+  @@map("rojname")
+}
+model Dua {
+  id                  String         @id @default(cuid())
+  content             String[]
+  userId              String
+  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments         Media[]
+
+  createdAt DateTime @default(now())
+
+  @@map("dua")
+}
+
+// Removed duplicate Media model that caused "model 'Media' already exists" error.
+// The consolidated Media model is the one earlier in this file (with @@map("post_media"))
+
+
+// New renamed models (mapped to existing table names to preserve DB):
+model Fiqih {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
+
+  @@map("fiqih")
+}
+
+model Kelam {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
+
+  @@map("kelam")
+}
+
+model Meal {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
+
+  @@map("meal")
+}
+
+model Tefsir {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
+
+  @@map("tefsir")
+}
+
+model Dirok {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
+
+  @@map("dirok")
+}
+
+// ensure Hedis model exists
+model Hedis {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
+
+  @@map("hedis") // keep existing table name if needed; change if you want new table
+}
+
+// Yekem model (mapped to existing mmhewcedari table)
+model Yekem {
+  id          String  @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
+
+  @@map("yekem")
+}
