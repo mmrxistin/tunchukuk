@@ -1,9 +1,9 @@
 // Bismillahirahmanirahim 
 // Elhamdulillahirabbulalemin
 // Esselatu vesselamu ala rasulillah 
-// Allahumme salli ala seyyidina Muhammedin 
+// La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamd,yuhyi ve yumit ve huve ala kulli şey'in kadir
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
-// La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+// La ilahe illAllah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
 import React from "react";
 import { Alert } from "react-bootstrap";
 import Mmmnavbar from "./components/mmnav";

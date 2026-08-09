@@ -29,11 +29,11 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Rêya Feqî",
-    default: " Rêya Feqî - Ber bi ronahîya dînê îslamê...",
+    template: "%s | Yeni Yaşam ",
+    default: " Yeni Yaşam Gazetesi",
   },
-  description: "Rêya Feqî malpereke perwerdehiyê îslamî ye ku armanca wê belavkirina zanîna rast û derbarê dîna Îslamê ye.",
-  keywords: ["islam dini", "İslamiyet", "FIKIH","KELAM","tasavvuf","tarikat","anlam","fetva","diyanet","alim","müftü","molla","imam","hoca","müslüman","müslümanlar","islamiyet","tarih","peygamber","sahabe","hadis","kuran","kuranı kerim","allah","allah cc","allah cc","muhammed sav","muhammed aleyhisselam","din eğitimi","dini bilgiler","islam tarihi","islam fıkhı","islam kelamı","islam tasavvufu"],
+  description: "ni Yaşam Gazetesi Yeni Yaşam Gazetesi | Yeni Yaşam  · Anasayfa · Gündem · Güncel ",
+  keywords: [" Yaşam · Söyleşi · Forum · Politika · Günün Manşeti."],
 };
 
 export default function RootLayout({
