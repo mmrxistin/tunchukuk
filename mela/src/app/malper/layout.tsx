@@ -1,7 +1,7 @@
 // Bismillahirahmanirahim 
 // Elhamdulillahirabbulalemin
 // Esselatu vesselamu ala rasulillah 
-// La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamd,yuhyi ve yumit ve huve ala kulli şey'in kadir
+// La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamdu,yuhyi ve yumit ve huve ala kulli şey'in kadir
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
 // La ilahe illAllah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
 import React from "react";

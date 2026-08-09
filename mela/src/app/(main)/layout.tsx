@@ -27,19 +27,3 @@ export default async function Layout({
 
 
 
-
-
-export function Footer() {
-  return (
-    <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
-      <p className="text-sm">
-        © {new Date().getFullYear()} Yekazad Software Center. All rights reserved.
-      </p>
-      <span className="mx-2">|</span>
-      <p className="text-xs text-gray-400">
-        Admin Panel &mdash; Empowering your management experience.
-      </p>
-    </footer>
-  );
-  
-}
