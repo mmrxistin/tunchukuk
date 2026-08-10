@@ -2,7 +2,7 @@
 // Elhamdulillahi Rabbil Alamin
 // Essalatu vesselamu ala Resulina Muhammedin 
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 // La ilahe illAllah, Muhammedur Resulullah
 // Allah U Ekber ve lillahi'l-hamd
 import Link from "next/link";

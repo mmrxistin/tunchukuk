@@ -27,33 +27,33 @@ const dashboardCards = [
     icon: Home,
   },
   {
-    title: "Kullanıcılar",
-    description: "Tüm kullanıcılarınızı görüntüleyin ve yönetin.",
-    href: "/users",
+    title: "Kültür",
+    description: "Kültür haberleri ve içeriklerini yönetin.",
+    href: "/kultur",
     icon: Users,
   },
   {
-    title: "Mesajlar",
-    description: "Gelen mesajları, bildirimleri ve geri bildirimleri denetleyin.",
-    href: "/peyam",
+    title: "Yazarlar",
+    description: "Tüm yazarlarınızı görüntüleyin ve yönetin.",
+    href: "/authors",
     icon: MessageCircle,
   },
   {
-    title: "İçerik Yönetimi",
-    description: "Qur'an, Hedis, Fiqih, Kelam ve diğer içerik bölümlerine hızlı erişim.",
-    href: "/content",
+    title: "",
+    description: "Ortadoğu",
+    href: "/dirok",
     icon: FileText,
   },
   {
-    title: "Raporlar",
-    description: "Sistem performansı, kullanım ve site raporlarına ulaşın.",
-    href: "/reports",
+    title: "Ekoloji Haberleri",
+    description: ".",
+    href: "/xane",
     icon: ShieldCheck,
   },
   {
     title: "Site Yönetimi",
-    description: "Site ana sayfasını ve yönlendirmeleri hızlıca kontrol edin.",
-    href: "/malper",
+    description: "Kadın Haberleri",
+    href: "/rojname",
     icon: BookOpen,
   },
 ];
@@ -61,20 +61,7 @@ const dashboardCards = [
 export default function AdminDashboard() {
   return (
     <section className="space-y-6">
-      <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Admin Kontrol Paneli</p>
-            <h1 className="mt-2 text-3xl font-semibold text-slate-900">Yönetim Merkezi</h1>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
-              `src/app/(main)` klasörü artık tek bir yönetim kabuğu ile tanımlı. Navbar, sidebar ve içerik bölümleri ayrı bileşenlerde organize edildi.
-            </p>
-          </div>
-          <Button asChild variant="secondary" size="lg">
-            <Link href="/users">Hızlı Kullanıcı Yönetimi</Link>
-          </Button>
-        </div>
-      </div>
+        
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {dashboardCards.map((card) => (
