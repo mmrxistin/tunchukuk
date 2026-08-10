@@ -50,7 +50,7 @@ export default async function MenuBar({ className }: MenuBarProps) {
     >
       <div className="mb-5 rounded-2xl bg-slate-900 p-5 text-white">
         <div className="text-lg font-bold">
-          {user.username ?? user.email ?? "Admin"}
+          {user.username}
         </div>
 
         <div className="mt-1 text-sm text-slate-300">
