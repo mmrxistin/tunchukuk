@@ -3,13 +3,19 @@
 // Elhamdulillahirrabbulalemin
 // Esselatu vesselamu ala seyyidina Muhammedin 
 // Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahe illAllah u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.Y ve huve ala kulli şey'in kadir
-// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
+// La ilahe illAllah u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu 
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir
+// Allah u Ekber Ve Lillahil Hamd
+//  ve huve ala kulli şey'in kadir
+// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illAllah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin
 // Xeyni Allah tu Xweda tune
+// Allahu Ekber Ve Lillahil Hamd
 import React from "react";
 
-const Footer = () => (
+const Bingeh = () => (
   <footer className="bg-gray-950 text-white mt-12">
 
     <div className="container mx-auto px-4 py-10">
@@ -316,5 +322,11 @@ const Footer = () => (
   </footer>
 );
 
-export default Footer;
+export default Bingeh;
 
+// El Hamdu Lillah Kesira
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

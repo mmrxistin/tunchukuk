@@ -1,9 +1,9 @@
-// Bismillahirrahmanirrahim 
+// Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
-// Esselatu vesselamu ala rasulina Muhammedin 
+// Esselatu vesselamu ala rasulina Muhammedin
 // Suphanallah, Elhamdulillah, Allahu Ekber
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
-// Allah u Ekber Ve Lillahil Hamd 
+// Allah u Ekber Ve Lillahil Hamd
 import { validateRequest } from "@/auth";
 import { Button } from "@/components/ui/button";
 import prisma from "@/lib/prisma";
@@ -20,13 +20,24 @@ export default async function MenuBar({ className }: MenuBarProps) {
   if (!user) return null;
 
   let messageCount = 0;
+
   try {
     const clientAny = prisma as any;
-    if (clientAny.mmmpeyam && typeof clientAny.mmmpeyam.count === "function") {
+
+    if (
+      clientAny.mmmpeyam &&
+      typeof clientAny.mmmpeyam.count === "function"
+    ) {
       messageCount = await clientAny.mmmpeyam.count();
-    } else if (clientAny.peyam && typeof clientAny.peyam.count === "function") {
+    } else if (
+      clientAny.peyam &&
+      typeof clientAny.peyam.count === "function"
+    ) {
       messageCount = await clientAny.peyam.count();
-    } else if (clientAny.message && typeof clientAny.message.count === "function") {
+    } else if (
+      clientAny.message &&
+      typeof clientAny.message.count === "function"
+    ) {
       messageCount = await clientAny.message.count();
     }
   } catch {
@@ -34,10 +45,17 @@ export default async function MenuBar({ className }: MenuBarProps) {
   }
 
   return (
-    <div className={className}>
-      <div className="mb-5 rounded-3xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600">
-        <p className="font-semibold text-slate-900">{user.username ?? user.email ?? "Admin"}</p>
-        <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Yönetim Paneli</p>
+    <div
+      className={`w-full rounded-2xl bg-white p-4 shadow-sm ${className ?? ""}`}
+    >
+      <div className="mb-5 rounded-2xl bg-slate-900 p-5 text-white">
+        <div className="text-lg font-bold">
+          {user.username ?? user.email ?? "Admin"}
+        </div>
+
+        <div className="mt-1 text-sm text-slate-300">
+          Yönetim Paneli
+        </div>
       </div>
 
       <div className="space-y-2">
@@ -48,17 +66,23 @@ export default async function MenuBar({ className }: MenuBarProps) {
             className="w-full justify-between rounded-3xl px-4 py-3 text-left"
             asChild
           >
-            <Link href={item.href} className="flex items-center justify-between gap-3">
+            <Link
+              href={item.href}
+              className="flex w-full items-center justify-between gap-3"
+            >
               <span className="flex items-center gap-2 text-sm text-slate-700">
-                <item.icon className="h-5 w-5" />
-                {item.label}
+                <item.icon className="h-5 w-5 shrink-0" />
+                <span>{item.label}</span>
               </span>
+
               {item.badgeKey === "messages" && messageCount > 0 ? (
                 <span className="rounded-full bg-rose-500 px-2 py-0.5 text-[11px] font-semibold text-white">
                   {messageCount}
                 </span>
               ) : (
-                <span className="text-xs text-slate-400">Git</span>
+                <span className="text-xs text-slate-400">
+                  Git
+                </span>
               )}
             </Link>
           </Button>
@@ -67,9 +91,11 @@ export default async function MenuBar({ className }: MenuBarProps) {
     </div>
   );
 }
+
 // El Hamdu Lillah Kesira
 
 // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
 // Yuhyi ve yumit
 // Biyadihil xayr
 // ve huve ala kulli şey'in kadir
+
