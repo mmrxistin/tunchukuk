@@ -3,7 +3,7 @@
 // Essalatu vesselamu ala Resulina Muhammedin 
 // La ilahe illallah, Muhammedur Resulullah
 // SuphanAllah velhamdulillah, Allahu Ekber
-
+// Allah u Ekber Ve Lillahil Hamd
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
@@ -73,3 +73,7 @@ export default function Fiqih() {
     </InfiniteScrollContainer>
   );
 }
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

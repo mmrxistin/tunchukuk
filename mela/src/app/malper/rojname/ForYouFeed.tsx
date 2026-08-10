@@ -1,7 +1,7 @@
 // Bismillahirrahmanirrahim 
 // Elhamdulillahi Rabbil Alamin
 // Essalatu vesselamu ala Resulina Muhammedin 
-// La ilahe illallah, Muhammedur Resulullah
+// La ilahe illAllah, Muhammedur Resulullah
 // SuphanAllah velhamdulillah, Allahu Ekber
 
 "use client";
@@ -14,7 +14,7 @@ import { RojnamePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function ForYouFeed() {
+export default function Rojnm() {
   const {
     data,
     fetchNextPage,
@@ -73,3 +73,15 @@ export default function ForYouFeed() {
     </InfiniteScrollContainer>
   );
 }
+
+// Elhamdulillah kesira
+// El Hamdu Lillahi Rabbul Alemin
+
+
+
+
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

@@ -1,8 +1,8 @@
 // Bismillahirrahmanirrahim 
 // Elhamdulillahi Rabbil Alamin
 // Essalatu vesselamu ala Resulina Muhammedin 
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 
 "use client";
 
@@ -14,7 +14,7 @@ import { DirokPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function ForYouFeed() {
+export default function Dirok() {
   const {
     data,
     fetchNextPage,

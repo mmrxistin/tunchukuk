@@ -20,10 +20,10 @@ export default async function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div>{  /*
       <Alert variant="success" style={{ width: "100%", textAlign: "center" }}>
         اَشْهَدُ اَنْ لاَ اِلٰهَ اِلاَّ اللّٰهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
-      </Alert>
+      </Alert> */}
       <Mmmnavbar />
 
       {children}
