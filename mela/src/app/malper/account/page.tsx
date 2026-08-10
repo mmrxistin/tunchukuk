@@ -15,7 +15,7 @@ export default async function Page() {
   if (!user) {
     redirect("/login");
   }
-
+// Elhamdulillah ya Kerim i Vehhab bedawiti
   return (
     <main className="container mx-auto py-12">
       <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
