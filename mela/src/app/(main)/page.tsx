@@ -20,7 +20,7 @@ export default function AdminPage() {
 }
 // El Hamdu Lillah Kesira
 
-// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.
 // Yuhyi ve yumit
 // Biyadihil xayr
 // ve huve ala kulli şey'in kadir

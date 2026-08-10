@@ -1,3 +1,10 @@
+// Bismillahirrahmanirrahim
+// Elhamdulillahi Rabbil Alamin
+// Essalatu vesselamu ala Resulina Muhammedin 
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// La ilahe illAllah, Muhammedur Resulullah
+// Allah U Ekber ve lillahi'l-hamd
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { validateRequest } from "@/auth";
@@ -24,7 +31,7 @@ export default async function Page() {
           </div>
           <div className="rounded-3xl bg-slate-50 p-6">
             <h2 className="text-sm uppercase tracking-[0.25em] text-slate-500">Email</h2>
-            <p className="mt-2 text-lg font-medium text-slate-900">{user.email ?? "Kayıtlı değil"}</p>
+            <p className="mt-2 text-lg font-medium text-slate-900">{"Kayıtlı değil"}</p>
           </div>
           <div className="rounded-3xl bg-slate-50 p-6 sm:col-span-2">
             <h2 className="text-sm uppercase tracking-[0.25em] text-slate-500">Profil Bilgisi</h2>
@@ -44,3 +51,9 @@ export default async function Page() {
     </main>
   );
 }
+// El Hamdu Lillah Kesira
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir
