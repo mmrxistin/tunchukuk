@@ -1,12 +1,12 @@
 // Bismillahirahmanirahim
 // Elhamdulillahirrabbulalemin
-// Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Esselatu vesselamu ala seyyidina Muhammedin
 // Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahe illallah 
+// La ilahe illAllah 
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
 // Xeyni Allah tu Xweda tune
-
+// Allah u Ekber Ve Lillahil Hamd
 
 import { validateRequest } from "@/auth";
 import { redirect } from "next/navigation";
@@ -21,4 +21,9 @@ export default async function Layout({
   if (user) redirect("/malper");
 
   return <>{children}</>;
-}
+} // El Hamdu Lillah Kesira
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

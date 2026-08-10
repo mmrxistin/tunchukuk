@@ -1,9 +1,9 @@
 // Bismillahirrahmanirrahim 
 // Elhamdulillahi Rabbil Alamin
 // Essalatu vesselamu ala Resulina Muhammedin 
-// La ilahe illallah, Muhammeden abduhu ve resuluhu
+// La ilahe illAllah, Muhammeden abduhu ve resuluhu
 // SuphanAllah velhamdulillah, Allahu Ekber
-
+// Allah u Ekber Ve Lillahil Hamd
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
@@ -14,7 +14,7 @@ import { XanePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function ForYouFeed() {
+export default function Xane() {
   const {
     data,
     fetchNextPage,
@@ -73,3 +73,7 @@ export default function ForYouFeed() {
     </InfiniteScrollContainer>
   );
 }
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

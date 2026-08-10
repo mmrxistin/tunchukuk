@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 
 import { Alert } from "react-bootstrap";
+import Rojnm from "./ForYouFeed";
 
 export default function Home() {
   return (
@@ -16,8 +17,8 @@ export default function Home() {
       <div className="w-full min-w-0 space-y-5">
 
 
-       <Alert>Rojname</Alert>
-       
+       <Alert>Kadın </Alert>
+       <Rojnm/>
       </div>
     </main>
   );

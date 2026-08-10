@@ -1,6 +1,15 @@
 // Bismillahirahmanirahim 
 
 
+// Bismillahirahmanirahim
+// Elhamdulillahirrabbulalemin
+// Esselatu vesselamu ala seyyidina Muhammedin
+// Subhanallah, Elhamdulillah, Allahu Ekber
+// La ilahe illAllah 
+// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illAllah
+// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
+// Xeyni Allah tu Xweda tune
+// Allah u Ekber Ve Lillahil Hamd
 
 
 import loginImage from "@/assets/login-image.jpg";
@@ -20,7 +29,7 @@ export default function Page() {
     <main  className="flex h-screen items-center justify-center p-5">
       <div className="flex h-full max-h-[40rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
         <div className="w-full space-y-10 overflow-y-auto p-10 md:w-1/2">
-          <h1 className="text-center text-3xl font-bold">Feqî</h1>
+          <h1 className="text-center text-3xl font-bold">admin</h1>
           <div className="space-y-5">
             
             <div className="flex items-center gap-3">
@@ -30,13 +39,7 @@ export default function Page() {
             </div>
             <LoginForm />
   
-<Button>
-            <Link href="/malper" className="block text-center hover:underline">
-              Home
-        
-            </Link>
 
-            </Button>
           </div>
         </div>
         <Image
@@ -48,3 +51,9 @@ export default function Page() {
     </main>
   );
 }
+// El Hamdu Lillah Kesira
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

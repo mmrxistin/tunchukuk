@@ -1,15 +1,15 @@
 // Bismillahirrahmanirahim
 // Elhamdulillahirabbulalemin
-// Ve salatu ve selamu ala resulina Muhammedin ve alihi ve sahbihi ecmain
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// Ve salatu ve selamu ala resulina Muhammedin
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
-
+// Allah u Ekber Ve Lillahil Hamd
 "use client";
 import React from "react";
 import { Card, Row, Col, Alert } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import ForYouFeed from "./ForYouFeed";
+import Xane from "./ForYouFeed";
 
 function page() {
   return (
@@ -40,7 +40,7 @@ function page() {
             <Col xs={12} md={6} className="mb-3 mb-md-0">
               <Card style={{ textAlign: "center", height: "100%" }}>
                 <Card.Body>
-                  <Card.Title style={{ fontSize: "1.1rem" }}>Zanista Îslamî,</Card.Title>
+                  <Card.Title style={{ fontSize: "1.1rem" }}>Ekoloji Haberleri</Card.Title>
                   <Card.Text style={{ fontSize: "1rem" }}>
                     <br />
                     <br />
@@ -52,18 +52,7 @@ function page() {
             </Col>
             {/* Sağ Kolon */}
             <Col xs={12} md={6} className="d-flex align-items-center">
-              <Image
-                src="https://iasbh.tmgrup.com.tr/a9e335/0/0/0/0/0/0?u=https://isbh.tmgrup.com.tr/sb/album/2021/12/11/tum-beslenmeniz-degisiyor-iste-saat-1600dan-sonra-asla-tuketmemeniz-gereken-o-besin-1639200626070.jpg&mw=752&mh=700"
-                style={{
-                  border: "5px solid white",
-                  borderRadius: "10px",
-                  width: "100%",
-                  height: "auto",
-                  marginBottom: "10px",
-                }}
-                alt="hedis"
-                fluid
-              />
+              <Xane/>
             </Col>
           </Row>
         </Card.Body>
@@ -77,3 +66,9 @@ function page() {
 export default page;
 //ELHAMDULILLAH ELHAMDULILLAH ELHAMDULILLAH
 //ELHAMDULILLAHIRABBILALEMIN
+
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

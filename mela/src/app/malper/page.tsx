@@ -14,6 +14,7 @@ import Dirok from './dirok/ForYouFeed'
 import Kelam from './kelam/ForYouFeed'
 import Dua from './dua/ForYouFeed'
 import Fiqih from './fiqih/parvekirin'
+import Xane from './xane/ForYouFeed'
 
 function page() {
   return (
@@ -472,12 +473,12 @@ function page() {
               </span>
               <h3 className="text-xl font-bold mt-2">
                 Spor Haberleri
-              </h3>
+              </h3> <Fiqih/>  
               <a
                 href="/haberler/spor"
                 className="inline-block mt-4 text-white underline"
               >
-                <Fiqih/>
+               
                 Haberleri Gör →
               </a>
             </div>
@@ -489,6 +490,8 @@ function page() {
               <h3 className="text-xl font-bold mt-2">
                 Dünya Haberleri
               </h3>
+
+              <Xane/>
               <a
                 href="/haberler/dunya"
                 className="inline-block mt-4 text-white underline"
@@ -500,10 +503,7 @@ function page() {
           </div>
         </section>
 
-        <ParvekirinaAgahi/>
-        <ParvekirinaMeal/>
-        <ParvekirinaTefsir/>
-        <Hedis/>
+        
 
       </main>
     </>

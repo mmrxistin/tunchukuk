@@ -1,9 +1,9 @@
 // Bismillahirrahmanirahim
 // Elhamdulillahirabbulalemin
-// Ese-selatu vesselamu ala rasulina Muhammedin ve ala alihi ve sahbihi ecmain
-// La ilahe illallah
-// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// Ese-selatu vesselamu ala rasulina Muhammedin 
+// La ilahe illAllah
+// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illAllah
+// SubhanAllah, Elhamdulillah, Allahu Ekber
  "use client";
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
@@ -71,10 +71,10 @@ const ContactForm: React.FC = () => {
           fontSize: "2rem",
         }}
       >
-        Tevlê Bibin
+        Bize Ulaşın
       </h2>
       <Form.Group className="mb-3" controlId="formName">
-        <Form.Label style={{ color: "#495057", fontWeight: 500 }}>Name</Form.Label>
+        <Form.Label style={{ color: "#495057", fontWeight: 500 }}>Adın  </Form.Label>
         <Form.Control
           type="text"
           name="name"
@@ -106,7 +106,7 @@ const ContactForm: React.FC = () => {
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formMessage">
-        <Form.Label style={{ color: "#495057", fontWeight: 500 }}>Your Message</Form.Label>
+        <Form.Label style={{ color: "#495057", fontWeight: 500 }}>Mesajın</Form.Label>
         <Form.Control
           as="textarea"
           rows={4}
@@ -139,11 +139,11 @@ const ContactForm: React.FC = () => {
           variant="success"
           type="submit"
         >
-          Bişînin
+          Gönder
         </Button>
       </div>
       <p className="text-center mt-4" style={{ color: "#6c757d", fontSize: "1rem" }}>
-       spas ji bo gava  we ye birûmet. Em ê di demek kurt de bersiva we bidin.
+       
       </p>
     </Form>
   );
@@ -151,12 +151,23 @@ const ContactForm: React.FC = () => {
 
 export default ContactForm;
 
-// Suphanallah Subhanallah Subhanallahi Azim ve Bihamdihi
+// SuphanAllah i Gani i Ehed ve Bihamdihi 
+// SubhanAllah Subhanallahi Azim ve Bihamdihi
 // Elhamdulillah Elhamdulillah Elhamdulillah
-// Elhamdulillahirabbulalemin//Subhanallah Subhanallah Subhanallahi Azim ve Bihamdihi
+// Elhamdulillahirabbulalemin
+// SubhanAllah SubhanAllah SubhanAllahi Azim ve Bihamdihi
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
 // La ilahe illAllah Muhammeden abduhu ve resuluhu
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
+
+
+
+
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir

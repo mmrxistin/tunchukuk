@@ -24,22 +24,18 @@ function Mmmnavbar() {
             <Nav.Link href="/malper/agahi">Tümü</Nav.Link>
 
             <NavDropdown title="Politika" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/kelam">Kadın</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/kelam">Ortadoğu</NavDropdown.Item>
               <NavDropdown.Item href="/malper/fiqih">Forum</NavDropdown.Item>
               <NavDropdown.Item href="/malper/aqide"> Dünya</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/malper/dirok">Ortadoğu</NavDropdown.Item>
+              <NavDropdown.Item href="/malper/dirok">Kadın</NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown title="Kültür" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/malper/hedis">Emek-Ekonomi</NavDropdown.Item>
-              <NavDropdown.Item href="/malper/dua">Yazarlar</NavDropdown.Item>
-            </NavDropdown>
-
+           
             <NavDropdown title="Pirtûkxane" id="basic-nav-dropdown">
               <NavDropdown.Item href="/malper/xane">Ekoloji</NavDropdown.Item>
            
-                         <NavDropdown.Item href="/malper/xane/feqijs"></NavDropdown.Item>
+                         <NavDropdown.Item href="/malper/rojname">Kadın</NavDropdown.Item>
 
             </NavDropdown>
 
@@ -55,11 +51,18 @@ function Mmmnavbar() {
 }
 
 export default Mmmnavbar;
-//SubhanAllah SubhanAllah SubhanAllahi Azim ve Bihamdihi
+//SubhanAllahi Rahmanir Rahim ve Bihamdihi
+//  SubhanAllah i Ehed ve Bihamdihi
+// SubhanAllah i Samed i Azim ve Bihamdihi 
+// Suphan Allahi Kerim i Vehhab ve Bihamdihi
+//  SubhanAllahi Azim ve Bihamdihi
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
 // La ilahe illAllah Muhammden abduhu ve resuluhu
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
-// La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamd,yuhyi ve yumit ve huve ala kulli şey'in kadir
+// La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamd
+// yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir
