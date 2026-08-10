@@ -2,8 +2,8 @@
 // Elhamdulillahirabbulalemin
 // Esselatu vesselamu ala rasulina Muhammedin 
 // Suphanallah, Elhamdulillah, Allahu Ekber
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
+// Allah u Ekber Ve Lillahil Hamd 
 import { validateRequest } from "@/auth";
 import { Button } from "@/components/ui/button";
 import prisma from "@/lib/prisma";
@@ -67,3 +67,9 @@ export default async function MenuBar({ className }: MenuBarProps) {
     </div>
   );
 }
+// El Hamdu Lillah Kesira
+
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir
