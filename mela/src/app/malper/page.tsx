@@ -46,7 +46,7 @@ function page() {
             {/* Karta 1: */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
               <div className="h-48 bg-gray-200">
-             <Hedis/>
+            
               </div>
 
               <div className="p-6">
@@ -108,11 +108,7 @@ function page() {
             {/* Karta 2: Fıkıh */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
               <div className="h-48 bg-gray-200">
-                <img
-                  src="/images/haber-ekonomi.jpg"
-                  alt="Ekonomi haberleri"
-                  className="w-full h-full object-cover"
-                />
+              <Hedis/>
               </div>
 
               <div className="p-6">
