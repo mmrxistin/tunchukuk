@@ -10,8 +10,8 @@
 
  import React from 'react'
  import ParvekirinaAgahi from './yek/parvekirin'
- import ParvekirinaMeal from './yek/meal/parvekirin'
- import ParvekirinaTefsir from './yek/tefsir/parvekirin'
+ import ParvekirinaMeal from './yek/yek/parvekirin'
+ import ParvekirinaTefsir from './yek/du/parvekirin'
  import Hedis from './du/parvekirin'
  import Rojnm from './rojname/ForYouFeed'
  import Dirok from './dirok/ForYouFeed'
