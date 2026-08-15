@@ -9,15 +9,15 @@
 
 
  import React from 'react'
- import ParvekirinaAgahi from './agahi/parvekirin'
- import ParvekirinaMeal from './agahi/meal/parvekirin'
- import ParvekirinaTefsir from './agahi/tefsir/parvekirin'
- import Hedis from './hedis/parvekirin'
+ import ParvekirinaAgahi from './yek/parvekirin'
+ import ParvekirinaMeal from './yek/meal/parvekirin'
+ import ParvekirinaTefsir from './yek/tefsir/parvekirin'
+ import Hedis from './du/parvekirin'
  import Rojnm from './rojname/ForYouFeed'
  import Dirok from './dirok/ForYouFeed'
- import Kelam from './kelam/ForYouFeed'
- import Dua from './dua/ForYouFeed'
- import Fiqih from './fiqih/parvekirin'
+ import Kelam from './car/ForYouFeed'
+ import Dua from './penc/ForYouFeed'
+ import Fiqih from './se/parvekirin'
  import Xane from './xane/ForYouFeed'
  // El Hamdu Lîllah ya Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn
  // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
@@ -54,7 +54,7 @@
                </div>
 
                <a
-                 href="/haberler"
+                 href="/malper/yek"
                  className="hidden md:block text-[#b80000] font-bold hover:underline"
                >
                  Tüm Haberler →
@@ -83,7 +83,7 @@
                  </p>
 
                  <a
-                   href="/haberler/gundem"
+                   href="/malper/du"
                    className="inline-block mt-4 text-[#b80000] font-bold hover:underline"
                  >
                    Haberin Devamını Oku →
@@ -136,7 +136,7 @@
                    </p>
 
                    <a
-                     href="/haberler/ekonomi"
+                     href="/malper/se"
                      className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
                    >
                      Ekonomi Haberleri →
@@ -172,7 +172,7 @@
                  </p>
 
                  <a
-                   href="/haberler/spor"
+                   href="/malper/car"
                    className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
                  >
                    Spor Haberleri →
@@ -203,7 +203,7 @@
                  </p>
 
                  <a
-                   href="/haberler/kultur-sanat"
+                   href="/malper/xane"
                    className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
                  >
                    Kültür Haberleri →
@@ -229,7 +229,7 @@
                  </p>
 
                  <a
-                   href="/haberler/teknoloji"
+                   href="/malper/penc"
                    className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
                  >
                    Teknoloji Haberleri →
@@ -286,7 +286,7 @@
                          </p>
 
                          <a
-                           href="/haberler/son-dakika"
+                           href="/malper/penc"
                            className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
                          >
                            Devamını Oku →
@@ -324,7 +324,7 @@
                          <Kelam/>
 
                          <a
-                           href="/haberler/gundem"
+                           href="/malper/rojname"
                            className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
                          >
                            Devamını Oku →
