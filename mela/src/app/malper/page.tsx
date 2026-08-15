@@ -4,6 +4,10 @@
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
 // SubhanAllah, Elhamdulillah, Allahu Ekber
 // Allah u Ekber Ve Lillahil Hamd
+
+
+
+
 import React from 'react'
 import ParvekirinaAgahi from './agahi/parvekirin'
 import ParvekirinaMeal from './agahi/meal/parvekirin'
@@ -15,7 +19,13 @@ import Kelam from './kelam/ForYouFeed'
 import Dua from './dua/ForYouFeed'
 import Fiqih from './fiqih/parvekirin'
 import Xane from './xane/ForYouFeed'
+// El Hamdu Lîllah ya Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir
 
+// El Hamdu Lîllah ya Kerîm î Rezzaq î Vehhab î Ehed î Quddus î Heq bêdawîtî..
 function page() {
   return (
     <>

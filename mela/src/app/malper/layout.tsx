@@ -14,6 +14,7 @@ import ContactForm from "./components/mmfrm";
 
 
 
+// El Hamdu Lîllah ya Kerîm î Rezzaq î Vehhab î Ehed î Quddus î Heq bêdawîtî..
 export default async function Layout({
   children,
 }: {
