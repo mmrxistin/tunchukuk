@@ -6,7 +6,7 @@
 // La ilahe illallah muhammadur resulullah
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getyekineInclude, yekinePage } from "@/lib/types";
+import { getyekayekeInclude, yekayekePage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -24,7 +24,7 @@ export async function GET(req: NextRequest) {
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.yekine.findMany({
+    const posts = await prisma.yekayeke.findMany({
       where: {
         OR: [
           {
@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
           },
         ],
       },
-      include: getyekineInclude(user.id),
+      include: getyekayekeInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,

@@ -32,11 +32,11 @@ model User {
   Yek                 Yek[]        // <-- add this line
   Penc                   Penc[]
   createdAt   DateTime      @default(now())
-  yekine       yekine[]        // renamed relation (was Mmhewcedari)
+  yekayeke       yekayeke[]        // renamed relation (was Mmhewcedari)
   Dirok       Dirok[]
   Mmmpeyam    Mmmpeyam[]
   Tefsir      Tefsir[]
-  yekine        yekine[]
+  yekayeke        yekayeke[]
   Car       Car[]
   se       se[]
   xane        Xane[]
@@ -127,8 +127,8 @@ model Media {
   PencId      String?
   Penc        Penc?      @relation(fields: [PencId], references: [id], onDelete: SetNull)
 
-  yekineId     String?
-  yekine       yekine?     @relation(fields: [yekineId], references: [id])
+  yekayekeId     String?
+  yekayeke       yekayeke?     @relation(fields: [yekayekeId], references: [id])
 
   tefsirId   String?
   Tefsir     Tefsir?   @relation(fields: [tefsirId], references: [id])
@@ -145,8 +145,8 @@ model Media {
   dirokId    String?
   Dirok      Dirok?    @relation(fields: [dirokId], references: [id])
 
-  yekineId    String?
-  yekine      yekine?    @relation(fields: [yekineId], references: [id])
+  yekayekeId    String?
+  yekayeke      yekayeke?    @relation(fields: [yekayekeId], references: [id])
 
   rojnameId  String?
   Rojname    Rojname?  @relation(fields: [rojnameId], references: [id], onDelete: SetNull)
@@ -242,7 +242,7 @@ model Car {
   @@map("Car")
 }
 
-model yekine {
+model yekayeke {
   id          String  @id @default(cuid())
   content     String[]
   userId      String
@@ -250,7 +250,7 @@ model yekine {
   attachments Media[]
   createdAt   DateTime @default(now())
 
-  @@map("yekine")
+  @@map("yekayeke")
 }
 
 model Tefsir {
@@ -287,8 +287,8 @@ model du {
   @@map("du") // keep existing table name if needed; change if you want new table
 }
 
-// yekine model (mapped to existing mmhewcedari table)
-model yekine {
+// yekayeke model (mapped to existing mmhewcedari table)
+model yekayeke {
   id          String  @id @default(cuid())
   content     String[]
   userId      String
@@ -296,5 +296,5 @@ model yekine {
   attachments Media[]
   createdAt   DateTime @default(now())
 
-  @@map("yekine")
+  @@map("yekayeke")
 }

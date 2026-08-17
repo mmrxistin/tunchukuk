@@ -9,14 +9,14 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getyekineInclude } from "@/lib/types";
+import { getyekayekeInclude } from "@/lib/types";
 
 export async function deletePost(id: string) {
   const { user } = await validateRequest();
 
   if (!user) throw new Error("Unauthorized");
 
-  const post = await prisma.yekine.findUnique({
+  const post = await prisma.yekayeke.findUnique({
     where: { id },
   });
 
@@ -24,9 +24,9 @@ export async function deletePost(id: string) {
 
   if (post.userId !== user.id) throw new Error("Unauthorized");
 
-  const deletedPost = await prisma.yekine.delete({
+  const deletedPost = await prisma.yekayeke.delete({
     where: { id },
-    include: getyekineInclude(user.id),
+    include: getyekayekeInclude(user.id),
   });
 
   return deletedPost;

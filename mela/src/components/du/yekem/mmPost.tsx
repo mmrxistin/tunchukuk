@@ -7,7 +7,7 @@
 
 "use client";
 
-import {  yekineData } from "@/lib/types";
+import {  yekayekeData } from "@/lib/types";
 import { cn, formatRelativeDate } from "@/lib/utils";
 import { Media } from "@prisma/client";
 import { MessageSquare } from "lucide-react";
@@ -18,7 +18,7 @@ import UserAvatar from "../../UserAvatar";
 
 
 interface PostProps {
-  post: yekineData;
+  post: yekayekeData;
 }
 
 export default function MmmPost({ post }: PostProps) {

@@ -10,11 +10,11 @@ import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
 import Post from "@/components/yek/yek/Post";
 import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { yekinePage } from "@/lib/types";
+import { yekayekePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function Parvekirinayekine() {
+export default function Parvekirinayekayeke() {
   const {
     data,
     fetchNextPage,
@@ -27,10 +27,10 @@ export default function Parvekirinayekine() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/parvekirin/Yek/yekine",
+          "/api/parvekirin/Yek/yekayeke",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<yekinePage>(),
+        .json<yekayekePage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

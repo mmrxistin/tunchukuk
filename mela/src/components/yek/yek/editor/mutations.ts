@@ -9,7 +9,7 @@
 // SuphanAllah, Elhamdulillah, Allahu Ekber
 import { useSession } from "@/app/(main)/SessionProvider";
 import { useToast } from "@/components/ui/use-toast";
-import { yekinePage } from "@/lib/types";
+import { yekayekePage } from "@/lib/types";
 import {
   InfiniteData,
   QueryFilters,
@@ -41,7 +41,7 @@ export function useSubmitPostMutation() {
 
       await queryClient.cancelQueries(queryFilter);
 
-      queryClient.setQueriesData<InfiniteData<yekinePage, string | null>>(
+      queryClient.setQueriesData<InfiniteData<yekayekePage, string | null>>(
         queryFilter,
         (oldData) => {
           const firstPage = oldData?.pages[0];
