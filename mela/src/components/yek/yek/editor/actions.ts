@@ -8,7 +8,7 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getyekemInclude } from "@/lib/types";
+import { getyekineInclude } from "@/lib/types";
 import { createPostSchema } from "@/lib/validation";
 
 export async function submitPost(input: {
@@ -21,7 +21,7 @@ export async function submitPost(input: {
 
   const { content, mediaIds } = createPostSchema.parse(input);
 
-  const newPost = await prisma.yekem.create({
+  const newPost = await prisma.yekine.create({
     data: {
       content, // Convert string[] to a single string
       userId: user.id,
@@ -29,7 +29,7 @@ export async function submitPost(input: {
         connect: mediaIds.map((id) => ({ id })),
       },
     },
-    include: getyekemInclude(user.id),
+    include: getyekineInclude(user.id),
   });
 
   return newPost;

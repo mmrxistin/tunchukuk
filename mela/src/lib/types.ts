@@ -38,7 +38,7 @@ export interface YekPage {
   items: YekData[];
   nextCursor: string | null;
 }
-export function getyekemInclude(loggedInUserId: string) {
+export function getyekineInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -47,12 +47,12 @@ export function getyekemInclude(loggedInUserId: string) {
   } as const;
 }
 
-export type yekemData = Prisma.yekemGetPayload<{
-  include: ReturnType<typeof getyekemInclude>;
+export type yekineData = Prisma.yekineGetPayload<{
+  include: ReturnType<typeof getyekineInclude>;
 }>;
 
-export interface yekemPage {
-  items: yekemData[];
+export interface yekinePage {
+  items: yekineData[];
   nextCursor: string | null;
 }
 
@@ -214,7 +214,7 @@ export interface RojnamePage {
 
 
 // Dirok (history) example
-export function getYekemInclude(loggedInUserId: string) {
+export function getyekineInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -223,12 +223,12 @@ export function getYekemInclude(loggedInUserId: string) {
   } as const;
 }
 
-export type YekemData = Prisma.YekemGetPayload<{
-  include: ReturnType<typeof getYekemInclude>;
+export type yekineData = Prisma.yekineGetPayload<{
+  include: ReturnType<typeof getyekineInclude>;
 }>;
 
-export interface YekemPage {
-  items: YekemData[];
+export interface yekinePage {
+  items: yekineData[];
   nextCursor: string | null;
 }
 

@@ -12,7 +12,7 @@ import MmmPost from "@/components/yek/yek/mmPost";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
-import { getyekemInclude, UserData } from "@/lib/types";
+import { getyekineInclude, UserData } from "@/lib/types";
 import { Loader2 } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -24,11 +24,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.yekem.findUnique({
+  const post = await prisma.yekine.findUnique({
     where: {
       id: postId,
     },
-    include: getyekemInclude(loggedInUserId),
+    include: getyekineInclude(loggedInUserId),
   });
 
   if (!post) notFound();

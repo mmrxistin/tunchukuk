@@ -10,11 +10,11 @@ import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
 import Post from "@/components/dirok/Post";
 import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { YekemPage } from "@/lib/types";
+import { yekinePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function Yekem() {
+export default function yekine() {
   const {
     data,
     fetchNextPage,
@@ -30,7 +30,7 @@ export default function Yekem() {
           "/api/posts/mmkinc",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<YekemPage>(),
+        .json<yekinePage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

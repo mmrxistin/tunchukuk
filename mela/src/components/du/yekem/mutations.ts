@@ -7,7 +7,7 @@
 
 
 
-import { YekemPage } from "@/lib/types";
+import { yekinePage } from "@/lib/types";
 import {
   InfiniteData,
   QueryFilters,
@@ -33,7 +33,7 @@ export function useDeletePostMutation() {
 
       await queryClient.cancelQueries(queryFilter);
 
-      queryClient.setQueriesData<InfiniteData<YekemPage, string | null>>(
+      queryClient.setQueriesData<InfiniteData<yekinePage, string | null>>(
         queryFilter,
         (oldData) => {
           if (!oldData) return oldData;

@@ -4,7 +4,7 @@
 // La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 
-import { YekemData } from "@/lib/types";
+import { yekineData } from "@/lib/types";
 import LoadingButton from "../../LoadingButton";
 import { Button } from "../../ui/button";
 import {
@@ -18,7 +18,7 @@ import {
 import { useDeletePostMutation } from "./mutations";
 
 interface DeletePostDialogProps {
-  post: YekemData;
+  post: yekineData;
   open: boolean;
   onClose: () => void;
 }

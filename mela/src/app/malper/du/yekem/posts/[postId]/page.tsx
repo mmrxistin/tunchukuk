@@ -24,7 +24,7 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.yekem.findUnique({
+  const post = await prisma.yekine.findUnique({
     where: {
       id: postId,
     },

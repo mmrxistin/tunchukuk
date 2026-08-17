@@ -11,7 +11,7 @@ import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
 import Post from "@/components/yek/yek/Post";
 import PostsLoadingSkeleton from "@/components/yek/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { yekemPage } from "@/lib/types";
+import { yekinePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
@@ -28,10 +28,10 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/parvekirin/Yek/yekem",
+          "/api/parvekirin/Yek/yekine",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<yekemPage>(),
+        .json<yekinePage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

@@ -4,7 +4,7 @@
 // Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
 // SuphanAllah, Elhamdulillah, Allahu Ekber
 "use client";
-import { yekemData } from "@/lib/types";
+import { yekineData } from "@/lib/types";
 import { MoreHorizontal, Trash2 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../../ui/button";
@@ -17,7 +17,7 @@ import {
 import DeletePostDialog from "./DeletePostDialog";
 
 interface PostMoreButtonProps {
-  post: yekemData;
+  post: yekineData;
   className?: string;
 }
 

@@ -10,7 +10,7 @@
 
  import React from 'react'
  import ParvekirinaYek from './yek/parvekirin'
- import Parvekirinayekem from './yek/yek/parvekirin'
+ import Parvekirinayekine from './yek/yek/parvekirin'
  import ParvekirinaTefsir from './yek/du/parvekirin'
  import du from './du/parvekirin'
  import Rojnm from './rojname/ForYouFeed'
@@ -268,7 +268,7 @@
                      <div className="flex flex-col md:flex-row gap-5">
 
                        <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden flex-shrink-0">
-                         <Parvekirinayekem/>
+                         <Parvekirinayekine/>
                        </div>
 
                        <div>

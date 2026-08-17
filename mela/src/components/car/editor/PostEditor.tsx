@@ -3,7 +3,7 @@
 // Es-selatu ve Es-selamu ala Resulina Muhammedin
 // Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illAllah
 // SuphanAllah, Elhamdulillah, Allahu Ekber
-// LA İLAHE İLL ALLAH U vAHDEHU LA ŞERİKE LEH , LEHUL MULKU VE LEHUL HAMDU 
+// LA İLAHE İLL ALLAH U VAHDEHU LA ŞERİKE LEH , LEHUL MULKU VE LEHUL HAMDU 
 // YUHYI VE YUMIT
 // BIYADIHIL XAYR
 // VE HUVE ALA KULLİ ŞEYİN QADİR
@@ -52,7 +52,7 @@ export default function PostEditor() {
   const editor = useEditor({
     extensions: [
       StarterKit.configure({ bold: {}, italic: false }), // bold'u etkinleştir, italic'i devre dışı bırak
-      Placeholder.configure({ placeholder: "Yazınızı buraya yazın..." }),
+      Placeholder.configure({ placeholder: "Haberî buraya yazın..." }),
     ],
   });
 

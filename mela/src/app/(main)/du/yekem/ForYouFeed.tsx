@@ -27,7 +27,7 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/du/yekem",
+          "/api/posts/du/yekine",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
         .json<duPage>(),
