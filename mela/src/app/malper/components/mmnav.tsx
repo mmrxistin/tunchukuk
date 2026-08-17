@@ -57,13 +57,13 @@ function Mmmnavbar() {
               <Nav.Link href="/malper" className="py-3 px-3 text-white hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">
                 Ana Sayfa
               </Nav.Link>
-              <Nav.Link href="/malper/agahi" className="py-3 px-3 text-zinc-300 hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">
+              <Nav.Link href="/malper/Yek" className="py-3 px-3 text-zinc-300 hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">
                 Tümü
               </Nav.Link>
-              <Nav.Link href="/malper/kelam" className="py-3 px-3 text-zinc-300 hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">
+              <Nav.Link href="/malper/Car" className="py-3 px-3 text-zinc-300 hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">
                 Gündem
               </Nav.Link>
-              <Nav.Link href="/malper/fiqih" className="py-3 px-3 text-zinc-300 hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">
+              <Nav.Link href="/malper/se" className="py-3 px-3 text-zinc-300 hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">
                 Dünya
               </Nav.Link>
               <Nav.Link href="/malper/dirok" className="py-3 px-3 text-zinc-300 hover:text-white border-b-2 border-transparent hover:border-[#bb1919] transition-all">

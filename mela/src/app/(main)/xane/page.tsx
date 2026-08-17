@@ -11,7 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import ForYouFeed from "./ForYouFeed";
 
-import SearchField from "@/components/agahi/SearchField";
+import SearchField from "@/components/yek/SearchField";
 import { Alert } from "react-bootstrap";
 
 export default function Home() {

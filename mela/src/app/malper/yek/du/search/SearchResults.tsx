@@ -3,8 +3,8 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/agahi/tefsir/Post";
-import PostsLoadingSkeleton from "@/components/agahi/tefsir/PostsLoadingSkeleton";
+import Post from "@/components/yek/du/Post";
+import PostsLoadingSkeleton from "@/components/yek/du/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
 import { TefsirPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";

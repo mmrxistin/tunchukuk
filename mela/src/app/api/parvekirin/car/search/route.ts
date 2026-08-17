@@ -7,7 +7,7 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getKelamDataInclude, KelamPage } from "@/lib/types";
+import { getCarDataInclude, CarPage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -25,7 +25,7 @@ export async function GET(req: NextRequest) {
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.kelam.findMany({
+    const posts = await prisma.Car.findMany({
       where: {
         OR: [
           {
@@ -51,7 +51,7 @@ export async function GET(req: NextRequest) {
           },
         ],
       },
-      include: getKelamDataInclude(user.id),
+      include: getCarDataInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,

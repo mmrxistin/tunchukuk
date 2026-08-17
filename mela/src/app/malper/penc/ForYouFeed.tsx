@@ -7,14 +7,14 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/fiqih/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/se/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { DuaPage } from "@/lib/types";
+import { PencPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function Dua() {
+export default function Penc() {
   const {
     data,
     fetchNextPage,
@@ -30,7 +30,7 @@ export default function Dua() {
           "/api/posts/mmkargeh",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<DuaPage>(),
+        .json<PencPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

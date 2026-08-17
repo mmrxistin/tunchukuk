@@ -15,11 +15,11 @@
 
 import { validateRequest } from "@/auth";
 import Linkify from "@/components/Linkify";
-import Post from "@/components/agahi/Post";
+import Post from "@/components/yek/Post";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
-import { getAgahiInclude, UserData } from "@/lib/types";
+import { getYekInclude, UserData } from "@/lib/types";
 import { Loader2 } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -31,11 +31,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.agahi.findUnique({
+  const post = await prisma.Yek.findUnique({
     where: {
       id: postId,
     },
-    include: getAgahiInclude(loggedInUserId),
+    include: getYekInclude(loggedInUserId),
   });
 
   if (!post) notFound();

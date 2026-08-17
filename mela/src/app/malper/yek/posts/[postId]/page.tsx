@@ -4,12 +4,12 @@
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 import Linkify from "@/components/Linkify";
-import MmmPost from "@/components/agahi/mmPost";
-import Post from "@/components/agahi/mmPost";
+import MmmPost from "@/components/yek/mmPost";
+import Post from "@/components/yek/mmPost";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
-import { getAgahiInclude, UserData } from "@/lib/types";
+import { getYekInclude, UserData } from "@/lib/types";
 import { Loader2 } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -21,11 +21,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string) => {
-  const post = await prisma.agahi.findUnique({
+  const post = await prisma.Yek.findUnique({
     where: {
       id: postId,
     },
-    include: getAgahiInclude(""), // Kullanıcı doğrulama kaldırıldı
+    include: getYekInclude(""), // Kullanıcı doğrulama kaldırıldı
   });
 
   if (!post) notFound();

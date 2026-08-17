@@ -8,7 +8,7 @@
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
 import Post from "@/components/dirok/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
 import { YekemPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";

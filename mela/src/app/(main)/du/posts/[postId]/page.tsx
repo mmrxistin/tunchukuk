@@ -8,11 +8,11 @@
 
 import { validateRequest } from "@/auth";
 import Linkify from "@/components/Linkify";
-import Post from "@/components/hedis/Post";
+import Post from "@/components/du/Post";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
-import { getHedisInclude, UserData } from "@/lib/types";
+import { getduInclude, UserData } from "@/lib/types";
 import { Loader2 } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -24,11 +24,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.hedis.findUnique({
+  const post = await prisma.du.findUnique({
     where: {
       id: postId,
     },
-    include: getHedisInclude(loggedInUserId),
+    include: getduInclude(loggedInUserId),
   });
 
   if (!post) notFound();

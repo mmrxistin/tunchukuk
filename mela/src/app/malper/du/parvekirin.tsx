@@ -7,14 +7,14 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/hedis/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/du/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { HedisPage } from "@/lib/types";
+import { duPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function Hedis() {
+export default function du() {
   const {
     data,
     fetchNextPage,
@@ -27,10 +27,10 @@ export default function Hedis() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/hedis",
+          "/api/posts/du",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<HedisPage>(),
+        .json<duPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

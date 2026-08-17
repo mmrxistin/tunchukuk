@@ -7,14 +7,14 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/fiqih/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/se/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { FiqihPage } from "@/lib/types";
+import { sePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function Fiqih() {
+export default function se() {
   const {
     data,
     fetchNextPage,
@@ -27,10 +27,10 @@ export default function Fiqih() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/fiqih",
+          "/api/posts/se",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<FiqihPage>(),
+        .json<sePage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

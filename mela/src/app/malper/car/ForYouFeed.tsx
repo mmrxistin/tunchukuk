@@ -7,14 +7,14 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/kelam/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/car/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { KelamPage } from "@/lib/types";
+import { CarPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function Kelam() {
+export default function Car() {
   const {
     data,
     fetchNextPage,
@@ -27,10 +27,10 @@ export default function Kelam() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/kelam",
+          "/api/posts/Car",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<KelamPage>(),
+        .json<CarPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

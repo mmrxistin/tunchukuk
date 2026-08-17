@@ -8,10 +8,10 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/agahi/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/yek/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { AgahiPage } from "@/lib/types";
+import { YekPage } from "@/lib/types";
 import { useInfiniteQuery, useMutation } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 import { Button } from "react-bootstrap";
@@ -32,10 +32,10 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/parvekirin/agahi",
+          "/api/parvekirin/Yek",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<AgahiPage>(),
+        .json<YekPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });
@@ -48,7 +48,7 @@ export default function ForYouFeed() {
 
   const deleteMutation = useMutation({
     mutationFn: async (postId: string) => {
-      await kyInstance.delete(`/api/parvekirin/agahi/${postId}`);
+      await kyInstance.delete(`/api/parvekirin/Yek/${postId}`);
     },
     onSuccess: () => {
       toast({

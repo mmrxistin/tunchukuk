@@ -9,10 +9,10 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/agahi/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/yek/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { AgahiPage } from "@/lib/types";
+import { YekPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
@@ -32,13 +32,13 @@ export default function SearchResults({ query }: SearchResultsProps) {
     queryKey: ["post-feed", "search", query],
     queryFn: ({ pageParam }) =>
       kyInstance
-        .get("/api/parvekirin/agahi/search", {
+        .get("/api/parvekirin/Yek/search", {
           searchParams: {
             q: query,
             ...(pageParam ? { cursor: pageParam } : {}),
           },
         })
-        .json<AgahiPage>(),
+        .json<YekPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
     gcTime: 0,

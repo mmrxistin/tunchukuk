@@ -9,9 +9,9 @@
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
 import Post from "@/components/dirok/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { KelamPage } from "@/lib/types";
+import { CarPage } from "@/lib/types";
 import { useInfiniteQuery, useMutation } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 import { Button } from "react-bootstrap";
@@ -32,10 +32,10 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/kelam",
+          "/api/posts/Car",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<KelamPage>(),
+        .json<CarPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

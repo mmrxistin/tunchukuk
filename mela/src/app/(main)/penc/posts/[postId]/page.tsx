@@ -7,11 +7,11 @@
 
 import { validateRequest } from "@/auth";
 import Linkify from "@/components/Linkify";
-import Post from "@/components/dua/Post";
+import Post from "@/components/penc/Post";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
-import { getDuaInclude, UserData } from "@/lib/types";
+import { getPencInclude, UserData } from "@/lib/types";
 import { Loader2 } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -23,11 +23,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.dua.findUnique({
+  const post = await prisma.Penc.findUnique({
     where: {
       id: postId,
     },
-    include: getDuaInclude(loggedInUserId),
+    include: getPencInclude(loggedInUserId),
   });
 
   if (!post) notFound();

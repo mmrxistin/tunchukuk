@@ -4,7 +4,7 @@
 //La ilahe illallah, Muhammedur Resulullah
 //SuphanAllah velhamdulillah, Allahu Ekber
 import { useToast } from "@/components/ui/use-toast";
-import { AgahiPage} from "@/lib/types";
+import { YekPage} from "@/lib/types";
 import { useUploadThing } from "@/lib/uploadthing";
 import { UpdateUserProfileValues } from "@/lib/validation";
 import {
@@ -47,7 +47,7 @@ export function useUpdateProfileMutation() {
 
       await queryClient.cancelQueries(queryFilter);
 
-      queryClient.setQueriesData<InfiniteData<AgahiPage, string | null>>(
+      queryClient.setQueriesData<InfiniteData<YekPage, string | null>>(
         queryFilter,
         (oldData) => {
           if (!oldData) return oldData;

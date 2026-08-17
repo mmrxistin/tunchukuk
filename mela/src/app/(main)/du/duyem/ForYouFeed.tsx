@@ -7,7 +7,7 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/fiqih/Post";
+import Post from "@/components/se/Post";
 import PostsLoadingSkeleton from "@/components/rojname/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
 import { DuyemPage } from "@/lib/types";
@@ -27,7 +27,7 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/hedis",
+          "/api/posts/du",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
         .json<DuyemPage>(),

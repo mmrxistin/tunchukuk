@@ -12,7 +12,7 @@ import Post from "@/components/rojname/Post";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
-import { getKelamDataInclude, UserData } from "@/lib/types";
+import { getCarDataInclude, UserData } from "@/lib/types";
 import { Loader2 } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -24,11 +24,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.kelam.findUnique({
+  const post = await prisma.Car.findUnique({
     where: {
       id: postId,
     },
-    include: getKelamDataInclude(loggedInUserId),
+    include: getCarDataInclude(loggedInUserId),
   });
 
   if (!post) notFound();

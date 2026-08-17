@@ -20,7 +20,7 @@ export type UserData = Prisma.UserGetPayload<{
   select: ReturnType<typeof getUserDataSelect>;
 }>;
 
-export function getAgahiInclude(loggedInUserId: string) {
+export function getYekInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -29,16 +29,16 @@ export function getAgahiInclude(loggedInUserId: string) {
   } as const;
 }
 
-export type AgahiData = Prisma.AgahiGetPayload<{
-  include: ReturnType<typeof getAgahiInclude>;
+export type YekData = Prisma.YekGetPayload<{
+  include: ReturnType<typeof getYekInclude>;
 }>;
 
-export interface AgahiPage {
+export interface YekPage {
   posts: any;
-  items: AgahiData[];
+  items: YekData[];
   nextCursor: string | null;
 }
-export function getMealInclude(loggedInUserId: string) {
+export function getyekemInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -47,12 +47,12 @@ export function getMealInclude(loggedInUserId: string) {
   } as const;
 }
 
-export type MealData = Prisma.MealGetPayload<{
-  include: ReturnType<typeof getMealInclude>;
+export type yekemData = Prisma.yekemGetPayload<{
+  include: ReturnType<typeof getyekemInclude>;
 }>;
 
-export interface MealPage {
-  items: MealData[];
+export interface yekemPage {
+  items: yekemData[];
   nextCursor: string | null;
 }
 
@@ -74,8 +74,8 @@ export interface TefsirPage {
   items: TefsirData[];
   nextCursor: string | null;
 }
-// Generic include for content models (Agahi, Duyem, Dirok, etc.)
-export function getKelamDataInclude(loggedInUserId: string) {
+// Generic include for content models (Yek, Duyem, Dirok, etc.)
+export function getCarDataInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -85,14 +85,14 @@ export function getKelamDataInclude(loggedInUserId: string) {
 }
 
 // Generic content type used for lists/pages returned by your APIs.
-// Each content model (Agahi, Duyem, Dirok, ...) will conform to this shape at runtime.
+// Each content model (Yek, Duyem, Dirok, ...) will conform to this shape at runtime.
 
-export type KelamData = Prisma.KelamGetPayload<{
-  include: ReturnType<typeof getKelamDataInclude>;
+export type CarData = Prisma.CarGetPayload<{
+  include: ReturnType<typeof getCarDataInclude>;
 }>;
 
-export interface KelamPage {
-  posts: KelamData[];
+export interface CarPage {
+  posts: CarData[];
   nextCursor: string | null;
 }
 
@@ -102,8 +102,8 @@ export interface KelamPage {
 
 
 
-// Hedis example (same pattern)
-export function getHedisInclude(loggedInUserId: string) {
+// du example (same pattern)
+export function getduInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -112,15 +112,15 @@ export function getHedisInclude(loggedInUserId: string) {
   } as const;
 }
 
-export type HedisData = Prisma.HedisGetPayload<{
-  include: ReturnType<typeof getHedisInclude>;
+export type duData = Prisma.duGetPayload<{
+  include: ReturnType<typeof getduInclude>;
 }>;
 
-export interface HedisPage {
-  items: HedisData[];
+export interface duPage {
+  items: duData[];
   nextCursor: string | null;
 }
-export function getFiqihInclude(loggedInUserId: string) {
+export function getseInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -129,16 +129,16 @@ export function getFiqihInclude(loggedInUserId: string) {
   } as const;
 }
 
-export type FiqihData = Prisma.FiqihGetPayload<{
-  include: ReturnType<typeof getFiqihInclude>;
+export type seData = Prisma.seGetPayload<{
+  include: ReturnType<typeof getseInclude>;
 }>;
 
-export interface FiqihPage {
-  items: FiqihData[];
+export interface sePage {
+  items: seData[];
   nextCursor: string | null;
 }
 
-export function getDuaInclude(loggedInUserId: string) {
+export function getPencInclude(loggedInUserId: string) {
   return {
     user: {
       select: getUserDataSelect(loggedInUserId),
@@ -147,12 +147,12 @@ export function getDuaInclude(loggedInUserId: string) {
   } as const;
 }
 
-export type DuaData = Prisma.DuaGetPayload<{
-  include: ReturnType<typeof getDuaInclude>;
+export type PencData = Prisma.PencGetPayload<{
+  include: ReturnType<typeof getPencInclude>;
 }>;
 
-export interface DuaPage {
-  items: DuaData[];
+export interface PencPage {
+  items: PencData[];
   nextCursor: string | null;
 }
 export function getXaneInclude(loggedInUserId: string) {

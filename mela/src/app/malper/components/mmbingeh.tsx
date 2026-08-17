@@ -40,8 +40,8 @@ const Bingeh = () => (
           </h5>
           <ul className="space-y-2.5 list-none p-0 m-0 text-sm text-zinc-300">
             <li><a href="/malper" className="hover:text-red-500 hover:underline transition">Ana Sayfa</a></li>
-            <li><a href="/malper/agahi" className="hover:text-red-500 hover:underline transition">Tüm Haberler</a></li>
-            <li><a href="/malper/kelam" className="hover:text-red-500 hover:underline transition">Son Dakika</a></li>
+            <li><a href="/malper/Yek" className="hover:text-red-500 hover:underline transition">Tüm Haberler</a></li>
+            <li><a href="/malper/Car" className="hover:text-red-500 hover:underline transition">Son Dakika</a></li>
             <li><a href="/hakkimizda" className="hover:text-red-500 hover:underline transition">Hakkımızda</a></li>
             <li><a href="/iletisim" className="hover:text-red-500 hover:underline transition">İletişim</a></li>
           </ul>
@@ -53,8 +53,8 @@ const Bingeh = () => (
             Kategoriler
           </h5>
           <ul className="space-y-2.5 list-none p-0 m-0 text-sm text-zinc-300">
-            <li><a href="/malper/kelam" className="hover:text-red-500 hover:underline transition">Gündem</a></li>
-            <li><a href="/malper/fiqih" className="hover:text-red-500 hover:underline transition">Dünya</a></li>
+            <li><a href="/malper/Car" className="hover:text-red-500 hover:underline transition">Gündem</a></li>
+            <li><a href="/malper/se" className="hover:text-red-500 hover:underline transition">Dünya</a></li>
             <li><a href="/malper/dirok" className="hover:text-red-500 hover:underline transition">Ekonomi</a></li>
             <li><a href="/malper/xane" className="hover:text-red-500 hover:underline transition">Ekoloji</a></li>
             <li><a href="/malper/rojname" className="hover:text-red-500 hover:underline transition">Kadın</a></li>

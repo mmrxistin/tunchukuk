@@ -9,10 +9,10 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/fiqih/Post";
+import Post from "@/components/se/Post";
 import PostsLoadingSkeleton from "@/components/rojname/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { FiqihPage } from "@/lib/types";
+import { sePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
@@ -29,10 +29,10 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/parvekirin/fiqih",
+          "/api/parvekirin/se",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<FiqihPage>(),
+        .json<sePage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

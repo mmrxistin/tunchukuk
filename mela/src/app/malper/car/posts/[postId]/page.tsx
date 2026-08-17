@@ -3,9 +3,9 @@
 // Essalatu vesselamu ala Resulina Muhammedin 
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
-import MmmPost from "@/components/kelam/mmPost";
+import MmmPost from "@/components/car/mmPost";
 import prisma from "@/lib/prisma";
-import { getKelamDataInclude, UserData } from "@/lib/types";
+import { getCarDataInclude, UserData } from "@/lib/types";
 import { notFound } from "next/navigation";
 import { cache, Suspense } from "react";
 
@@ -14,11 +14,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string) => {
-  const post = await prisma.kelam.findUnique({
+  const post = await prisma.Car.findUnique({
     where: {
       id: postId,
     },
-    include: getKelamDataInclude(""), // Kullanıcı doğrulama kaldırıldı
+    include: getCarDataInclude(""), // Kullanıcı doğrulama kaldırıldı
   });
 
   if (!post) notFound();

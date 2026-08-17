@@ -8,11 +8,11 @@
 
 import { validateRequest } from "@/auth";
 import Linkify from "@/components/Linkify";
-import Post from "@/components/agahi/meal/Post";
+import Post from "@/components/yek/yek/Post";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
-import { getMealInclude, UserData } from "@/lib/types";
+import { getyekemInclude, UserData } from "@/lib/types";
 import { Loader2 } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -24,11 +24,11 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.meal.findUnique({
+  const post = await prisma.yekem.findUnique({
     where: {
       id: postId,
     },
-    include: getMealInclude(loggedInUserId),
+    include: getyekemInclude(loggedInUserId),
   });
 
   if (!post) notFound();

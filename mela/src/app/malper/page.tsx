@@ -9,15 +9,15 @@
 
 
  import React from 'react'
- import ParvekirinaAgahi from './yek/parvekirin'
- import ParvekirinaMeal from './yek/yek/parvekirin'
+ import ParvekirinaYek from './yek/parvekirin'
+ import Parvekirinayekem from './yek/yek/parvekirin'
  import ParvekirinaTefsir from './yek/du/parvekirin'
- import Hedis from './du/parvekirin'
+ import du from './du/parvekirin'
  import Rojnm from './rojname/ForYouFeed'
  import Dirok from './dirok/ForYouFeed'
- import Kelam from './car/ForYouFeed'
- import Dua from './penc/ForYouFeed'
- import Fiqih from './se/parvekirin'
+ import Car from './car/ForYouFeed'
+ import Penc from './penc/ForYouFeed'
+ import se from './se/parvekirin'
  import Xane from './xane/ForYouFeed'
  // El Hamdu Lîllah ya Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn
  // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
@@ -92,7 +92,7 @@
 
                <div className="lg:col-span-5 grid grid-cols-1 gap-5">
 
-                 {/* Karta 1: Kelam */}
+                 {/* Karta 1: Car */}
                  <article className="border-b border-gray-300 pb-5">
                    <div className="h-44 bg-gray-100 overflow-hidden mb-4">
                      <img
@@ -119,7 +119,7 @@
                  {/* Karta 2: Fıkıh */}
                  <article className="border-b border-gray-300 pb-5">
                    <div className="h-44 bg-gray-100 overflow-hidden mb-4">
-                     <Hedis/>
+                     <du/>
                    </div>
 
                    <span className="text-xs font-black text-[#b80000]">
@@ -212,7 +212,7 @@
 
                <article className="py-6 md:pl-5">
                  <div className="h-44 bg-gray-100 overflow-hidden mb-4">
-                   <ParvekirinaAgahi/>
+                   <ParvekirinaYek/>
                  </div>
 
                  <span className="text-xs font-black text-[#b80000]">
@@ -268,7 +268,7 @@
                      <div className="flex flex-col md:flex-row gap-5">
 
                        <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden flex-shrink-0">
-                         <ParvekirinaMeal/>
+                         <Parvekirinayekem/>
                        </div>
 
                        <div>
@@ -321,7 +321,7 @@
                            ilgilendiren haberler.
                          </p>
 
-                         <Kelam/>
+                         <Car/>
 
                          <a
                            href="/malper/rojname"
@@ -400,7 +400,7 @@
                        </div>
                      </a>
 
-                     <Dua/>
+                     <Penc/>
 
                      <a
                        href="/haberler/2"
@@ -520,7 +520,7 @@
                    Spor Haberleri
                  </h3>
 
-                 <Fiqih/>
+                 <se/>
 
                  <a
                    href="/haberler/spor"

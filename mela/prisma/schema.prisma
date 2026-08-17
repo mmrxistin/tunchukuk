@@ -28,17 +28,17 @@ model User {
   bio                   String?
   sessions              Session[]
   duyem                 Duyem[]
-  hedis                 Hedis[]
-  agahi                 Agahi[]        // <-- add this line
-  dua                   Dua[]
+  du                 du[]
+  Yek                 Yek[]        // <-- add this line
+  Penc                   Penc[]
   createdAt   DateTime      @default(now())
   Yekem       Yekem[]        // renamed relation (was Mmhewcedari)
   Dirok       Dirok[]
   Mmmpeyam    Mmmpeyam[]
   Tefsir      Tefsir[]
-  Meal        Meal[]
-  Kelam       Kelam[]
-  Fiqih       Fiqih[]
+  yekem        yekem[]
+  Car       Car[]
+  se       se[]
   xane        Xane[]
   rojname     Rojname[]
   @@map("users")
@@ -54,7 +54,7 @@ model Session {
 }
 
 
-model Agahi {
+model Yek {
   id          String  @id @default(cuid())
   content     String[]
   userId      String
@@ -64,7 +64,7 @@ model Agahi {
 
   createdAt           DateTime       @default(now())
 
-  @@map("agahi")
+  @@map("Yek")
 }
 
 model Duyem {
@@ -115,8 +115,8 @@ model Media {
   createdAt  DateTime  @default(now())
 
   // relations to content tables
-  agahiId    String?
-  Agahi      Agahi?    @relation(fields: [agahiId], references: [id])
+  YekId    String?
+  Yek      Yek?    @relation(fields: [YekId], references: [id])
 
   duyemId    String?
   Duyem      Duyem?    @relation(fields: [duyemId], references: [id], onDelete: SetNull)
@@ -124,23 +124,23 @@ model Media {
   xaneId     String?
   Xane       Xane?     @relation(fields: [xaneId], references: [id], onDelete: SetNull)
 
-  duaId      String?
-  Dua        Dua?      @relation(fields: [duaId], references: [id], onDelete: SetNull)
+  PencId      String?
+  Penc        Penc?      @relation(fields: [PencId], references: [id], onDelete: SetNull)
 
-  mealId     String?
-  Meal       Meal?     @relation(fields: [mealId], references: [id])
+  yekemId     String?
+  yekem       yekem?     @relation(fields: [yekemId], references: [id])
 
   tefsirId   String?
   Tefsir     Tefsir?   @relation(fields: [tefsirId], references: [id])
 
-  hedisId    String?
-  Hedis      Hedis?    @relation(fields: [hedisId], references: [id])
+  duId    String?
+  du      du?    @relation(fields: [duId], references: [id])
 
-  fiqihId    String?
-  Fiqih      Fiqih?    @relation(fields: [fiqihId], references: [id])
+  seId    String?
+  se      se?    @relation(fields: [seId], references: [id])
 
-  kelamId    String?
-  Kelam      Kelam?    @relation(fields: [kelamId], references: [id])
+  CarId    String?
+  Car      Car?    @relation(fields: [CarId], references: [id])
 
   dirokId    String?
   Dirok      Dirok?    @relation(fields: [dirokId], references: [id])
@@ -203,7 +203,7 @@ model Rojname {
 
   @@map("rojname")
 }
-model Dua {
+model Penc {
   id                  String         @id @default(cuid())
   content             String[]
   userId              String
@@ -212,7 +212,7 @@ model Dua {
 
   createdAt DateTime @default(now())
 
-  @@map("dua")
+  @@map("Penc")
 }
 
 // Removed duplicate Media model that caused "model 'Media' already exists" error.
@@ -220,7 +220,7 @@ model Dua {
 
 
 // New renamed models (mapped to existing table names to preserve DB):
-model Fiqih {
+model se {
   id          String  @id @default(cuid())
   content     String[]
   userId      String
@@ -228,10 +228,10 @@ model Fiqih {
   attachments Media[]
   createdAt   DateTime @default(now())
 
-  @@map("fiqih")
+  @@map("se")
 }
 
-model Kelam {
+model Car {
   id          String  @id @default(cuid())
   content     String[]
   userId      String
@@ -239,10 +239,10 @@ model Kelam {
   attachments Media[]
   createdAt   DateTime @default(now())
 
-  @@map("kelam")
+  @@map("Car")
 }
 
-model Meal {
+model yekem {
   id          String  @id @default(cuid())
   content     String[]
   userId      String
@@ -250,7 +250,7 @@ model Meal {
   attachments Media[]
   createdAt   DateTime @default(now())
 
-  @@map("meal")
+  @@map("yekem")
 }
 
 model Tefsir {
@@ -275,8 +275,8 @@ model Dirok {
   @@map("dirok")
 }
 
-// ensure Hedis model exists
-model Hedis {
+// ensure du model exists
+model du {
   id          String  @id @default(cuid())
   content     String[]
   userId      String
@@ -284,7 +284,7 @@ model Hedis {
   attachments Media[]
   createdAt   DateTime @default(now())
 
-  @@map("hedis") // keep existing table name if needed; change if you want new table
+  @@map("du") // keep existing table name if needed; change if you want new table
 }
 
 // Yekem model (mapped to existing mmhewcedari table)

@@ -7,8 +7,8 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/agahi/tefsir/Post";
-import PostsLoadingSkeleton from "@/components/agahi/tefsir/PostsLoadingSkeleton";
+import Post from "@/components/yek/du/Post";
+import PostsLoadingSkeleton from "@/components/yek/du/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
 import { TefsirPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
@@ -27,7 +27,7 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/agahi/tefsir",
+          "/api/posts/Yek/tefsir",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
         .json<TefsirPage>(),

@@ -8,7 +8,7 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getFiqihInclude, FiqihPage } from "@/lib/types";
+import { getseInclude, sePage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -23,8 +23,8 @@ export async function GET(req: NextRequest) {
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.fiqih.findMany({
-      include: getFiqihInclude(user.id),
+    const posts = await prisma.se.findMany({
+      include: getseInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,

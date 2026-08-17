@@ -7,10 +7,10 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/fiqih/Post";
+import Post from "@/components/se/Post";
 import PostsLoadingSkeleton from "@/components/rojname/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { HedisPage } from "@/lib/types";
+import { duPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
@@ -27,10 +27,10 @@ export default function ForYouFeed() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/posts/hedis/yekem",
+          "/api/posts/du/yekem",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<HedisPage>(),
+        .json<duPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

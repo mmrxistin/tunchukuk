@@ -8,10 +8,10 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/agahi/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/yek/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { FiqihPage } from "@/lib/types";
+import { sePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
@@ -37,7 +37,7 @@ export default function SearchResults({ query }: SearchResultsProps) {
             ...(pageParam ? { cursor: pageParam } : {}),
           },
         })
-        .json<FiqihPage>(),
+        .json<sePage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
     gcTime: 0,

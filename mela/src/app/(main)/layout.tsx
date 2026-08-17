@@ -11,6 +11,9 @@
 import { validateRequest } from "@/auth";
 import { redirect } from "next/navigation";
 import SessionProvider from "./SessionProvider";
+import AdminFooter from "./components/AdminFooter";
+import Navbar from './Navbar';
+import MenuBar from "./MenuBar";
 
 export default async function Layout({
   children,
@@ -21,7 +24,24 @@ export default async function Layout({
 
   if (!session.user) redirect("/malper");
 
-  return <SessionProvider value={session}>{children}</SessionProvider>;
+  return(  <SessionProvider value={session}>
+    <Navbar />
+          
+        <aside className="hidden w-72 shrink-0 lg:block">
+          <div className="sticky top-5 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
+            <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+              Yönetim Menüsü
+            </h2>
+            <MenuBar />
+          </div>
+        </aside>
+
+        <main className="flex-1 space-y-6">
+      
+    {children}
+    </main>
+   <AdminFooter />
+  </SessionProvider>)
 }
 
 

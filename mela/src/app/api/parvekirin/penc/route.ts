@@ -8,7 +8,7 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getDuaInclude, DuaPage } from "@/lib/types";
+import { getPencInclude, PencPage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -23,8 +23,8 @@ export async function GET(req: NextRequest) {
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.dua.findMany({
-      include: getDuaInclude(user.id),
+    const posts = await prisma.Penc.findMany({
+      include: getPencInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,
@@ -38,7 +38,7 @@ export async function GET(req: NextRequest) {
         content: Array.isArray(post.content) ? post.content : [post.content]
       })),
       nextCursor,
-    } as unknown as DuaPage;
+    } as unknown as PencPage;
 
     return Response.json(data);
   } catch (error) {

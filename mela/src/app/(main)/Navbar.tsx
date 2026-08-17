@@ -16,7 +16,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
-
+///Her dem pêşeroj divê 
   useEffect(() => {
     if (!menuOpen) return;
     function handleClick(e: MouseEvent) {
@@ -38,7 +38,7 @@ export default function Navbar() {
       >
         <div className="flex items-center gap-3">
           <Link href="/" className="text-2xl font-bold text-primary">
-            Yekazad SC
+           Gundwana Admîn
           </Link>
         </div>
 

@@ -8,7 +8,7 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getHedisInclude, HedisPage } from "@/lib/types";
+import { getduInclude, duPage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -23,8 +23,8 @@ export async function GET(req: NextRequest) {
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.hedis.findMany({
-      include: getHedisInclude(user.id),
+    const posts = await prisma.du.findMany({
+      include: getduInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,
@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
         content: Array.isArray(post.content) ? post.content : [post.content]
       })),
       nextCursor,
-    } as unknown as HedisPage;
+    } as unknown as duPage;
 
     return Response.json(data);
   } catch (error) {

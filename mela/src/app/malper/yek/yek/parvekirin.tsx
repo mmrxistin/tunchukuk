@@ -7,14 +7,14 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
-import Post from "@/components/agahi/meal/Post";
-import PostsLoadingSkeleton from "@/components/agahi/PostsLoadingSkeleton";
+import Post from "@/components/yek/yek/Post";
+import PostsLoadingSkeleton from "@/components/yek/PostsLoadingSkeleton";
 import kyInstance from "@/lib/ky";
-import { MealPage } from "@/lib/types";
+import { yekemPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function ParvekirinaMeal() {
+export default function Parvekirinayekem() {
   const {
     data,
     fetchNextPage,
@@ -27,10 +27,10 @@ export default function ParvekirinaMeal() {
     queryFn: ({ pageParam }) =>
       kyInstance
         .get(
-          "/api/parvekirin/agahi/meal",
+          "/api/parvekirin/Yek/yekem",
           pageParam ? { searchParams: { cursor: pageParam } } : {},
         )
-        .json<MealPage>(),
+        .json<yekemPage>(),
     initialPageParam: null as string | null,
     getNextPageParam: (lastPage) => lastPage.nextCursor,
   });

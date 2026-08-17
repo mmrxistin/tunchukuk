@@ -13,12 +13,16 @@
 // La ilahe illAllah 
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
-// Xeyni Allah tu Xweda tune
+// Xeyni Allah tu Xweda tune, Allah yek e û  tu şirîkê Allah tune, pesin da jî mulk de jî û spasî tenê Allah re tê kirin.
+// Ew dimirîne û vedijîne
+// Hemû qencî ji wî ye
+// Ew her tiştî diqedîne
+// Hz. Mihemed jîqûl û resûlê Allah 'e (sav) û hebîbê Allah ' e 
 // Allah u Ekber Ve Lillahil Hamd
 import Link from "next/link";
 import { ArrowRight, BookOpen, FileText, Home, MessageCircle, ShieldCheck, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+// Allah û Teala ji hemû kêmasîyan  dûr e bêyî şik. Rehm û kerem a Allah bêdawî ye.
 const dashboardCards = [
   {
     title: "Dashboard",
@@ -40,8 +44,8 @@ const dashboardCards = [
   },
   {
     title: "İçerik Yönetimi",
-    description: "Qur'an, Hedis, Fiqih, Kelam ve diğer içerik bölümlerine hızlı erişim.",
-    href: "/content",
+    description: "Sitenizdeki içerikleri oluşturun, düzenleyin ve yönetin.",
+    href: "/naverok",
     icon: FileText,
   },
   {
@@ -66,9 +70,7 @@ export default function AdminDashboard() {
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Admin Kontrol Paneli</p>
             <h1 className="mt-2 text-3xl font-semibold text-slate-900">Yönetim Merkezi</h1>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
-              `src/app/(main)` klasörü artık tek bir yönetim kabuğu ile tanımlı. Navbar, sidebar ve içerik bölümleri ayrı bileşenlerde organize edildi.
-            </p>
+          
           </div>
           <Button asChild variant="secondary" size="lg">
             <Link href="/users">Hızlı Kullanıcı Yönetimi</Link>
