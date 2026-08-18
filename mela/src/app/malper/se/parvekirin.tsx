@@ -14,7 +14,7 @@ import { sePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function se() {
+export default function Se() {
   const {
     data,
     fetchNextPage,
@@ -73,7 +73,7 @@ export default function se() {
     </InfiniteScrollContainer>
   );
 }
-// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.
 // Yuhyi ve yumit
 // Biyadihil xayr
 // ve huve ala kulli şey'in kadir

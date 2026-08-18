@@ -14,7 +14,7 @@ import { duPage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function du() {
+export default function Du() {
   const {
     data,
     fetchNextPage,

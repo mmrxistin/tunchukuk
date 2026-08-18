@@ -1,4 +1,4 @@
- // Bismillahirahmanirahim
+// Bismillahirahmanirahim
  // Elhamdulillahirrabbulalemin
  // Esselatu vesselamu ala seyyidina Muhammedin
  // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
@@ -7,20 +7,24 @@
 
 
 
-
+// El Hamdu Lîllah ya Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn
+// La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+// Yuhyi ve yumit
+// Biyadihil xayr
+// ve huve ala kulli şey'in kadir
  import React from 'react'
  import ParvekirinaYek from './yek/parvekirin'
  import Parvekirinayekayeke from './yek/yek/parvekirin'
  import ParvekirinaTefsir from './yek/du/parvekirin'
- import du from './du/parvekirin'
+ import Du from './du/parvekirin'
  import Rojnm from './rojname/ForYouFeed'
  import Dirok from './dirok/ForYouFeed'
  import Car from './car/ForYouFeed'
  import Penc from './penc/ForYouFeed'
- import se from './se/parvekirin'
+ import Se from './se/parvekirin'
  import Xane from './xane/ForYouFeed'
  // El Hamdu Lîllah ya Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn, El Hamdu Lîllah yâ Rabbi'l-Âlemîn
- // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+ // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.
  // Yuhyi ve yumit
  // Biyadihil xayr
  // ve huve ala kulli şey'in kadir
@@ -30,7 +34,7 @@
    return (
      <>
        <main className="bg-white text-[#1f1f1f]">
-         <div className="max-w-7xl mx-auto px-4 py-8">
+         <div className="container mx-auto px-4 py-8 max-w-7xl">
 
            {/* Beşa Perwerdehîya Îslamî */}
            <section className="mb-12">
@@ -38,8 +42,8 @@
              <div className="flex items-end justify-between border-b-4 border-[#b80000] pb-3 mb-6">
                <div>
                  <div className="flex items-center gap-2 mb-2">
-                   <span className="w-3 h-3 bg-[#b80000]"></span>
-                   <span className="text-sm font-bold uppercase tracking-wide text-[#b80000]">
+                   <span className="size-3 bg-[#b80000]" />
+                   <span className="text-sm font-bold uppercase tracking-wider text-[#b80000]">
                      Son Dakika
                    </span>
                  </div>
@@ -73,7 +77,7 @@
                    GÜNDEM
                  </span>
 
-                 <h2 className="text-3xl md:text-4xl font-black leading-tight mt-2 mb-3 hover:text-[#b80000] transition">
+                 <h2 className="text-3xl md:text-4xl font-black leading-tight mt-2 mb-3 transition-colors hover:text-[#b80000]">
                    Türkiye'den güncel gelişmeler ve son dakika haberleri
                  </h2>
 
@@ -106,7 +110,7 @@
                      DÜNYA
                    </span>
 
-                   <h3 className="text-2xl font-black mt-2 leading-tight hover:text-[#b80000] transition">
+                   <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
                      Dünyadan son gelişmeler ve önemli haberler
                    </h3>
 
@@ -119,14 +123,14 @@
                  {/* Karta 2: Fıkıh */}
                  <article className="border-b border-gray-300 pb-5">
                    <div className="h-44 bg-gray-100 overflow-hidden mb-4">
-                     <du/>
+                     <Du/>
                    </div>
 
                    <span className="text-xs font-black text-[#b80000]">
                      EKONOMİ
                    </span>
 
-                   <h3 className="text-2xl font-black mt-2 leading-tight hover:text-[#b80000] transition">
+                   <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
                      Ekonomiden güncel veriler ve son gelişmeler
                    </h3>
 
@@ -244,7 +248,7 @@
 
              <div className="border-b-4 border-[#1f1f1f] pb-3 mb-6">
                <div className="flex items-center gap-2 mb-2">
-                 <span className="w-3 h-3 bg-[#b80000]"></span>
+                 <span className="size-3 bg-[#b80000]" />
                  <span className="text-sm font-bold text-[#b80000] uppercase">
                    Haber Akışı
                  </span>
@@ -267,7 +271,7 @@
                    <article className="border-b border-gray-300 py-6 first:pt-0">
                      <div className="flex flex-col md:flex-row gap-5">
 
-                       <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden flex-shrink-0">
+                       <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden shrink-0">
                          <Parvekirinayekayeke/>
                        </div>
 
@@ -276,7 +280,7 @@
                            SON DAKİKA
                          </span>
 
-                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight hover:text-[#b80000]">
+                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
                            Günün öne çıkan gelişmeleri ve son dakika haberleri
                          </h3>
 
@@ -299,7 +303,7 @@
                    <article className="border-b border-gray-300 py-6">
                      <div className="flex flex-col md:flex-row gap-5">
 
-                       <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden flex-shrink-0">
+                       <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden shrink-0">
                          <img
                            src="/images/haber-2.jpg"
                            alt="Gündem haberi"
@@ -312,7 +316,7 @@
                            GÜNDEM
                          </span>
 
-                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight hover:text-[#b80000]">
+                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
                            Gündemin nabzını tutan önemli gelişmeler
                          </h3>
 
@@ -337,7 +341,7 @@
                    <article className="border-b border-gray-300 py-6">
                      <div className="flex flex-col md:flex-row gap-5">
 
-                       <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden flex-shrink-0">
+                       <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden shrink-0">
                          <ParvekirinaTefsir/>
                        </div>
 
@@ -346,7 +350,7 @@
                            DÜNYA
                          </span>
 
-                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight hover:text-[#b80000]">
+                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
                            Dünyada yaşanan son gelişmeler
                          </h3>
 
@@ -385,12 +389,12 @@
                        href="/haberler/1"
                        className="flex gap-4 group py-4 border-b border-gray-300"
                      >
-                       <span className="text-3xl font-black text-gray-400 group-hover:text-[#b80000]">
+                       <span className="text-3xl font-black text-gray-400 transition-colors group-hover:text-[#b80000]">
                          01
                        </span>
 
                        <div>
-                         <h3 className="font-bold group-hover:text-[#b80000] transition">
+                         <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
                            Günün en çok okunan haberleri
                          </h3>
 
@@ -406,12 +410,12 @@
                        href="/haberler/2"
                        className="flex gap-4 group py-4 border-b border-gray-300"
                      >
-                       <span className="text-3xl font-black text-gray-400 group-hover:text-[#b80000]">
+                       <span className="text-3xl font-black text-gray-400 transition-colors group-hover:text-[#b80000]">
                          02
                        </span>
 
                        <div>
-                         <h3 className="font-bold group-hover:text-[#b80000] transition">
+                         <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
                            Gündemde büyük yankı uyandıran gelişme
                          </h3>
 
@@ -425,12 +429,12 @@
                        href="/haberler/3"
                        className="flex gap-4 group py-4 border-b border-gray-300"
                      >
-                       <span className="text-3xl font-black text-gray-400 group-hover:text-[#b80000]">
+                       <span className="text-3xl font-black text-gray-400 transition-colors group-hover:text-[#b80000]">
                          03
                        </span>
 
                        <div>
-                         <h3 className="font-bold group-hover:text-[#b80000] transition">
+                         <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
                            Ekonomide günün önemli gelişmeleri
                          </h3>
 
@@ -444,12 +448,12 @@
                        href="/haberler/4"
                        className="flex gap-4 group py-4"
                      >
-                       <span className="text-3xl font-black text-gray-400 group-hover:text-[#b80000]">
+                       <span className="text-3xl font-black text-gray-400 transition-colors group-hover:text-[#b80000]">
                          04
                        </span>
 
                        <div>
-                         <h3 className="font-bold group-hover:text-[#b80000] transition">
+                         <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
                            Spor dünyasında son dakika
                          </h3>
 
@@ -477,7 +481,7 @@
 
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-gray-300">
 
-               <div className="bg-[#b80000] text-white p-6 hover:bg-[#990000] transition">
+               <div className="bg-[#b80000] text-white p-6 transition-colors hover:bg-[#990000]">
                  <span className="text-xs font-bold opacity-80">
                    GÜNDEM
                  </span>
@@ -494,7 +498,7 @@
                  </a>
                </div>
 
-               <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 hover:bg-gray-200 transition">
+               <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
                    EKONOMİ
                  </span>
@@ -511,7 +515,7 @@
                  </a>
                </div>
 
-               <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 hover:bg-gray-200 transition">
+               <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
                    SPOR
                  </span>
@@ -520,7 +524,7 @@
                    Spor Haberleri
                  </h3>
 
-                 <se/>
+                 <Se/>
 
                  <a
                    href="/haberler/spor"
@@ -530,7 +534,7 @@
                  </a>
                </div>
 
-               <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 hover:bg-gray-200 transition">
+               <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
                    DÜNYA
                  </span>
