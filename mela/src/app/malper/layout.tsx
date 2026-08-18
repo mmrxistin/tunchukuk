@@ -23,15 +23,17 @@ export default async function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <div>{  /*
+    <div className="min-h-screen flex flex-col">
+      {/*
       <Alert variant="success" style={{ width: "100%", textAlign: "center" }}>
-        اَشْهَدُ اَنْ لاَ اِلٰهَ اِلاَّ اللّٰهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
-      </Alert> */}
+        اَشْهَدُ اَنْ لاَ اِلٰهَ اِلاَّ اللّٰهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
+      </Alert>
+      */}
       <Mmmnavbar />
 
-      {children}
-     
-
+      <main className="flex-1">
+        {children}
+      </main>
 
       <ContactForm />
       <Footer />
