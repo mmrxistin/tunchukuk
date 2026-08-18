@@ -1,11 +1,14 @@
 // Bismillahirrahmanirahim
 // Elhamdullillahirabbulalemin
 // Es-selatu vesselamu ala rasulina Muhammedin 
-// Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
-// La ilahe illallah
+// Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illAllah
+// La ilahe illAllahu vahdehu la şerike leh lehul mulku ve lehul hamdu
+// ALLAH U EKBER VELILLAHIL HAMD
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
+
+// El Hamdu Lîllah ya Kerîm î Rezzaq î Vehhab î Ehed î Quddus î Heq bêdawîtî..
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["fullTextSearch"]
@@ -17,30 +20,34 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
+// ============================================
+// USER & SESSION
+// ============================================
+
 model User {
-  id                    String         @id
-  username              String         @unique
-  displayName           String
-  email                 String?        @unique
-  passwordHash          String?
-  googleId              String?        @unique
-  avatarUrl             String?
-  bio                   String?
-  sessions              Session[]
-  duyem                 Duyem[]
-  du                 du[]
-  Yek                 Yek[]        // <-- add this line
-  Penc                   Penc[]
-  createdAt   DateTime      @default(now())
-  yekayeke       yekayeke[]        // renamed relation (was Mmhewcedari)
-  Dirok       Dirok[]
-  Mmmpeyam    Mmmpeyam[]
-  Tefsir      Tefsir[]
-  yekayeke        yekayeke[]
-  Car       Car[]
-  se       se[]
-  xane        Xane[]
-  rojname     Rojname[]
+  id           String         @id
+  username     String         @unique
+  displayName  String
+  email        String?        @unique
+  passwordHash String?
+  googleId     String?        @unique
+  avatarUrl    String?
+  bio          String?
+  sessions     Session[]
+  duyem        Duyem[]
+  du           du[]
+  Yek          Yek[]
+  Penc         Penc[]
+  createdAt    DateTime       @default(now())
+  yekayeke     yekayeke[]
+  Dirok        Dirok[]
+  Mmmpeyam     Mmmpeyam[]
+  Tefsir       Tefsir[]
+  Car          Car[]
+  se           se[]
+  xane         Xane[]
+  rojname      Rojname[]
+
   @@map("users")
 }
 
@@ -53,178 +60,82 @@ model Session {
   @@map("sessions")
 }
 
+// ============================================
+// CONTENT MODELS (Posts)
+// ============================================
 
 model Yek {
-  id          String  @id @default(cuid())
+  id          String   @id @default(cuid())
   content     String[]
   userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
-
-
-  createdAt           DateTime       @default(now())
+  createdAt   DateTime @default(now())
 
   @@map("Yek")
 }
 
 model Duyem {
-  id                  String         @id @default(cuid())
-  content             String[]
-  userId              String
-  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  attachments         Media[]
-
-  createdAt DateTime @default(now())
+  id          String   @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
 
   @@map("duyem")
 }
+
 model Mmmpeyam {
   id        Int      @id @default(autoincrement())
   name      String
   email     String
   message   String
   createdAt DateTime @default(now())
-
-  // optional relation to User (keeps existing User.Mmmpeyam[] valid)
-  userId String? 
-  user   User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@map("mmmpeyam")
 }
 
 model Xane {
-  id                  String         @id @default(cuid())
-  content             String[]
-  userId              String
-  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  attachments         Media[]
-
-  createdAt DateTime @default(now())
+  id          String   @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
 
   @@map("xane")
 }
 
-
-// ---------------------------
-// MEDIA
-// ---------------------------
-model Media {
-  id         String    @id @default(cuid())
-  type       MediaType
-  url        String
-  createdAt  DateTime  @default(now())
-
-  // relations to content tables
-  YekId    String?
-  Yek      Yek?    @relation(fields: [YekId], references: [id])
-
-  duyemId    String?
-  Duyem      Duyem?    @relation(fields: [duyemId], references: [id], onDelete: SetNull)
-
-  xaneId     String?
-  Xane       Xane?     @relation(fields: [xaneId], references: [id], onDelete: SetNull)
-
-  PencId      String?
-  Penc        Penc?      @relation(fields: [PencId], references: [id], onDelete: SetNull)
-
-  yekayekeId     String?
-  yekayeke       yekayeke?     @relation(fields: [yekayekeId], references: [id])
-
-  tefsirId   String?
-  Tefsir     Tefsir?   @relation(fields: [tefsirId], references: [id])
-
-  duId    String?
-  du      du?    @relation(fields: [duId], references: [id])
-
-  seId    String?
-  se      se?    @relation(fields: [seId], references: [id])
-
-  CarId    String?
-  Car      Car?    @relation(fields: [CarId], references: [id])
-
-  dirokId    String?
-  Dirok      Dirok?    @relation(fields: [dirokId], references: [id])
-
-  yekayekeId    String?
-  yekayeke      yekayeke?    @relation(fields: [yekayekeId], references: [id])
-
-  rojnameId  String?
-  Rojname    Rojname?  @relation(fields: [rojnameId], references: [id], onDelete: SetNull)
-
-  @@map("post_media")
-}
-
-enum MediaType {
-  IMAGE
-  VIDEO
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 model Rojname {
-  id                  String         @id @default(cuid())
-  content             String[]
-  userId              String
-  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  attachments         Media[]
-
-  createdAt DateTime @default(now())
+  id          String   @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
 
   @@map("rojname")
 }
-model Penc {
-  id                  String         @id @default(cuid())
-  content             String[]
-  userId              String
-  user                User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  attachments         Media[]
 
-  createdAt DateTime @default(now())
+model Penc {
+  id          String   @id @default(cuid())
+  content     String[]
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments Media[]
+  createdAt   DateTime @default(now())
 
   @@map("Penc")
 }
 
-// Removed duplicate Media model that caused "model 'Media' already exists" error.
-// The consolidated Media model is the one earlier in this file (with @@map("post_media"))
-
-
-// New renamed models (mapped to existing table names to preserve DB):
 model se {
-  id          String  @id @default(cuid())
+  id          String   @id @default(cuid())
   content     String[]
   userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
   createdAt   DateTime @default(now())
 
@@ -232,10 +143,10 @@ model se {
 }
 
 model Car {
-  id          String  @id @default(cuid())
+  id          String   @id @default(cuid())
   content     String[]
   userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
   createdAt   DateTime @default(now())
 
@@ -243,10 +154,10 @@ model Car {
 }
 
 model yekayeke {
-  id          String  @id @default(cuid())
+  id          String   @id @default(cuid())
   content     String[]
   userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
   createdAt   DateTime @default(now())
 
@@ -254,10 +165,10 @@ model yekayeke {
 }
 
 model Tefsir {
-  id          String  @id @default(cuid())
+  id          String   @id @default(cuid())
   content     String[]
   userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
   createdAt   DateTime @default(now())
 
@@ -265,36 +176,79 @@ model Tefsir {
 }
 
 model Dirok {
-  id          String  @id @default(cuid())
+  id          String   @id @default(cuid())
   content     String[]
   userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
   createdAt   DateTime @default(now())
 
   @@map("dirok")
 }
 
-// ensure du model exists
 model du {
-  id          String  @id @default(cuid())
+  id          String   @id @default(cuid())
   content     String[]
   userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
   createdAt   DateTime @default(now())
 
-  @@map("du") // keep existing table name if needed; change if you want new table
+  @@map("du")
 }
 
-// yekayeke model (mapped to existing mmhewcedari table)
-model yekayeke {
-  id          String  @id @default(cuid())
-  content     String[]
-  userId      String
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
-  attachments Media[]
-  createdAt   DateTime @default(now())
+// ============================================
+// MEDIA MODEL
+// ============================================
 
-  @@map("yekayeke")
+model Media {
+  id          String     @id @default(cuid())
+  type        MediaType
+  url         String
+  createdAt   DateTime   @default(now())
+
+  // Relations to content tables
+  YekId       String?
+  Yek         Yek?       @relation(fields: [YekId], references: [id])
+
+  duyemId     String?
+  Duyem       Duyem?     @relation(fields: [duyemId], references: [id], onDelete: SetNull)
+
+  xaneId      String?
+  Xane        Xane?      @relation(fields: [xaneId], references: [id], onDelete: SetNull)
+
+  PencId      String?
+  Penc        Penc?      @relation(fields: [PencId], references: [id], onDelete: SetNull)
+
+  yekayekeId  String?
+  yekayeke    yekayeke?  @relation(fields: [yekayekeId], references: [id])
+
+  tefsirId    String?
+  Tefsir      Tefsir?    @relation(fields: [tefsirId], references: [id])
+
+  duId        String?
+  du          du?        @relation(fields: [duId], references: [id])
+
+  seId        String?
+  se          se?        @relation(fields: [seId], references: [id])
+
+  CarId       String?
+  Car         Car?       @relation(fields: [CarId], references: [id])
+
+  dirokId     String?
+  Dirok       Dirok?     @relation(fields: [dirokId], references: [id])
+
+  rojnameId   String?
+  Rojname     Rojname?   @relation(fields: [rojnameId], references: [id], onDelete: SetNull)
+
+  @@map("post_media")
 }
+
+enum MediaType {
+  IMAGE
+  VIDEO
+}. // La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamdu,
+// yuhyi ve yumit
+//  ve huve ala kulli şey'in kadir
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
