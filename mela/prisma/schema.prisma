@@ -5,7 +5,6 @@
 // La ilahe illAllahu vahdehu la şerike leh lehul mulku ve lehul hamdu
 // ALLAH U EKBER VELILLAHIL HAMD
 
-
 // El Hamdu Lîllah ya Kerîm î Rezzaq î Vehhab î Ehed î Quddus î Heq bêdawîtî..
 generator client {
   provider        = "prisma-client-js"
@@ -23,12 +22,12 @@ datasource db {
 // ============================================
 
 model User {
-  id           String         @id
-  username     String         @unique
+  id           String     @id
+  username     String     @unique
   displayName  String
-  email        String?        @unique
+  email        String?    @unique
   passwordHash String?
-  googleId     String?        @unique
+  googleId     String?    @unique
   avatarUrl    String?
   bio          String?
   sessions     Session[]
@@ -36,7 +35,7 @@ model User {
   du           du[]
   Yek          Yek[]
   Penc         Penc[]
-  createdAt    DateTime       @default(now())
+  createdAt    DateTime   @default(now())
   yekayeke     yekayeke[]
   Dirok        Dirok[]
   Mmmpeyam     Mmmpeyam[]
@@ -200,53 +199,54 @@ model du {
 // ============================================
 
 model Media {
-  id          String     @id @default(cuid())
-  type        MediaType
-  url         String
-  createdAt   DateTime   @default(now())
+  id        String    @id @default(cuid())
+  type      MediaType
+  url       String
+  createdAt DateTime  @default(now())
 
   // Relations to content tables
-  YekId       String?
-  Yek         Yek?       @relation(fields: [YekId], references: [id])
+  YekId String?
+  Yek   Yek?    @relation(fields: [YekId], references: [id])
 
-  duyemId     String?
-  Duyem       Duyem?     @relation(fields: [duyemId], references: [id], onDelete: SetNull)
+  duyemId String?
+  Duyem   Duyem?  @relation(fields: [duyemId], references: [id], onDelete: SetNull)
 
-  xaneId      String?
-  Xane        Xane?      @relation(fields: [xaneId], references: [id], onDelete: SetNull)
+  xaneId String?
+  Xane   Xane?   @relation(fields: [xaneId], references: [id], onDelete: SetNull)
 
-  PencId      String?
-  Penc        Penc?      @relation(fields: [PencId], references: [id], onDelete: SetNull)
+  PencId String?
+  Penc   Penc?   @relation(fields: [PencId], references: [id], onDelete: SetNull)
 
-  yekayekeId  String?
-  yekayeke    yekayeke?  @relation(fields: [yekayekeId], references: [id])
+  yekayekeId String?
+  yekayeke   yekayeke? @relation(fields: [yekayekeId], references: [id])
 
-  tefsirId    String?
-  Tefsir      Tefsir?    @relation(fields: [tefsirId], references: [id])
+  tefsirId String?
+  Tefsir   Tefsir? @relation(fields: [tefsirId], references: [id])
 
-  duId        String?
-  du          du?        @relation(fields: [duId], references: [id])
+  duId String?
+  du   du?     @relation(fields: [duId], references: [id])
 
-  seId        String?
-  se          se?        @relation(fields: [seId], references: [id])
+  seId String?
+  se   se?     @relation(fields: [seId], references: [id])
 
-  CarId       String?
-  Car         Car?       @relation(fields: [CarId], references: [id])
+  CarId String?
+  Car   Car?    @relation(fields: [CarId], references: [id])
 
-  dirokId     String?
-  Dirok       Dirok?     @relation(fields: [dirokId], references: [id])
+  dirokId String?
+  Dirok   Dirok?  @relation(fields: [dirokId], references: [id])
 
-  rojnameId   String?
-  Rojname     Rojname?   @relation(fields: [rojnameId], references: [id], onDelete: SetNull)
+  rojnameId String?
+  Rojname   Rojname? @relation(fields: [rojnameId], references: [id], onDelete: SetNull)
 
   @@map("post_media")
 }
+
 enum MediaType {
   IMAGE
   VIDEO
 }
 
- // La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamdu,
+// La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamdu,
 // Yuhyi ve Yumit
 // Bîyadîhîl Xayr
 //  ve huve ala kulli şey'in kadir
