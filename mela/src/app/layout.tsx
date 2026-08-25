@@ -1,11 +1,12 @@
 // Bismillahirrahmanirrahim 
 // Elhamdulillahirabbulalemin
 // Esselatu vesselamu ala rasulillah 
-// Allahumme salli ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Allahumme salli ala seyyidina Muhammedin 
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
-// La ilahe illallah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+// La ilahe illAllah, Allahu Ekber, 
 // SubhanAllah, Elhamdulillah, Allahu Ekber
-
+// Estaxfurullah El Azim
+// Allahu Ekber ve Lillahil Hamd
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
@@ -16,6 +17,11 @@ import { extractRouterConfig } from "uploadthing/server";
 import { fileRouter } from "./api/uploadthing/core";
 import "./globals.css";
 import ReactQueryProvider from "./ReactQueryProvider";
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü . 
+
+
 
 import Alert from 'react-bootstrap';
 const geistSans = localFont({
@@ -79,8 +85,17 @@ export default function RootLayout({
 export function Footer() {
   return (
     <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
-      <p className="text-sm">© {new Date().getFullYear()} Yekazad Software Center</p>
+      <p className="text-sm">© {new Date().getFullYear()} GONDWANA Software Solutions</p>
     </footer>
   );
-  
+       
 }
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü ,  
+
+
+// Yuhyî ve yumît
+// Bîyadîhîl xayr 
+// ve hüve alâ külli şeyin kadîr
+// ALLAH U EKBER VELİLLAHIL HAMD

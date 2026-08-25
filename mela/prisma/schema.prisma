@@ -4,8 +4,6 @@
 // Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illAllah
 // La ilahe illAllahu vahdehu la şerike leh lehul mulku ve lehul hamdu
 // ALLAH U EKBER VELILLAHIL HAMD
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 
 // El Hamdu Lîllah ya Kerîm î Rezzaq î Vehhab î Ehed î Quddus î Heq bêdawîtî..
@@ -243,11 +241,12 @@ model Media {
 
   @@map("post_media")
 }
-
 enum MediaType {
   IMAGE
   VIDEO
-}. // La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamdu,
+}.
+
+ // La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamdu,
 // yuhyi ve yumit
 //  ve huve ala kulli şey'in kadir
 // Elhamdulillah Elhamdulillah Elhamdulillah
