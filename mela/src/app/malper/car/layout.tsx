@@ -10,19 +10,17 @@
 
 import React from 'react'
 import ForYouFeed from './ForYouFeed'
-import { Card } from 'react-bootstrap';
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
-    
+    <div className="mx-auto max-w-3xl px-4 py-8">
       {children}
-      <Card style={{ marginTop: "20px", width: "100%", maxWidth: "700px", textAlign: "center", padding: "19px" }}>
-        <Card.Title>Other Articles</Card.Title>
-        <Card.Body>
-          <ForYouFeed />
-        </Card.Body>
-      </Card>
+      <section className="mt-10 border-t-4 border-[#bb1919] bg-white p-6 shadow-sm">
+        <h2 className="mb-4 border-b border-gray-200 pb-3 text-xl font-black">
+          Other Articles
+        </h2>
+        <ForYouFeed />
+      </section>
     </div>
   )
 }

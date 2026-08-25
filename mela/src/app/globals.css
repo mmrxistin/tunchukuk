@@ -183,3 +183,40 @@ a:hover {
   border-color: #901313 !important;
   color: #ffffff !important;
 }
+
+/* Haber Sitesi Reset - Bootstrap global stillerini nötralize et,
+   Tailwind tasarımını öne çıkar */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  margin: 0;
+  line-height: 1.2;
+  color: inherit;
+}
+
+main p {
+  margin: 0;
+}
+
+main ul,
+main ol {
+  margin: 0;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main img,
+main video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Bootstrap card'larının varsayılan gri çerçevesini yumuşat */
+.card {
+  border-radius: 0.5rem;
+}

@@ -7,69 +7,40 @@
 
 "use client";
 import React from "react";
-import { Card, Row, Col, Alert } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 import ForYouFeed from "./ForYouFeed";
 
 function page() {
   return (
-    <div
-      style={{
-        backgroundColor: "#f8f9fa",
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column", // mobilde dikey hizalama
-        alignItems: "center",
-        padding: "10px",
-      }}
-    >
-      <Card
-        style={{
-          opacity: 0.97,
-          color: "black",
-          textAlign: "center",
-          maxWidth: "700px",
-          width: "100%",
-          margin: "0 auto",
-        }}
-      >
-        <Card.Body>
-          <Card.Title style={{ fontSize: "1.5rem" }}>fikih</Card.Title>
-          <Row className="g-4">
-            {/* Sol Kolon */}
-            <Col xs={12} md={6} className="mb-3 mb-md-0">
-              <Card style={{ textAlign: "center", height: "100%" }}>
-                <Card.Body>
-                  <Card.Title style={{ fontSize: "1.1rem" }}>Zanista Îslamî,</Card.Title>
-                  <Card.Text style={{ fontSize: "1rem" }}>
-                    <br />
-                    <br />
-                    <strong>Sonuç</strong>
-                    <br />
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            {/* Sağ Kolon */}
-            <Col xs={12} md={6} className="d-flex align-items-center">
-              <Image
-                src="https://iasbh.tmgrup.com.tr/a9e335/0/0/0/0/0/0?u=https://isbh.tmgrup.com.tr/sb/album/2021/12/11/tum-beslenmeniz-degisiyor-iste-saat-1600dan-sonra-asla-tuketmemeniz-gereken-o-besin-1639200626070.jpg&mw=752&mh=700"
-                style={{
-                  border: "5px solid white",
-                  borderRadius: "10px",
-                  width: "100%",
-                  height: "auto",
-                  marginBottom: "10px",
-                }}
-                alt="du"
-                fluid
-              />
-            </Col>
-          </Row>
-        </Card.Body>
-      </Card>
+    <div className="min-h-screen bg-[#f8f9fa] px-4 py-10">
+      <div className="mx-auto max-w-7xl">
+        <header className="mb-8 border-b-4 border-[#bb1919] pb-4">
+          <span className="text-xs font-black uppercase tracking-wider text-[#bb1919]">
+            Kategori
+          </span>
+          <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">Gündem</h1>
+          <p className="mt-1 text-gray-600">Zanista Îslamî ve güncel gelişmeler</p>
+        </header>
+
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
+          <section className="lg:col-span-8 rounded-lg bg-white p-6 shadow-sm">
+            <ForYouFeed />
+          </section>
+
+          <aside className="lg:col-span-4">
+            <div className="border-t-4 border-[#bb1919] bg-white p-6 shadow-sm">
+              <h2 className="mb-4 border-b border-gray-200 pb-3 text-xl font-black">Kategoriler</h2>
+              <ul className="space-y-3 text-sm font-semibold">
+                <li><a href="/malper/car" className="text-[#bb1919] hover:underline">Gündem</a></li>
+                <li><a href="/malper/se" className="hover:text-[#bb1919]">Dünya</a></li>
+                <li><a href="/malper/dirok" className="hover:text-[#bb1919]">Ekonomi</a></li>
+                <li><a href="/malper/xane" className="hover:text-[#bb1919]">Ekoloji</a></li>
+                <li><a href="/malper/rojname" className="hover:text-[#bb1919]">Kadın</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
       {/* Alert ve ForYouFeed Alt Kısma Taşındı */}
-     
     </div>
   );
 }

@@ -1,6 +1,6 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahi Rabbil Alamin
-// Essalatu vesselamu ala Resulina Muhammedin 
+// Essalatu vesselamu ala Resulina Muhammedin
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah, Allahu Ekber
 import Linkify from "@/components/Linkify";
@@ -38,16 +38,16 @@ export default async function Page({ params: { postId } }: PageProps) {
   const post = await getPost(postId);
 
   return (
-    <main 
-      className="flex flex-col lg:flex-row w-full min-h-screen bg-gradient-to-br from-[#f8fafc] to-[#e2e8f0] p-4"
+    <main
+      className="flex w-full min-h-screen flex-col bg-[#f8f9fa] p-4 lg:flex-row"
     >
       {/* İçerik Kartı */}
-      <div className="flex-1 flex justify-center items-start">
+      <div className="flex flex-1 items-start justify-center">
         <div className="w-full max-w-2xl">
           <MmmPost post={post} />
           {/* Ayraç ve boşluk */}
           <div className="my-8">
-            <hr className="border-t-4 border-gray-355" />
+            <hr className="border-t-4 border-gray-200" />
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
-// Bismillahirrahmanirrahim 
+// Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
-// Esselatu vesselamu ala rasulillah 
-// Allahumme salli ala seyyidina Muhammedin 
+// Esselatu vesselamu ala rasulillah
+// Allahumme salli ala seyyidina Muhammedin
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
-// La ilahe illAllah, Allahu Ekber, 
+// La ilahe illAllah, Allahu Ekber,
 // SubhanAllah, Elhamdulillah, Allahu Ekber
 // Estaxfurullah El Azim
 // Allahu Ekber ve Lillahil Hamd
@@ -19,11 +19,10 @@ import "./globals.css";
 import ReactQueryProvider from "./ReactQueryProvider";
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
-// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü . 
+// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü .
 
 
 
-import Alert from 'react-bootstrap';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -59,7 +58,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
               {children}
-             
+
           </ThemeProvider>
         </ReactQueryProvider>
         <Toaster />
@@ -88,14 +87,14 @@ export function Footer() {
       <p className="text-sm">© {new Date().getFullYear()} GONDWANA Software Solutions</p>
     </footer>
   );
-       
+
 }
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
-// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü ,  
+// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü ,
 
 
 // Yuhyî ve yumît
-// Bîyadîhîl xayr 
+// Bîyadîhîl xayr
 // ve hüve alâ külli şeyin kadîr
 // ALLAH U EKBER VELİLLAHIL HAMD
