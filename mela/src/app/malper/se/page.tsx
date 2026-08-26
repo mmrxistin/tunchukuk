@@ -18,7 +18,7 @@ function page() {
             Kategori
           </span>
           <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">Dünya</h1>
-          <p className="mt-1 text-gray-600">Zanista Îslamî ve güncel gelişmeler</p>
+          <p className="mt-1 text-gray-600">Dünyadan son dakika haberleri, uluslararası diplomasi, çatışma bölgeleri ve küresel gelişmeler</p>
         </header>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">

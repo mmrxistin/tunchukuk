@@ -18,7 +18,7 @@ function page() {
             Kategori
           </span>
           <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">Tüm Haberler</h1>
-          <p className="mt-1 text-gray-600">QURAN ve güncel içerikler</p>
+          <p className="mt-1 text-gray-600">Son dakika haberleri, gündem, ekonomi, dünya ve daha fazlası</p>
         </header>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
