@@ -1,6 +1,6 @@
 // Bismillahirahmanirahim
 // Elhamdulillahirabbilalemin
-// Es-selatu ve Es-selamu ala Resulina Muhammedin 
+// Es-selatu ve Es-selamu ala Resulina Muhammedin
 // SüphanAllah, Elhamdulillah, Allahu Ekber
 // La ilahe illAllah u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.
 // Yuhyi ve yumit
@@ -55,7 +55,7 @@ export function getContentInclude(loggedInUserId: string) {
 // TYPE HELPERS (Generic)
 // ============================================
 
-export type ContentData<T> = Prisma.UserGetPayload<{
+export type ContentData<T> = Prisma.YekGetPayload<{
   include: ReturnType<typeof getContentInclude>;
 }> & T;
 

@@ -25,7 +25,7 @@ export async function GET(req: NextRequest) {
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.Penc.findMany({
+    const posts = await prisma.penc.findMany({
       where: {
         OR: [
           {

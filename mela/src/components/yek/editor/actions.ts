@@ -20,7 +20,7 @@ export async function submitPost(input: {
 
   const { content, mediaIds } = createPostSchema.parse(input);
 
-  const newPost = await prisma.Yek.create({
+  const newPost = await prisma.yek.create({
     data: {
       content, // DİZİ OLARAK GÖNDER
       userId: user.id,

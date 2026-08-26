@@ -16,7 +16,7 @@ export async function deletePost(id: string) {
 
   if (!user) throw new Error("Unauthorized");
 
-  const post = await prisma.Yek.findUnique({
+  const post = await prisma.yek.findUnique({
     where: { id },
   });
 
@@ -24,7 +24,7 @@ export async function deletePost(id: string) {
 
   if (post.userId !== user.id) throw new Error("Unauthorized");
 
-  const deletedPost = await prisma.Yek.delete({
+  const deletedPost = await prisma.yek.delete({
     where: { id },
     include: getYekInclude(user.id),
   });

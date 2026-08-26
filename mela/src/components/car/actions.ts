@@ -16,7 +16,7 @@ export async function deletePost(id: string) {
 
   if (!user) throw new Error("Unauthorized");
 
-  const post = await prisma.Car.findUnique({
+  const post = await prisma.car.findUnique({
     where: { id },
   });
 
@@ -24,7 +24,7 @@ export async function deletePost(id: string) {
 
   if (post.userId !== user.id) throw new Error("Unauthorized");
 
-  const deletedPost = await prisma.Car.delete({
+  const deletedPost = await prisma.car.delete({
     where: { id },
     include: getCarDataInclude(user.id),
   });

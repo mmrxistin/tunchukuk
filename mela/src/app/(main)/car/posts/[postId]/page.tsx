@@ -24,7 +24,7 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.Car.findUnique({
+  const post = await prisma.car.findUnique({
     where: {
       id: postId,
     },

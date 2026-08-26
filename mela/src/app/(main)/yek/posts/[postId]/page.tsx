@@ -31,7 +31,7 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.Yek.findUnique({
+  const post = await prisma.yek.findUnique({
     where: {
       id: postId,
     },

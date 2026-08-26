@@ -21,7 +21,7 @@ export async function submitPost(input: {
 
   const { content, mediaIds } = createPostSchema.parse(input);
 
-  const newPost = await prisma.Penc.create({
+  const newPost = await prisma.penc.create({
     data: {
       content,
       userId: user.id,

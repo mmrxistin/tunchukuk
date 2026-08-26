@@ -23,7 +23,7 @@ interface PageProps {
 }
 
 const getPost = cache(async (postId: string, loggedInUserId: string) => {
-  const post = await prisma.Penc.findUnique({
+  const post = await prisma.penc.findUnique({
     where: {
       id: postId,
     },

@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
 
    
 
-    const posts = await prisma.Yek.findMany({
+    const posts = await prisma.yek.findMany({
       include: getYekInclude(""),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,

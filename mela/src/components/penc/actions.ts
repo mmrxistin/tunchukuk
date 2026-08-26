@@ -15,7 +15,7 @@ export async function deletePost(id: string) {
 
   if (!user) throw new Error("Unauthorized");
 
-  const post = await prisma.Penc.findUnique({
+  const post = await prisma.penc.findUnique({
     where: { id },
   });
 
@@ -23,7 +23,7 @@ export async function deletePost(id: string) {
 
   if (post.userId !== user.id) throw new Error("Unauthorized");
 
-  const deletedPost = await prisma.Penc.delete({
+  const deletedPost = await prisma.penc.delete({
     where: { id },
     include: getPencInclude(user.id),
   });

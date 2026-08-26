@@ -29,7 +29,7 @@ export async function GET(
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.Yek.findMany({
+    const posts = await prisma.yek.findMany({
       where: { userId },
       include: getYekInclude(user.id),
       orderBy: { createdAt: "desc" },

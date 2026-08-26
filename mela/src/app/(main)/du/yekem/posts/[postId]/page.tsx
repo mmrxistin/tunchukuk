@@ -8,7 +8,7 @@
 
 import { validateRequest } from "@/auth";
 import Linkify from "@/components/Linkify";
-import Post from "@/components/du/yekayeke/Post";
+import Post from "@/components/du/yekem/Post";
 import UserAvatar from "@/components/UserAvatar";
 import UserTooltip from "@/components/UserTooltip";
 import prisma from "@/lib/prisma";
@@ -109,7 +109,7 @@ async function UserInfoSidebar({ user }: UserInfoSidebarProps) {
           {user.bio}
         </div>
       </Linkify>
-     
+
     </div>
   );
 }
