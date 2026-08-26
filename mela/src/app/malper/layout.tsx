@@ -3,6 +3,7 @@
 // Esselatu vesselamu ala rasulillah
 // La ilahe illAllahu vahdehu la sharika leh, lehu'l-mulku ve lehu'l-hamdu,
 // yuhyi ve yumit
+// bîyadîhîl xayr
 //  ve huve ala kulli şey'in kadir
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
 // La ilahe illAllah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
@@ -28,10 +29,26 @@ export default async function Layout({
       </Alert>
       */}
       <Mmmnavbar />
-<iframe width="632" height="357" src="https://www.youtube.com/embed/a9gWy20Q6hE" title="Yeni Yaşam Gazetesi - Gençlerden çağrı: Cûdî Dağı’nı yakıyorlar, ses ver!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <main className="flex-1">
-        {children}
-      </main>
+      
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="w-full md:w-auto md:min-w-[280px] lg:min-w-[320px] p-4">
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+            <iframe 
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/a9gWy20Q6hE" 
+              title="Yeni Yaşam Gazetesi - Gençlerden çağrı: Cûdî Dağı'nı yakıyorlar, ses ver!" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+        
+        <main className="flex-1 p-4 md:p-6">
+          {children}
+        </main>
+      </div>
 
       <ContactForm />
       <Footer />
