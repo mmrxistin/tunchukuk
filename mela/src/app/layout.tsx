@@ -4,7 +4,7 @@
 // Allahumme salli ala seyyidina Muhammedin
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
 // La ilahe illAllah, Allahu Ekber,
-// SubhanAllah, Elhamdulillah, Allahu Ekber
+// SubhanAllah, Elhamdulillah, La ilahe illAllah, Allahu Ekber
 // Estaxfurullah El Azim
 // Allahu Ekber ve Lillahil Hamd
 import React from "react";

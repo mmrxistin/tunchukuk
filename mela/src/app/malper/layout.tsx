@@ -28,7 +28,7 @@ export default async function Layout({
       </Alert>
       */}
       <Mmmnavbar />
-
+<iframe width="632" height="357" src="https://www.youtube.com/embed/a9gWy20Q6hE" title="Yeni Yaşam Gazetesi - Gençlerden çağrı: Cûdî Dağı’nı yakıyorlar, ses ver!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <main className="flex-1">
         {children}
       </main>
