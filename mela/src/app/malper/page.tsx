@@ -15,7 +15,7 @@
  import React from 'react'
  import ParvekirinaYek from './yek/parvekirin'
  import Parvekirinayekayeke from './yek/yek/parvekirin'
- import ParvekirinaTefsir from './yek/du/parvekirin'
+
  import Du from './du/parvekirin'
  import Rojnm from './rojname/ForYouFeed'
  import Dirok from './dirok/ForYouFeed'
@@ -342,7 +342,7 @@
                      <div className="flex flex-col md:flex-row gap-5">
 
                        <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden shrink-0">
-                         <ParvekirinaTefsir/>
+                       
                        </div>
 
                        <div>
