@@ -18,6 +18,16 @@ const CHANNEL_ID = "UCeHJLmZ75jsot6tzDk-BUUA";
 // Kanalın son videoları oynatma listesi (uploads playlist = UU + channelId[2..])
 const UPLOADS_PLAYLIST = "UUeHJLmZ75jsot6tzDk-BUUA";
 
+// Editörün Seçtikleri — yeniyasamgazetesi9.com güncel içerik
+const editorPicks = [
+  { title: "Gülistan Doku'nun kaybolduğu saatlerde defalarca telefon görüşmesi ortaya çıktı", href: "/malper/yek" },
+  { title: "Katledilmeden önce polise başvuran Sultan Kara'ya 'Bu ailede adam öldürecek tip yok' denildi", href: "/malper/rojname" },
+  { title: "2 köyde 60 yıldır yol ve su yok: Siyasi tercihlerimizden dolayı cezalandırılıyoruz", href: "/malper/xane" },
+  { title: "Amed sokaklarına şehitlerin posterleri asıldı", href: "/malper/car" },
+  { title: "Avrupa'da kuraklık nehirleri kurutuyor", href: "/malper/penc" },
+  { title: "Bir çağın içinden, bir barışın eşiğinde", href: "/malper/mmmmm" },
+];
+
 
 
 // El Hamdu Lîllah ya Kerîm î Rezzaq î Vehhab î Ehed î Quddus î Heq bêdawîtî..
@@ -101,6 +111,22 @@ export default async function Layout({
             <div className="mm-tv-foot">
               <span className="mm-tv-foot-title">VİDEO GALERİ</span>
               <span className="mm-tv-foot-sub">Yeni Yaşam Media — Tüm videolar</span>
+            </div>
+          </div>
+
+          {/* Editörün Seçtikleri */}
+          <div className="mm-editor-pick">
+            <div className="mm-editor-head">
+              <span className="mm-editor-star">★</span>
+              EDİTÖRÜN SEÇTİKLERİ
+            </div>
+            <div className="mm-editor-list">
+              {editorPicks.map((pick, i) => (
+                <a href={pick.href} key={i} className="mm-editor-item">
+                  <span className="mm-editor-idx">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="mm-editor-txt">{pick.title}</span>
+                </a>
+              ))}
             </div>
           </div>
         </aside>

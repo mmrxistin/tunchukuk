@@ -465,6 +465,79 @@ main video {
 }
 
 /* ============================================================
+   EDİTÖRÜN SEÇTİKLERİ (TV kolonu altı)
+   ============================================================ */
+.mm-editor-pick {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 3px solid #bb1919;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.mm-editor-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  background: linear-gradient(90deg, #fafafa, #f2f2f2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #18181b;
+}
+
+.mm-editor-star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  background: #bb1919;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.mm-editor-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mm-editor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.7rem 0.85rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.2s ease;
+}
+.mm-editor-item:last-child { border-bottom: none; }
+.mm-editor-item:hover { background: #faf5f5; }
+
+.mm-editor-idx {
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #d4d4d8;
+  transition: color 0.2s ease;
+}
+.mm-editor-item:hover .mm-editor-idx { color: #bb1919; }
+
+.mm-editor-txt {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #27272a;
+  transition: color 0.2s ease;
+}
+.mm-editor-item:hover .mm-editor-txt { color: #bb1919; }
+
+/* ============================================================
    TAM EKRAN IZGARA YERLEŞİMİ — site geneli çerçeve içinde
    ============================================================ */
 .mm-grid-frame {
