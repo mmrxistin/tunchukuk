@@ -38,9 +38,9 @@ export default async function Layout({
       {/* Üst kısım: Son Dakika + Yazarlar slider'ı */}
       <MmSlider />
 
-      {/* TV bölümü: sağda canlı TV, altında gazetenin oynatma listesi */}
-      <div className="flex flex-col md:flex-row w-full gap-0">
-        <aside className="w-full md:w-auto md:min-w-[300px] lg:min-w-[340px] p-4 space-y-4">
+      {/* TV bölümü: solda canlı TV + oynatma listesi, sağda içerik */}
+      <div className="mm-grid-frame mx-auto w-full">
+        <aside className="mm-tv-col p-3 space-y-3">
           {/* Canlı TV */}
           <div className="mm-tv-card">
             <div className="mm-tv-head">
@@ -68,6 +68,10 @@ export default async function Layout({
                 allowFullScreen
               ></iframe>
             </div>
+            <div className="mm-tv-foot">
+              <span className="mm-tv-foot-title">Yeni Yaşam TV</span>
+              <span className="mm-tv-foot-sub">Güncel yayın akışı</span>
+            </div>
           </div>
 
           {/* Gazete videosu oynatma listesi */}
@@ -94,10 +98,14 @@ export default async function Layout({
                 allowFullScreen
               ></iframe>
             </div>
+            <div className="mm-tv-foot">
+              <span className="mm-tv-foot-title">VİDEO GALERİ</span>
+              <span className="mm-tv-foot-sub">Yeni Yaşam Media — Tüm videolar</span>
+            </div>
           </div>
         </aside>
 
-        <main className="flex-1 p-4 md:p-6">
+        <main className="mm-main-col p-4 md:p-5">
           {children}
         </main>
       </div>
