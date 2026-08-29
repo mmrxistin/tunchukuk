@@ -1,7 +1,7 @@
 // Bismillahirrahmanirrahim
 // Elhamdulillahirrabbulalemin
 // Esselatu vesselamu ala seyyidina Muhammedin
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 // La ilahe illAllah u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.
 // Yuhyi ve yumit
 // Biyadihil xayr

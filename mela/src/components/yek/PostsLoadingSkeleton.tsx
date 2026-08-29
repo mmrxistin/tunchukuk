@@ -6,37 +6,48 @@
 // Subhanallah, Elhamdulillah, Allahu Ekber
 
 
-import { Skeleton } from "../ui/skeleton";
-
 export default function PostsLoadingSkeleton() {
   return (
     <div className="space-y-7">
-      <PostLoadingSkeleton />
-      <PostLoadingSkeleton />
-      <PostLoadingSkeleton />
+      <div className="mm-loader-bar" />
+      {[0, 1, 2].map((i) => (
+        <PostLoadingSkeleton key={i} index={i} />
+      ))}
+      <div className="mm-loader-label">
+        <span className="mm-dot" />
+        <span className="mm-dot" style={{ animationDelay: "0.15s" }} />
+        <span className="mm-dot" style={{ animationDelay: "0.3s" }} />
+        <span className="mm-loader-text">Haberler yükleniyor…</span>
+      </div>
     </div>
   );
 }
 
-function PostLoadingSkeleton() {
+function PostLoadingSkeleton({ index }: { index: number }) {
   return (
-    <div className="w-full animate-pulse rounded-2xl bg-white p-6 shadow-md space-y-4">
+    <div
+      className="mm-skel mm-card-lift w-full rounded-lg bg-white p-6 shadow-sm space-y-4"
+      style={{ animationDelay: `${0.12 * index}s` }}
+    >
+      {/* Kategori rozeti + tarih */}
+      <div className="flex items-center justify-between">
+        <div className="mm-shimmer mm-shimmer-badge" />
+        <div className="mm-shimmer h-3 w-16" />
+      </div>
       {/* Başlık */}
-      <Skeleton className="h-6 w-3/4 rounded mb-2" />
-      {/* Alt başlık veya kısa açıklama */}
-      <Skeleton className="h-4 w-1/2 rounded mb-4" />
-      {/* İçerik paragrafları */}
-      <Skeleton className="h-4 w-full rounded mb-2" />
-      <Skeleton className="h-4 w-5/6 rounded mb-2" />
-      <Skeleton className="h-4 w-2/3 rounded mb-2" />
+      <div className="mm-shimmer mm-shimmer-line" style={{ width: "78%", height: "1.35rem" }} />
       {/* Görsel alanı */}
-      <Skeleton className="h-40 w-full rounded-lg mb-2" />
+      <div className="mm-shimmer mm-shimmer-img h-44 w-full" />
+      {/* İçerik paragrafları */}
+      <div className="mm-shimmer mm-shimmer-line" style={{ width: "100%" }} />
+      <div className="mm-shimmer mm-shimmer-line" style={{ width: "84%" }} />
+      <div className="mm-shimmer mm-shimmer-line" style={{ width: "58%" }} />
       {/* Alt kısım: avatar ve yazar */}
-      <div className="flex items-center gap-3 mt-4">
-        <Skeleton className="size-10 rounded-full" />
-        <div className="space-y-1">
-          <Skeleton className="h-4 w-24 rounded" />
-          <Skeleton className="h-3 w-16 rounded" />
+      <div className="flex items-center gap-3 pt-2">
+        <div className="mm-shimmer size-10 rounded-full" />
+        <div className="space-y-1.5">
+          <div className="mm-shimmer h-3.5 w-28" />
+          <div className="mm-shimmer h-3 w-20" />
         </div>
       </div>
     </div>
