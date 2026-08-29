@@ -29,7 +29,7 @@ export default async function Layout({
       </Alert>
       */}
       <Mmmnavbar />
-      
+      // Elhamdulillah Elhamdulillah Elhamdulillah
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full md:w-auto md:min-w-[280px] lg:min-w-[320px] p-4">
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
