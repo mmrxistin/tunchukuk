@@ -394,3 +394,185 @@ main video {
 
 /* ---- Son dakika rozeti nabız efekti ---- */
 .mm-pulse-badge { animation: mm-glow 1.8s ease-in-out infinite; }
+
+/* ============================================================
+   CANLI TV KARTLARI (Layout TV bölümü)
+   ============================================================ */
+.mm-tv-card {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.mm-tv-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.85rem;
+  background: linear-gradient(90deg, #0e0e0e, #1c1c1c);
+  border-bottom: 2px solid #bb1919;
+}
+
+.mm-tv-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #bb1919;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.mm-tv-live.dark {
+  background: #2a2a2a;
+  color: #f5f5f5;
+}
+
+.mm-tv-link {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #d4d4d8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.mm-tv-link:hover { color: #ff5252; }
+
+/* ============================================================
+   ÜST SLIDER (Son Dakika + Yazarlar)
+   ============================================================ */
+.mm-hero-slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  background:
+    linear-gradient(120deg, rgba(18, 18, 18, 0.94) 0%, rgba(24, 18, 18, 0.86) 55%, rgba(187, 25, 25, 0.55) 130%),
+    url("https://yeniyasamgazetesi9.com/wp-content/uploads/2026/08/mrd-29-08-26-nisebin-taziye-ucuncu-gun23-750x375.jpg") center/cover no-repeat;
+  animation: mm-fade-up 0.5s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mm-hero-slider:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.mm-yazar-slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(135deg, #1c1c1c 0%, #2b2b2b 100%);
+  border-top: 4px solid #bb1919;
+  animation: mm-fade-up 0.5s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mm-yazar-slider:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.mm-slider-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.65rem;
+  border-radius: 3px;
+}
+.mm-slider-tag-red { background: #bb1919; color: #fff; }
+.mm-slider-tag-dark { background: rgba(255, 255, 255, 0.12); color: #f5f5f5; }
+
+.mm-slider-content,
+.mm-yazar-content {
+  text-decoration: none;
+  color: inherit;
+  animation: mm-fade-up 0.45s ease-out both;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mm-slider-cat {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #ff8a8a;
+  margin-bottom: 0.35rem;
+}
+
+.mm-slider-title,
+.mm-yazar-title {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+.mm-slider-content:hover .mm-slider-title,
+.mm-yazar-content:hover .mm-yazar-title { color: #ff6b6b; }
+
+.mm-yazar-avatar {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  background: #bb1919;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.mm-yazar-name {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #a1a1aa;
+  text-transform: uppercase;
+}
+
+.mm-slider-dots {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+.mm-slider-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.mm-slider-dot.active {
+  width: 20px;
+  background: #bb1919;
+}
+.mm-slider-dot.dark { background: rgba(255, 255, 255, 0.2); }
