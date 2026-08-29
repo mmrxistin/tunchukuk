@@ -94,7 +94,7 @@ function Mmmnavbar() {
             SON DAKİKA
           </span>
           <div className="truncate font-medium text-zinc-300">
-            Türkiye ve dünyadan en güncel gelişmeler, özel haberler ve canlı yayın takibi Yeni Yaşam'da.
+            Gîyadin'de siyanür süreci başladı! — Nisêbîn'de anma alanına ziyaretler sürüyor — Maden işçileri kazandı: Direnişimiz zaferle sonuçlandı — Irak'ta 12 milletvekili ve yetkilinin mal varlığına el konuldu
           </div>
         </div>
       </div>

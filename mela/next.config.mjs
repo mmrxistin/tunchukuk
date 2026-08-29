@@ -9,11 +9,11 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  
-  
-  
+
+
+
   reactStrictMode: true,
-	
+
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
@@ -26,7 +26,7 @@ const nextConfig = {
   },
   serverExternalPackages: ["@node-rs/argon2"],
   images: {
-    domains: ['utfs.io'],
+    domains: ['utfs.io', 'yeniyasamgazetesi9.com'],
   },
   rewrites: () => {
     return [

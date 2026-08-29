@@ -6,7 +6,7 @@
 // bîyadîhîl xayr
 //  ve huve ala kulli şey'in kadir
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
-// La ilahe illAllah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+// La ilahe illAllah, Allahu Ekber, Allahu Ekber ve lillahi'l-hamd
 import React from "react";
 import Mmmnavbar from "./components/mmnav";
 

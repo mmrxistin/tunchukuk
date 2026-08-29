@@ -67,7 +67,7 @@
 
              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-               {/* Karta 1: */}
+               {/* Karta 1: Manşet */}
                <article className="lg:col-span-7 border-b border-gray-300 pb-6">
                  <div className="h-64 md:h-96 bg-gray-100 overflow-hidden mb-4">
                    <Dirok/>
@@ -78,12 +78,13 @@
                  </span>
 
                  <h2 className="text-3xl md:text-4xl font-black leading-tight mt-2 mb-3 transition-colors hover:text-[#b80000]">
-                   Türkiye'den güncel gelişmeler ve son dakika haberleri
+                   Nisêbîn'de anma alanına ziyaretler sürüyor
                  </h2>
 
                  <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                   Ülke gündeminde yaşanan son gelişmeler, önemli açıklamalar
-                   ve güncel haberler burada.
+                   Özgürlük mücadelesinde yaşamını yitiren gerillalar için Nisêbîn'de
+                   kurulan anma alanını, üçüncü gününde çok sayıda kişinin ziyaretiyle
+                   devam ediyor.
                  </p>
 
                  <a
@@ -100,8 +101,8 @@
                  <article className="border-b border-gray-300 pb-5">
                    <div className="h-44 bg-gray-100 overflow-hidden mb-4">
                      <img
-                       src="/images/haber-dunya.jpg"
-                       alt="Dünya haberleri"
+                       src="https://yeniyasamgazetesi9.com/wp-content/uploads/2026/08/mrd-29-08-26-nisebin-taziye-ucuncu-gun23-750x375.jpg"
+                       alt="Nisêbîn'de anma alanına ziyaretler sürüyor"
                        className="w-full h-full object-cover"
                      />
                    </div>
@@ -111,12 +112,11 @@
                    </span>
 
                    <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
-                     Dünyadan son gelişmeler ve önemli haberler
+                     Yunanistan: Türkiye İHA'sı hava sahamıza girdi
                    </h3>
 
                    <p className="text-gray-600 mt-2">
-                     Dünyada yaşanan siyasi, ekonomik ve toplumsal gelişmeleri
-                     yakından takip edin.
+                     Yunanistan, Türk İHA'sının hava sahasına girdiğini iddia etti.
                    </p>
                  </article>
 
@@ -131,12 +131,12 @@
                    </span>
 
                    <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
-                     Ekonomiden güncel veriler ve son gelişmeler
+                     Maden işçileri kazandı: Buraya 3 kere geldik, direnişimiz zaferle sonuçlandı
                    </h3>
 
                    <p className="text-gray-600 mt-2">
-                     Piyasalar, döviz, altın, finans ve ekonomi dünyasından
-                     önemli gelişmeler.
+                     Maden işçilerinin direnişi zaferle sonuçlandı; işçiler kazanımlarını
+                     ilan etti.
                    </p>
 
                    <a
@@ -156,8 +156,8 @@
                <article className="border-b md:border-b-0 md:border-r border-gray-300 py-6 md:pr-5">
                  <div className="h-44 bg-gray-100 overflow-hidden mb-4">
                    <img
-                     src="/images/haber-spor.jpg"
-                     alt="Spor haberleri"
+                     src="https://yeniyasamgazetesi9.com/wp-content/uploads/2026/08/690x390cc-mrk-28-08-2028-turk-sihasi-yunanitan-havaalanina-girdi-360x180.jpg"
+                     alt="Yunanistan: Türkiye İHA'sı hava sahamıza girdi"
                      className="w-full h-full object-cover"
                    />
                  </div>
@@ -167,12 +167,12 @@
                  </span>
 
                  <h3 className="text-xl font-black mt-2">
-                   Spor dünyasından son dakika gelişmeleri
+                   Gülistan Doku'nun kaybolduğu saatlerde defalarca telefon görüşmesi ortaya çıktı
                  </h3>
 
                  <p className="text-gray-600 mt-2">
-                   Futbol, basketbol ve diğer spor dallarından maç sonuçları,
-                   transferler ve son dakika haberleri.
+                   Jandarma komutanının eşi B.H.K. ile Handan Sonel'in, Gülistan'ın
+                   kaybolduğu saatlerde defalarca telefon görüşmesi yaptığı ortaya çıktı.
                  </p>
 
                  <a
@@ -187,8 +187,8 @@
                <article className="border-b md:border-b-0 md:border-r border-gray-300 py-6 md:px-5">
                  <div className="h-44 bg-gray-100 overflow-hidden mb-4">
                    <img
-                     src="/images/haber-kultur.jpg"
-                     alt="Kültür ve sanat haberleri"
+                     src="https://yeniyasamgazetesi9.com/wp-content/uploads/2026/08/823x463cc-amd-29-08-26-gulistan-doku-dosya-yeni-gelisme-350x250.jpeg"
+                     alt="Gülistan Doku dosyası"
                      className="w-full h-full object-cover"
                    />
                  </div>
@@ -198,12 +198,11 @@
                  </span>
 
                  <h3 className="text-xl font-black mt-2">
-                   Kültür, sanat ve yaşamdan haberler
+                   Edebiyatın yılmaz devrimcisi
                  </h3>
 
                  <p className="text-gray-600 mt-2">
-                   Kültür, sanat, kitap, sinema, etkinlikler ve yaşam
-                   dünyasından güncel içerikler.
+                   Kültür-sanat dünyasından güncel içerikler ve özel haberler.
                  </p>
 
                  <a
@@ -220,23 +219,23 @@
                  </div>
 
                  <span className="text-xs font-black text-[#b80000]">
-                   TEKNOLOJİ
+                   EKOLOJİ
                  </span>
 
                  <h3 className="text-xl font-black mt-2">
-                   Teknoloji dünyasından yeni gelişmeler
+                   Gîyadin'de siyanür süreci başladı!
                  </h3>
 
                  <p className="text-gray-600 mt-2">
-                   Teknoloji, yapay zekâ, internet, mobil cihazlar ve dijital
-                   dünyadaki son gelişmeler.
+                   Gîyadin'de altın madeninde siyanürle altın ayrıştırma süreci başladı;
+                   bölgede ekolojik tehdit büyüyor.
                  </p>
 
                  <a
                    href="/malper/penc"
                    className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
                  >
-                   Teknoloji Haberleri →
+                   Teknoloji ve Çevre Haberleri →
                  </a>
                </article>
 
@@ -277,16 +276,16 @@
 
                        <div>
                          <span className="text-xs text-[#b80000] font-black">
-                           SON DAKİKA
+                           GÜNCEL
                          </span>
 
                          <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
-                           Günün öne çıkan gelişmeleri ve son dakika haberleri
+                           Nisêbîn'de bir kişi gözaltına alındı
                          </h3>
 
                          <p className="text-gray-600 leading-relaxed">
-                           Türkiye ve dünyadan gün içerisinde yaşanan önemli
-                           gelişmelerin detayları.
+                           Hakkında yakalama kararı bulunduğu gerekçesiyle Rıdvan Aslan,
+                           Nisêbîn ilçe merkezinde gözaltına alındı.
                          </p>
 
                          <a
@@ -305,8 +304,8 @@
 
                        <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden shrink-0">
                          <img
-                           src="/images/haber-2.jpg"
-                           alt="Gündem haberi"
+                           src="https://yeniyasamgazetesi9.com/wp-content/uploads/2026/08/amd-29-08-2026-3genc-tahliye-350x250.jpeg"
+                           alt="3 genç tahliye edildi"
                            className="w-full h-full object-cover"
                          />
                        </div>
@@ -317,12 +316,12 @@
                          </span>
 
                          <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
-                           Gündemin nabzını tutan önemli gelişmeler
+                           Uyuşturucuya karşı çıktığı için tutuklanan 3 genç tahliye edildi
                          </h3>
 
                          <p className="text-gray-600 leading-relaxed">
-                           Ülke gündemindeki gelişmeler, açıklamalar ve kamuoyunu
-                           ilgilendiren haberler.
+                           Uyuşturucu ticaretine karşı çıktığı için tutuklanan 3 genç,
+                           yargı sürecinin ardından tahliye edildi.
                          </p>
 
                          <Car/>
@@ -342,7 +341,7 @@
                      <div className="flex flex-col md:flex-row gap-5">
 
                        <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden shrink-0">
-                       
+
                        </div>
 
                        <div>
@@ -351,12 +350,12 @@
                          </span>
 
                          <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
-                           Dünyada yaşanan son gelişmeler
+                           Irak'ta 12 milletvekili ve yetkilinin mal varlığına el konuldu
                          </h3>
 
                          <p className="text-gray-600 leading-relaxed">
-                           Uluslararası gündemde öne çıkan gelişmeler ve son
-                           dakika haberleri.
+                           Irak Kerx Mahkemesi ve Maliye Bakanlığı, 12 eski milletvekili
+                           ile eski danışmanların tüm mal varlıklarına el koydu.
                          </p>
 
                          <Rojnm/>
@@ -395,11 +394,11 @@
 
                        <div>
                          <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Günün en çok okunan haberleri
+                           Kaya petrolü Amed'i kurutup zehirleyecek
                          </h3>
 
                          <span className="text-xs text-gray-500">
-                           5 dakika önce
+                           EN ÇOK OKUNAN
                          </span>
                        </div>
                      </a>
@@ -414,16 +413,16 @@
                          02
                        </span>
 
-                       <div>
-                         <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Gündemde büyük yankı uyandıran gelişme
-                         </h3>
+                         <div>
+                           <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
+                             Murat Karayılan: Savaş koşulları nedeniyle şahadetleri zamanında açıklayamadık
+                           </h3>
 
-                         <span className="text-xs text-gray-500">
-                           15 dakika önce
-                         </span>
-                       </div>
-                     </a>
+                           <span className="text-xs text-gray-500">
+                             EN ÇOK OKUNAN
+                           </span>
+                         </div>
+                       </a>
 
                      <a
                        href="/haberler/3"
@@ -433,16 +432,16 @@
                          03
                        </span>
 
-                       <div>
-                         <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Ekonomide günün önemli gelişmeleri
-                         </h3>
+                         <div>
+                           <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
+                             IBAN üzerinden yatırım dolandırıcılığı
+                           </h3>
 
-                         <span className="text-xs text-gray-500">
-                           30 dakika önce
-                         </span>
-                       </div>
-                     </a>
+                           <span className="text-xs text-gray-500">
+                             EN ÇOK OKUNAN
+                           </span>
+                         </div>
+                       </a>
 
                      <a
                        href="/haberler/4"
@@ -452,16 +451,16 @@
                          04
                        </span>
 
-                       <div>
-                         <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Spor dünyasında son dakika
-                         </h3>
+                         <div>
+                           <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
+                             Entelektüel tartışması, barış ve Öcalan meselesine dair…
+                           </h3>
 
-                         <span className="text-xs text-gray-500">
-                           45 dakika önce
-                         </span>
-                       </div>
-                     </a>
+                           <span className="text-xs text-gray-500">
+                             EN ÇOK OKUNAN
+                           </span>
+                         </div>
+                       </a>
 
                    </div>
                  </div>
@@ -487,11 +486,11 @@
                  </span>
 
                  <h3 className="text-2xl font-black mt-2">
-                   Türkiye Gündemi
+                   Günün Manşeti
                  </h3>
 
                  <a
-                   href="/haberler/gundem"
+                   href="/malper/car"
                    className="inline-block mt-6 font-bold underline"
                  >
                    Haberleri Gör →
@@ -500,15 +499,15 @@
 
                <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
-                   EKONOMİ
+                   KADIN
                  </span>
 
                  <h3 className="text-2xl font-black mt-2">
-                   Ekonomi Haberleri
+                   Kadın Haberleri
                  </h3>
 
                  <a
-                   href="/haberler/ekonomi"
+                   href="/malper/rojname"
                    className="inline-block mt-6 text-[#b80000] font-bold underline"
                  >
                    Haberleri Gör →
@@ -517,17 +516,17 @@
 
                <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
-                   SPOR
+                   KÜLTÜR
                  </span>
 
                  <h3 className="text-2xl font-black mt-2">
-                   Spor Haberleri
+                   Kültür & Sanat
                  </h3>
 
                  <Se/>
 
                  <a
-                   href="/haberler/spor"
+                   href="/malper/dirok"
                    className="inline-block mt-6 text-[#b80000] font-bold underline"
                  >
                    Haberleri Gör →
@@ -546,7 +545,7 @@
                  <Xane/>
 
                  <a
-                   href="/haberler/dunya"
+                   href="/malper/se"
                    className="inline-block mt-6 text-[#b80000] font-bold underline"
                  >
                    Haberleri Gör →
