@@ -106,8 +106,7 @@ const Bingeh = () => (
     <div className="border-t border-zinc-900 bg-[#0a0a0a] py-4 text-xs text-zinc-500">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 md:flex-row md:justify-between">
         <div>
-          © {new Date().getFullYear()} YENİ YAŞAM GAZETESİ. Tüm hakları saklıdır. BBC stili güncel haber portalı.
-        </div>
+          © {new Date().getFullYear()} YENİ YAŞAM GAZETESİ. Tüm hakları saklıdır.         </div>
         <div className="flex gap-4">
           <a href="/gizlilik" className="transition-colors text-zinc-500 hover:text-white">Gizlilik</a>
           <a href="/iletisim" className="transition-colors text-zinc-500 hover:text-white">İletişim</a>
