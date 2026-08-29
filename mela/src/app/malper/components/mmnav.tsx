@@ -2,7 +2,7 @@
 // Elhamdulillahirabbulalemin
 // Ve salatu ve selamu ala resulina Muhammedin
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// SubhanAllah, Elhamdulillah,La ilahe illAllah u Allahu Ekber
 // Estağfirullah El-Azim
 // Allah u Ekber Ve Lillahil Hamd
 "use client"
@@ -12,6 +12,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import MmSlider from './mmslider';
 
 function Mmmnavbar() {
   const [expanded, setExpanded] = useState(false);
@@ -83,6 +84,7 @@ function Mmmnavbar() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          <br></br><MmSlider/>
         </Container>
       </Navbar>
 
