@@ -20,7 +20,7 @@ import ReactQueryProvider from "./ReactQueryProvider";
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillahirabbilalemin
 // La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü .
-
+// Seyyidina Muhammeden abduhu ve resuluhu (s.a.v) ve habibihi
 
 
 const geistSans = localFont({
@@ -31,7 +31,8 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
 });
-
+// Suphan Allah, Elhamdulillah, La ilahe illAllah 
+// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illAllah
 export const metadata: Metadata = {
   title: {
     template: "%s | Yeni Yaşam ",

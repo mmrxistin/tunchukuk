@@ -17,7 +17,7 @@ import React from "react";
 
 
 const Bingeh = () => (
-  <footer className="bg-[#121212] text-white border-t-4 border-[#bb1919] mt-16 font-sans">
+  <footer className="bg-[#121212] text-white border-t-2 border-[#bb1919] mt-16 font-sans">
     <div className="max-w-7xl mx-auto px-4 py-12">
       {/* BBC Brand Top Row */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 mb-8 border-b border-zinc-800 gap-4">
@@ -119,7 +119,7 @@ const Bingeh = () => (
 
 export default Bingeh;
 
-// Suphan Allah î Rezzaq î Kerîm î Vehhab î Ehed î Quddus î Haq ve Bîhamdîhî 
+// Suphan Allah î Rezzaq î Kerîm î Vehhab î Ehed î Quddus î Haq ve Bîhamdîhî
 // El Hamdu Lillah Kesira
 
 // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.
