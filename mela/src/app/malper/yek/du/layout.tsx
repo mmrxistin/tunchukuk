@@ -9,14 +9,14 @@
 "use client";
 
 import React from 'react'
-import ForYouFeed from './parvekirin'
+import ForYouFeed from '../../du/parvekirin'
 import { Card } from 'react-bootstrap';
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-    
-    
+
+
       {children}
       <Card style={{ marginTop: "20px", width: "100%", maxWidth: "700px", textAlign: "center", padding: "19px" }}>
         <Card.Title>Zêdetir Bixwînin</Card.Title>

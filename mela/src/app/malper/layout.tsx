@@ -12,6 +12,7 @@ import Mmmnavbar from "./components/mmnav";
 import MmSlider from "./components/mmslider";
 import Footer from "./components/mmbingeh";
 import ContactForm from "./components/mmfrm";
+import MmLiveTv from "./components/mmlivetv";
 
 // Yeni Yaşam Media YouTube kanalı
 const CHANNEL_ID = "UCeHJLmZ75jsot6tzDk-BUUA";
@@ -47,16 +48,16 @@ export default async function Layout({
 
       {/* Üst kısım: Son Dakika + Yazarlar slider'ı */}
       <div className="mm-shell">
-      
+
         {/* Ana ızgara: içerik solda (geniş), TV sağda (dar kolon) */}
         <div className="mm-grid-frame mx-auto w-full">
 
           {/* ANA İÇERİK */}
           <main className="mm-main-col p-3 sm:p-4 md:p-5">
-           
+
                 {children}
-            
-            
+
+
           </main>
 
           {/* TV KOLONU */}
@@ -64,78 +65,8 @@ export default async function Layout({
 
             <div className="mm-tv-panel">
 
-              {/* Canlı TV */}
-              <div className="mm-tv-card mm-tv-card-equal">
-                <div className="mm-tv-head">
-                  <span className="mm-tv-live">
-                    <span className="size-2 rounded-full bg-white animate-pulse" />
-                    CANLI TV
-                  </span>
-
-                  <a
-                    href={`https://www.youtube.com/channel/${CHANNEL_ID}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mm-tv-link"
-                  >
-                    Yeni Yaşam Kanalı ↗
-                  </a>
-                </div>
-
-                <div className="relative w-full bg-black aspect-video">
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src="https://www.youtube.com/embed/fZondUOmR9k"
-                    title="Yeni Yaşam TV - Son Video"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-
-                <div className="mm-tv-foot">
-                  <span className="mm-tv-foot-title">Yeni Yaşam TV</span>
-                  <span className="mm-tv-foot-sub">Güncel yayın akışı</span>
-                </div>
-              </div>
-
-              {/* Gazete videosu oynatma listesi */}
-              <div className="mm-tv-card mm-tv-card-equal">
-                <div className="mm-tv-head">
-                  <span className="mm-tv-live dark">
-                    VİDEO GALERİ
-                  </span>
-
-                  <a
-                    href={`https://www.youtube.com/channel/${CHANNEL_ID}/videos`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mm-tv-link"
-                  >
-                    Tüm Videolar ↗
-                  </a>
-                </div>
-
-                <div className="relative w-full bg-black aspect-video">
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src={`https://www.youtube.com/embed/videoseries?list=${UPLOADS_PLAYLIST}`}
-                    title="Yeni Yaşam Gazetesi - Video Oynatma Listesi"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-
-                <div className="mm-tv-foot">
-                  <span className="mm-tv-foot-title">VİDEO GALERİ</span>
-                  <span className="mm-tv-foot-sub">
-                    Yeni Yaşam Media — Tüm videolar
-                  </span>
-                </div>
-              </div>
+              {/* ABC News tarzı Canlı TV */}
+              <MmLiveTv />
 
               {/* Editörün Seçtikleri */}
               <div className="mm-editor-pick">

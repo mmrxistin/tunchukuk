@@ -15,6 +15,7 @@ import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
 import { extractRouterConfig } from "uploadthing/server";
 import { fileRouter } from "./api/uploadthing/core";
+// @ts-ignore: side-effect import for global CSS
 import "./globals.css";
 import ReactQueryProvider from "./ReactQueryProvider";
 // Elhamdulillah Elhamdulillah Elhamdulillah
@@ -31,7 +32,7 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
 });
-// Suphan Allah, Elhamdulillah, La ilahe illAllah 
+// Suphan Allah, Elhamdulillah, La ilahe illAllah
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illAllah
 export const metadata: Metadata = {
   title: {
@@ -54,11 +55,12 @@ export default function RootLayout({
         <ReactQueryProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
+            defaultTheme="light"
+            forcedTheme="light"
+            enableSystem={false}
             disableTransitionOnChange
           >
-              {children}
+            {children}
 
           </ThemeProvider>
         </ReactQueryProvider>
@@ -82,7 +84,7 @@ export default function RootLayout({
 
 
 
-export function Footer() {
+function Footer() {
   return (
     <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
       <p className="text-sm">© {new Date().getFullYear()} GONDWANA Software Solutions</p>
